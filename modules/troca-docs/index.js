@@ -1,3 +1,2 @@
-//Import other modules here
-import '../troca-variables';
+//Import here local assets
 import './troca-docs.scss';

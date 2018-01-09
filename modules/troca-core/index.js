@@ -1,3 +1,3 @@
 //Import other modules here
-import '../troca-variables';
 import '../troca-docs';
+import '../troca-variables';
