@@ -3,13 +3,13 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  context: path.resolve(__dirname, 'src'),
+  context: path.resolve(__dirname, 'modules'),
   entry: {
-    app: './app.js',
+    app: './troca-core/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: 'troca-core.js',
   },
   module: {
 
@@ -26,7 +26,7 @@ module.exports = {
 	  		new ExtractTextPlugin('style.css')
 	  ],
   devServer: {
-   	contentBase: './src',
+   	contentBase: './docs',
    	publicPath: '/dist'
 	}
 };
