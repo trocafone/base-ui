@@ -1,0 +1,102 @@
+@import "../troca-variables/troca-variables";
+@import "../troca-mixins/troca-mixins";
+@import "../troca-type/troca-type";
+
+.colors{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .color{
+    width: calc(20% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 40px;
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .brand-primary{
+    background: $brand-primary;
+    color: text-contrast( $brand-primary);
+  }
+  .brand-secondary{
+    background: $brand-secondary;
+    color: text-contrast( $brand-secondary);
+  }
+  .brand-tertiary{
+    background: $brand-tertiary;
+    color: text-contrast( $brand-tertiary);
+  }
+  .brand-fourth{
+    background: $brand-fourth;
+    color: text-contrast( $brand-fourth);
+  }
+  .brand-fifth{
+    background: $brand-fifth;
+    color: text-contrast( $brand-fifth);
+  }
+  .brand-info{
+    background: $brand-info;
+    color: text-contrast( $brand-info);
+  }
+  .brand-error{
+    background: $brand-error;
+    color: text-contrast( $brand-error);
+  }
+  .brand-success{
+    background: $brand-success;
+    color: text-contrast( $brand-success);
+  }
+  .brand-primary-lighter{
+    background: $brand-primary-lighter;
+    color: text-contrast( $brand-primary-lighter);
+  }
+  .black{
+    background: $black;
+    color: text-contrast( $black);
+  }
+  .grayscale-90{
+    background: $grayscale-90;
+    color: text-contrast( $grayscale-90);
+  }
+  .grayscale-80{
+    background: $grayscale-80;
+    color: text-contrast( $grayscale-80);
+  }
+  .grayscale-70{
+    background: $grayscale-70;
+    color: text-contrast( $grayscale-70);
+  }
+  .grayscale-60{
+    background: $grayscale-60;
+    color: text-contrast( $grayscale-60);
+  }
+  .grayscale-50{
+    background: $grayscale-50;
+    color: text-contrast( $grayscale-50);
+  }
+  .grayscale-40{
+    background: $grayscale-40;
+    color: text-contrast( $grayscale-40);
+  }
+  .grayscale-30{
+    background: $grayscale-30;
+    color: text-contrast( $grayscale-30);
+  }
+  .grayscale-20{
+    background: $grayscale-20;
+    color: text-contrast( $grayscale-20);
+  }
+  .grayscale-10{
+    background: $grayscale-10;
+    color: text-contrast( $grayscale-10);
+  }
+  .white{
+    background: $white;
+    color: text-contrast( $white);
+    border: solid 1px $grayscale-30;
+  }
+}
