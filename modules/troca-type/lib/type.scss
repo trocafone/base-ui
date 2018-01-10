@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i');
+@import "../../troca-variables/troca-variables";
+
+html{
+  font-size: $main-font-size;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $main-font-size;
+  color: $font-color-dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+@mixin fontSize($size) {
+  font-size: map-get($modular-font-size, $size);
+}
+
+@mixin lineHeight($size) {
+  line-height: map-get($modular-font-size, $size);
+}
+
+@mixin fontWeight($weight) {
+  font-weight: map-get($modular-font-weight, $weight);
+}
+
+
+h1 {
+  @include fontSize(biggest);
+  @include fontWeight(semibold);
+}
+
+h2 {
+  @include fontSize(bigger);
+  @include fontWeight(semibold);
+}
+
+h3 {
+  @include fontSize(big);
+  @include fontWeight(semibold);
+}
+
+h4 {
+  @include fontSize(base);
+  @include fontWeight(semibold);
+}
+
+h5 {
+  @include fontSize(small);
+  @include fontWeight(semibold);
+}
+
+h6 {
+  @include fontSize(smaller);
+  @include fontWeight(semibold);
+}
+
+p {
+  @include fontSize(base);
+  @include lineHeight(biggest);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+a {
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+}
+
+a{
+  color:$link-primary-color;
+
+  &:hover{
+    color: $link-primary-color-hover;
+  }
+  &:active{
+    color: $link-primary-color-active;
+  }
+}
+.secondary-link{
+  color:$link-secondary-color;
+
+  &:hover{
+    color: $link-secondary-color-hover;
+  }
+  &:active{
+    color: $link-secondary-color-active;
+  }
+}
+
+
+.page-title{
+  @include fontSize(jumbo);
+  @include lineHeight(giant);
+  @include fontWeight(semibold);
+  color: $brand-tertiary;
+  margin-bottom: 15px;
+  margin-top: 0;
+  @media (max-width: 767px){
+    @include fontSize(bigger);
+    @include lineHeight(biggest);
+  }
+}
+
+.page-sub-title{
+  @include fontSize(bigger);
+  @include lineHeight(biggest);
+  @include fontWeight(semibold);
+  color: $brand-tertiary;
+  margin-bottom: 15px;
+  margin-top: 0;
+  @media (max-width: 767px){
+    @include fontSize(big);
+    @include lineHeight(bigger);
+  }
+}
+
+/*
+.use-it-like-this {
+  @include fontSize(big);
+  @include lineHeight(bigger);
+  @include fontWeight(semibold);
+}*/

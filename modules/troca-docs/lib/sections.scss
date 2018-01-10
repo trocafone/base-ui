@@ -1,0 +1,11 @@
+.module-section{
+  padding: $section-padding 0;
+
+  &:nth-child(even){
+    background: $step-bg-even;
+
+  }
+  > article{
+    padding: 15px 0;
+  }
+}

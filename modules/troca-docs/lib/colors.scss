@@ -1,14 +1,14 @@
-@import "../troca-variables/troca-variables";
-@import "../troca-mixins/troca-mixins";
-@import "../troca-type/troca-type";
+@import "../../troca-variables/troca-variables";
+@import "../../troca-mixins/troca-mixins";
+@import "../../troca-type/troca-type";
 
 .colors{
-  width:100%;
+  width:calc(100% + 10px);
+  margin-left: -5px;
   display: flex;
   flex-wrap: wrap;
 
   .color{
-    width: calc(20% - 10px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,12 @@
     margin: 5px;
     font-size: 14px;
   }
-
+  .color.width-20{
+    width: calc(20% - 10px);
+  }
+  .color.width-100{
+    width: 100%;
+  }
   .brand-primary{
     background: $brand-primary;
     color: text-contrast( $brand-primary);
@@ -98,5 +103,9 @@
     background: $white;
     color: text-contrast( $white);
     border: solid 1px $grayscale-30;
+  }
+  .page-container-bg{
+    background: $page-container-bg;
+    color: text-contrast( $page-container-bg);
   }
 }

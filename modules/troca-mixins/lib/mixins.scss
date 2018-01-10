@@ -1,0 +1,5 @@
+@function text-contrast($color) {
+  @return if(lightness($color) < 51, $font-color-light, $font-color-dark);
+}
+
+

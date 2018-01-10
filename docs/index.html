@@ -1,56 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <link href="main.css">
-   <title>Troca App</title>
-   <link rel="stylesheet" type="text/css" href="dist/style.css"></link>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"/>
+    <link href="main.css">
+    <title>Troca App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/style.css"></link>
 </head>
 <body>
-   <div id="app">
-       <div class="container">
-           <h1>TROCAFONE Styles</h1>
-           <div>
-               <h2>Main font</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas magna ipsum, posuere in nisi nec, efficitur luctus turpis. Praesent fermentum ligula faucibus, sollicitudin purus a, imperdiet elit. Vestibulum suscipit leo et risus mattis feugiat. Nullam pretium tincidunt nunc, ac molestie ex. Duis laoreet vitae est a maximus. Maecenas arcu libero, consequat pharetra nulla nec, aliquam sollicitudin dolor. Nulla at porta diam. Sed rutrum tincidunt augue, id rutrum neque consectetur ut. Aenean risus nibh, tincidunt ut justo sed, iaculis pellentesque ipsum. Integer consectetur nisi id leo mollis pulvinar. Sed ut vehicula purus. Fusce eget semper lorem.</p>
-           </div>
-           <h1>H1 heading</h1>
-           <h2>H1 heading</h2>
-           <h3>H1 heading</h3>
-           <h4>H1 heading</h4>
-           <h5>H1 heading</h5>
-           <h6>H1 heading</h6>
-       </div>
-       <div class="container">
-           <h2>Main colors</h2>
-           <div class="colors">
-               <div class="color brand-primary"><span>$brand-primary</span></div>
-               <div class="color brand-secondary"><span>$brand-secondary</span></div>
-               <div class="color brand-tertiary"><span>$brand-tertiary</span></div>
-               <div class="color brand-fourth"><span>$brand-fourt</span></div>
-               <div class="color brand-fifth"><span>$brand-fifth</span></div>
-               <div class="color brand-info"><span>$brand-info</span></div>
-               <div class="color brand-error"><span>$brand-error</span></div>
-               <div class="color brand-success"><span>$brand-success</span></div>
-               <div class="color brand-primary-lighter"><span>$brand-primary-lighter</span></div>
-           </div>
-           <h2>Grayscale colors</h2>
-           <div class="colors grayscale">
-               <div class="color black"><span>$black</span></div>
-               <div class="color grayscale-90"><span>$grayscale-90</span></div>
-               <div class="color grayscale-80"><span>$grayscale-80</span></div>
-               <div class="color grayscale-70"><span>$grayscale-70</span></div>
-               <div class="color grayscale-60"><span>$grayscale-60</span></div>
-               <div class="color grayscale-50"><span>$grayscale-50</span></div>
-               <div class="color grayscale-40"><span>$grayscale-40</span></div>
-               <div class="color grayscale-30"><span>$grayscale-30</span></div>
-               <div class="color grayscale-20"><span>$grayscale-20</span></div>
-               <div class="color grayscale-10"><span>$grayscale-10</span></div>
-               <div class="color white"><span>$white</span></div>
-           </div>
-       </div>
-
-   </div>
-   <script src="dist/troca-core.js"></script>
+<div id="app">
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo_big.png" alt="Trocafone Styles" class="img-responsive">
+        </div>
+    </header>
+    <div class="page-container">
+        <section class="module-section module-colors">
+            <article class="container">
+                <h2>Colors</h2>
+                <div class="colors">
+                    <div class="color width-20 brand-primary"><span>$brand-primary</span></div>
+                    <div class="color width-20 brand-secondary"><span>$brand-secondary</span></div>
+                    <div class="color width-20 brand-tertiary"><span>$brand-tertiary</span></div>
+                    <div class="color width-20 brand-fourth"><span>$brand-fourt</span></div>
+                    <div class="color width-20 brand-fifth"><span>$brand-fifth</span></div>
+                    <div class="color width-20 brand-info"><span>$brand-info</span></div>
+                    <div class="color width-20 brand-error"><span>$brand-error</span></div>
+                    <div class="color width-20 brand-success"><span>$brand-success</span></div>
+                    <div class="color width-20 brand-primary-lighter"><span>$brand-primary-lighter</span></div>
+                </div>
+            </article>
+            <article class="container">
+                <h2>Grayscale</h2>
+                <div class="colors grayscale">
+                    <div class="color width-20 black"><span>$black</span></div>
+                    <div class="color width-20 grayscale-90"><span>$grayscale-90</span></div>
+                    <div class="color width-20 grayscale-80"><span>$grayscale-80</span></div>
+                    <div class="color width-20 grayscale-70"><span>$grayscale-70</span></div>
+                    <div class="color width-20 grayscale-60"><span>$grayscale-60</span></div>
+                    <div class="color width-20 grayscale-50"><span>$grayscale-50</span></div>
+                    <div class="color width-20 grayscale-40"><span>$grayscale-40</span></div>
+                    <div class="color width-20 grayscale-30"><span>$grayscale-30</span></div>
+                    <div class="color width-20 grayscale-20"><span>$grayscale-20</span></div>
+                    <div class="color width-20 grayscale-10"><span>$grayscale-10</span></div>
+                    <div class="color width-20 white"><span>$white</span></div>
+                </div>
+            </article>
+            <article class="container">
+                <h2>Page Background</h2>
+                <div class="colors">
+                    <div class="color width-100 page-container-bg"><span>$page-container-bg</span></div>
+                </div>
+            </article>
+        </section>
+        <section class="module-section module-type">
+            <article class="container">
+                <h2>Type</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas magna ipsum, posuere in nisi nec,
+                    efficitur luctus turpis. Praesent fermentum ligula faucibus, sollicitudin purus a, imperdiet elit.
+                    Vestibulum suscipit leo et risus mattis feugiat. Nullam pretium tincidunt nunc, ac molestie ex. Duis
+                    laoreet vitae est a maximus. Maecenas arcu libero, consequat pharetra nulla nec, aliquam
+                    sollicitudin dolor. Nulla at porta diam. Sed rutrum tincidunt augue, id rutrum neque consectetur ut.
+                    Aenean risus nibh, tincidunt ut justo sed, iaculis pellentesque ipsum. Integer consectetur nisi id
+                    leo mollis pulvinar. Sed ut vehicula purus. Fusce eget semper lorem.</p>
+            </article>
+            <article class="container">
+                <h1>H1 heading</h1>
+                <h2>H2 heading</h2>
+                <h3>H3 heading</h3>
+                <h4>H4 heading</h4>
+                <h5>H5 heading</h5>
+                <h6>H6 heading</h6>
+            </article>
+            <article class="container">
+                <h2 class="page-title">Page title, step title or module title</h2>
+                <h2 class="page-sub-title">Page sub-title or module sub-title</h2>
+            </article>
+            <article class="container">
+                <div>
+                    <a href="">Primary Link</a>
+                </div>
+                <div>
+                    <a href="" class="secondary-link">Secondary Link</a>
+                </div>
+            </article>
+        </section>
+    </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="dist/troca-core.js"></script>
 </body>
 </html>
