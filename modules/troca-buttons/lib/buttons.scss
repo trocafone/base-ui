@@ -1,0 +1,109 @@
+@import "../../troca-variables/troca-variables";
+@import "../../troca-mixins/troca-mixins";
+@import "../../troca-type/troca-type";
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer
+}
+
+.button-primary, .button-secondary, .button-primary-border, .button-secondary-border {
+  @include fontSize(base);
+  @include fontWeight(semibold);
+  border: none;
+  color: $white;
+  border-radius: 0;
+  text-transform: none;
+  box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
+  -webkit-box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
+  -moz-box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
+  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color='#404040');
+  outline: none;
+
+  &.button-disabled {
+    background-color: $grayscale-40;
+    cursor: default;
+    &:hover, &:active {
+      background-color: $grayscale-40;
+    }
+  }
+}
+
+
+.button-primary, .button-secondary, .button-primary-border, .button-secondary-border {
+  border: none;
+  color: $white;
+  border-radius: 0;
+  text-transform: none;
+  box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
+  -webkit-box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
+  -moz-box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
+  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color='#404040');
+  outline: none;
+
+  &.button-disabled {
+    background-color: $grayscale-40;
+    cursor: default;
+    &:hover, &:active {
+      background-color: $grayscale-40;
+    }
+  }
+}
+
+
+.button-primary, .button-secondary{
+  @include fontWeight(normal);
+}
+
+.button-primary-border, .button-secondary-border {
+  @include fontWeight(normal);
+}
+
+
+.button-medium {
+  padding: 13px 23px;
+  @include fontSize(small);
+}
+
+.button-large {
+  padding: 15px 30px;
+  @include fontSize(base);
+}
+
+.button-primary {
+  background-color: $brand-primary;
+
+  &:hover, &:active {
+    background-color: $brand-fifth;
+  }
+}
+
+.button-secondary {
+  background-color: $brand-secondary;
+
+  &:hover, &:active {
+    background-color: $brand-tertiary;
+  }
+}
+
+.button-primary-border:not(.button-disabled){
+  background-color: $white;
+  border:1px solid $brand-primary;
+  color: $brand-primary;
+
+  &:hover, &:active {
+    background-color: $brand-primary;
+    color: $white;
+  }
+}
+
+.button-secondary-border:not(.button-disabled){
+  background-color: $white;
+  border:1px solid $brand-secondary;
+  color: $brand-secondary;
+
+  &:hover, &:active {
+    background-color: $brand-secondary;
+    color: $white;
+  }
+}

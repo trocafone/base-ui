@@ -9,6 +9,8 @@ $brand-info:    #3f8aeb;
 $brand-error: #d02828;
 $brand-success: #52cb7b;
 $brand-primary-lighter: #ffa53d;
+$red-discounts: #fe4d55;
+$green-discounts: $brand-success;
 
 /*  old names, just for guidence while creating this repo
 @darkest-gray:  #333333;
@@ -34,10 +36,12 @@ $grayscale-20: #f4f4f4;
 $grayscale-10: #fafafa;
 $white: #fff;
 
-
+/*PAGE CONTAINER*/
 $page-container-bg: $grayscale-20;
-$step-bg-odd: #fff;
-$step-bg-even: $grayscale-10;
+
+/*STRIPPED BACKGROUND*/
+$stripped-bg-odd: #fff;
+$stripped-bg-even: $grayscale-10;
 
 /*GRAY BOX WITH GRAY BORDER*/
 $content-box-bg: $white;

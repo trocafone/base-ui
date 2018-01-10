@@ -19,7 +19,8 @@
     <div class="page-container">
         <section class="module-section module-colors">
             <article class="container">
-                <h2>Colors</h2>
+                <h2  class="page-title-large">Colors</h2>
+                <h3>Brand</h3>
                 <div class="colors">
                     <div class="color width-20 brand-primary"><span>$brand-primary</span></div>
                     <div class="color width-20 brand-secondary"><span>$brand-secondary</span></div>
@@ -30,6 +31,8 @@
                     <div class="color width-20 brand-error"><span>$brand-error</span></div>
                     <div class="color width-20 brand-success"><span>$brand-success</span></div>
                     <div class="color width-20 brand-primary-lighter"><span>$brand-primary-lighter</span></div>
+                    <div class="color width-20 red-discounts"><span>$red-discounts</span></div>
+                    <div class="color width-20 green-discounts"><span>$green-discounts</span></div>
                 </div>
             </article>
             <article class="container">
@@ -54,10 +57,29 @@
                     <div class="color width-100 page-container-bg"><span>$page-container-bg</span></div>
                 </div>
             </article>
+            <article class="container">
+                <div class="content-box">
+                    In many cases you'll have box with border, usually it's the same colors throughout the site.
+                    In that case use the class <strong>content-box</strong> to add border and background color or the variables <strong>$content-box-bdr</strong> and <strong>$content-box-bg</strong>
+                </div>
+            </article>
+        </section>
+        <section class="module-section module-step-even">
+            <div class="container">
+                <h2  class="page-title-large">Stripped background </h2>
+                Even color: $stripped-bg-even
+            </div>
+        </section>
+        <section class="module-section module-step-odd">
+            <div class="container">
+                <h2  class="page-title-large">Stripped background </h2>
+                Odd color: $stripped-bg-odd
+            </div>
         </section>
         <section class="module-section module-type">
             <article class="container">
-                <h2>Type</h2>
+                <h2 class="page-title-large">Type</h2>
+                <h3>Paragraph</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas magna ipsum, posuere in nisi nec,
                     efficitur luctus turpis. Praesent fermentum ligula faucibus, sollicitudin purus a, imperdiet elit.
                     Vestibulum suscipit leo et risus mattis feugiat. Nullam pretium tincidunt nunc, ac molestie ex. Duis
@@ -67,23 +89,105 @@
                     leo mollis pulvinar. Sed ut vehicula purus. Fusce eget semper lorem.</p>
             </article>
             <article class="container">
-                <h1>H1 heading</h1>
-                <h2>H2 heading</h2>
-                <h3>H3 heading</h3>
-                <h4>H4 heading</h4>
-                <h5>H5 heading</h5>
-                <h6>H6 heading</h6>
+                <h3>Headings</h3>
+                <h1>H1</h1>
+                <h2>H2</h2>
+                <h3>H3</h3>
+                <h4>H4</h4>
+                <h5>H5</h5>
+                <h6>H6</h6>
             </article>
             <article class="container">
-                <h2 class="page-title">Page title, step title or module title</h2>
-                <h2 class="page-sub-title">Page sub-title or module sub-title</h2>
+                <h3>Titles</h3>
+                <h2 class="page-title-large">Page title large, step title or module title</h2>
+                <h2 class="page-title-medium">Page title medium or module sub-title</h2>
             </article>
             <article class="container">
-                <div>
-                    <a href="">Primary Link</a>
+                <h3>Links inside text</h3>
+                <p>In general <a href="">Primary Link</a> it's used </p>
+
+
+                <p>In some cases you'll need this <a href="" class="link-secondary">Secondary Link</a>. It will be in the design.</p>
+
+            </article>
+        </section>
+        <section class="module-section module-buttons">
+            <article class="container">
+                <h2 class="page-title-large">Buttons</h2>
+                <h3>Plain buttons</h3>
+                <p>First add class <strong>button-primary</strong> or <strong>button-secondary</strong> then add the size <strong>button-medium</strong> or <strong>button-large</strong> and when needed add disable class <strong>button-disabled</strong></p>
+                <div class="buttons">
+                    <div class="button">
+                        <input type="button" value="Primary Medium" class="button-primary button-medium">
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Primary Medium Disabled" class="button-primary button-medium button-disabled">
+                    </div>
                 </div>
-                <div>
-                    <a href="" class="secondary-link">Secondary Link</a>
+                <div class="buttons">
+                    <div class="button">
+                        <input type="button" value="Primary Large" class="button-primary button-large">
+                    </div>
+
+                    <div class="button">
+                        <input type="button" value="Primary Large Disabled" class="button-primary button-large button-disabled">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="button">
+                        <input type="button" value="Secondary Medium" class="button-secondary button-medium">
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Secondary Medium Disabled" class="button-secondary button-medium button-disabled">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="button">
+                        <input type="button" value="Secondary Large" class="button-secondary button-large">
+                    </div>
+
+                    <div class="button">
+                        <input type="button" value="Secondary Large Disabled" class="button-secondary button-large button-disabled">
+                    </div>
+                </div>
+            </article>
+            <article class="container">
+                <h3>Border buttons</h3>
+                <p>In this case it onky changes the first class to <strong>button-primary-border</strong> or <strong>button-secondary-border</strong></p>
+
+                <div class="buttons">
+                    <div class="button">
+                        <input type="button" value="Primary Border Medium" class="button-primary-border button-medium">
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Primary Border LarMediumge Disabled" class="button-primary-border button-medium button-disabled">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="button">
+                        <input type="button" value="Primary Border Large" class="button-primary-border button-large">
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Primary Border Large Disabled" class="button-primary-border button-large button-disabled">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="button">
+                        <input type="button" value="Secondary Border Medium" class="button-secondary-border button-medium">
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Secondary Border Medium Disabled" class="button-secondary-border button-medium button-disabled">
+                    </div>
+                </div>
+
+
+                <div class="buttons">
+                    <div class="button">
+                        <input type="button" value="Secondary Border Large" class="button-secondary-border button-large">
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Secondary Border Large Disabled" class="button-secondary-border button-large button-disabled">
+                    </div>
                 </div>
             </article>
         </section>

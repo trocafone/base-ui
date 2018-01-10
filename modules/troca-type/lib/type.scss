@@ -35,32 +35,32 @@ h6 {
 
 
 h1 {
-  @include fontSize(biggest);
+  @include fontSize(jumbo);
   @include fontWeight(semibold);
 }
 
 h2 {
-  @include fontSize(bigger);
+  @include fontSize(biggest);
   @include fontWeight(semibold);
 }
 
 h3 {
-  @include fontSize(big);
+  @include fontSize(bigger);
   @include fontWeight(semibold);
 }
 
 h4 {
-  @include fontSize(base);
+  @include fontSize(big);
   @include fontWeight(semibold);
 }
 
 h5 {
-  @include fontSize(small);
+  @include fontSize(base);
   @include fontWeight(semibold);
 }
 
 h6 {
-  @include fontSize(smaller);
+  @include fontSize(small);
   @include fontWeight(semibold);
 }
 
@@ -87,7 +87,7 @@ a{
     color: $link-primary-color-active;
   }
 }
-.secondary-link{
+.link-secondary{
   color:$link-secondary-color;
 
   &:hover{
@@ -99,7 +99,7 @@ a{
 }
 
 
-.page-title{
+.page-title-large{
   @include fontSize(jumbo);
   @include lineHeight(giant);
   @include fontWeight(semibold);
@@ -112,7 +112,7 @@ a{
   }
 }
 
-.page-sub-title{
+.page-title-medium{
   @include fontSize(bigger);
   @include lineHeight(biggest);
   @include fontWeight(semibold);
@@ -124,10 +124,3 @@ a{
     @include lineHeight(bigger);
   }
 }
-
-/*
-.use-it-like-this {
-  @include fontSize(big);
-  @include lineHeight(bigger);
-  @include fontWeight(semibold);
-}*/

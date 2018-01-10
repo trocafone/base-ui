@@ -2,110 +2,125 @@
 @import "../../troca-mixins/troca-mixins";
 @import "../../troca-type/troca-type";
 
-.colors{
-  width:calc(100% + 10px);
-  margin-left: -5px;
-  display: flex;
-  flex-wrap: wrap;
-
-  .color{
+.module-colors {
+  .colors {
+    width: calc(100% + 10px);
+    margin-left: -5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .color {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    height: 40px;
+    height: 50px;
     margin: 5px;
     font-size: 14px;
   }
-  .color.width-20{
+  .color.width-20 {
     width: calc(20% - 10px);
   }
-  .color.width-100{
+  .color.width-100 {
     width: 100%;
   }
-  .brand-primary{
+  .brand-primary {
     background: $brand-primary;
-    color: text-contrast( $brand-primary);
+    color: text-contrast($brand-primary);
   }
-  .brand-secondary{
+  .brand-secondary {
     background: $brand-secondary;
-    color: text-contrast( $brand-secondary);
+    color: text-contrast($brand-secondary);
   }
-  .brand-tertiary{
+  .brand-tertiary {
     background: $brand-tertiary;
-    color: text-contrast( $brand-tertiary);
+    color: text-contrast($brand-tertiary);
   }
-  .brand-fourth{
+  .brand-fourth {
     background: $brand-fourth;
-    color: text-contrast( $brand-fourth);
+    color: text-contrast($brand-fourth);
   }
-  .brand-fifth{
+  .brand-fifth {
     background: $brand-fifth;
-    color: text-contrast( $brand-fifth);
+    color: text-contrast($brand-fifth);
   }
-  .brand-info{
+  .brand-info {
     background: $brand-info;
-    color: text-contrast( $brand-info);
+    color: text-contrast($brand-info);
   }
-  .brand-error{
+  .brand-error {
     background: $brand-error;
-    color: text-contrast( $brand-error);
+    color: text-contrast($brand-error);
   }
-  .brand-success{
+  .brand-success {
     background: $brand-success;
-    color: text-contrast( $brand-success);
+    color: text-contrast($brand-success);
   }
-  .brand-primary-lighter{
+  .brand-primary-lighter {
     background: $brand-primary-lighter;
-    color: text-contrast( $brand-primary-lighter);
+    color: text-contrast($brand-primary-lighter);
   }
-  .black{
+  .red-discounts {
+    background: $red-discounts;
+    color: text-contrast($red-discounts);
+  }
+  .green-discounts {
+    background: $green-discounts;
+    color: text-contrast($green-discounts);
+  }
+
+  .black {
     background: $black;
-    color: text-contrast( $black);
+    color: text-contrast($black);
   }
-  .grayscale-90{
+  .grayscale-90 {
     background: $grayscale-90;
-    color: text-contrast( $grayscale-90);
+    color: text-contrast($grayscale-90);
   }
-  .grayscale-80{
+  .grayscale-80 {
     background: $grayscale-80;
-    color: text-contrast( $grayscale-80);
+    color: text-contrast($grayscale-80);
   }
-  .grayscale-70{
+  .grayscale-70 {
     background: $grayscale-70;
-    color: text-contrast( $grayscale-70);
+    color: text-contrast($grayscale-70);
   }
-  .grayscale-60{
+  .grayscale-60 {
     background: $grayscale-60;
-    color: text-contrast( $grayscale-60);
+    color: text-contrast($grayscale-60);
   }
-  .grayscale-50{
+  .grayscale-50 {
     background: $grayscale-50;
-    color: text-contrast( $grayscale-50);
+    color: text-contrast($grayscale-50);
   }
-  .grayscale-40{
+  .grayscale-40 {
     background: $grayscale-40;
-    color: text-contrast( $grayscale-40);
+    color: text-contrast($grayscale-40);
   }
-  .grayscale-30{
+  .grayscale-30 {
     background: $grayscale-30;
-    color: text-contrast( $grayscale-30);
+    color: text-contrast($grayscale-30);
   }
-  .grayscale-20{
+  .grayscale-20 {
     background: $grayscale-20;
-    color: text-contrast( $grayscale-20);
+    color: text-contrast($grayscale-20);
   }
-  .grayscale-10{
+  .grayscale-10 {
     background: $grayscale-10;
-    color: text-contrast( $grayscale-10);
+    color: text-contrast($grayscale-10);
   }
-  .white{
+  .white {
     background: $white;
-    color: text-contrast( $white);
+    color: text-contrast($white);
     border: solid 1px $grayscale-30;
   }
-  .page-container-bg{
+  .page-container-bg {
     background: $page-container-bg;
-    color: text-contrast( $page-container-bg);
+    color: text-contrast($page-container-bg);
+  }
+
+  .content-box{
+    border: 1px solid $content-box-bdr;
+    background: $content-box-bg;
   }
 }

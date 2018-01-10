@@ -1,0 +1,16 @@
+.module-buttons {
+  .buttons {
+    width: calc(100%);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+}
