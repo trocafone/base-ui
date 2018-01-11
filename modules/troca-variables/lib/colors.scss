@@ -37,11 +37,12 @@ $grayscale-10: #fafafa;
 $white: #fff;
 
 /*PAGE CONTAINER*/
+$body-bg: #fff;
 $page-container-bg: $grayscale-20;
 
 /*STRIPPED BACKGROUND*/
-$stripped-bg-odd: #fff;
-$stripped-bg-even: $grayscale-10;
+$stripped-bg-dark: $grayscale-10;
+$stripped-bg-light: #fff;
 
 /*GRAY BOX WITH GRAY BORDER*/
 $content-box-bg: $white;

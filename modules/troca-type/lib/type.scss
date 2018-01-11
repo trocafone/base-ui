@@ -71,10 +71,8 @@ p {
   margin-bottom: 10px;
 }
 
-a {
-  &:hover, &:active, &:focus {
-    text-decoration: none;
-  }
+a:hover, a:active, a:focus, a:-webkit-any-link {
+  text-decoration: none;
 }
 
 a{

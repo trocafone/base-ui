@@ -1,0 +1,22 @@
+@import "../../troca-variables/troca-variables";
+@import "../../troca-mixins/troca-mixins";
+@import "../../troca-type/troca-type";
+
+.stripped-container{
+  &.stripped-odd{
+    > .stripped-row:nth-child(odd) {
+      background: $stripped-bg-dark;
+    }
+    > .stripped-row:nth-child(evenn) {
+      background: $stripped-bg-light;
+    }
+  }
+  &.stripped-even{
+    > .stripped-row:nth-child(even) {
+      background: $stripped-bg-dark;
+    }
+    > .stripped-row:nth-child(odd) {
+      background: $stripped-bg-light;
+    }
+  }
+}

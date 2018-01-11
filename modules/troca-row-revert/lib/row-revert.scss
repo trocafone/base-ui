@@ -1,0 +1,40 @@
+@import "../../troca-variables/troca-variables";
+@import "../../troca-mixins/troca-mixins";
+@import "../../troca-type/troca-type";
+
+.row-flex {
+  @media (min-width: 768px) {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -ms-align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+  }
+}
+
+.row-reverse-all {
+  .row-reverse {
+    @media (min-width: 768px) {
+      -moz-flex-flow: row-reverse;
+      -webkit-flex-flow: row-reverse;
+      flex-flow: row-reverse;
+      -ms-flex-direction: row-reverse;
+    }
+  }
+}
+
+.row-reverse-interlaced {
+  .row-reverse:nth-child(even) {
+    @media (min-width: 768px) {
+      -moz-flex-flow: row-reverse;
+      -webkit-flex-flow: row-reverse;
+      flex-flow: row-reverse;
+      -ms-flex-direction: row-reverse;
+    }
+  }
+}
+
+

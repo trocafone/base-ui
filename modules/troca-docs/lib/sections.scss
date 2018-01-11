@@ -1,15 +1,48 @@
 .module-section{
   padding: $section-padding 0;
 
-  &:nth-child(even){
-    background: $stripped-bg-even;
-
-  }
   > article{
-    padding: 15px 0;
+    padding: 30px 0;
   }
 
   .content-box{
     padding: 30px;
+  }
+
+  .navigation{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    li{
+      @include fontSize(base);
+      background: $grayscale-10;
+      border-bottom: 2px solid $white;
+      overflow: hidden;
+
+      a{
+        padding: 10px;
+        display: block;
+      }
+      &:hover, &.active{
+        background: $grayscale-60;
+        a{
+          color: $white;
+        }
+      }
+      a, a:active{
+        color: $link-primary-color;
+      }
+      a:hover{
+        color: $white;
+      }
+    }
+  }
+
+  .stripped-container{
+    margin: 50px 0;
+    .stripped-row{
+      padding: 20px;
+    }
   }
 }
