@@ -47,6 +47,9 @@
                             <li role="presentation">
                                 <a href="#row-revert" aria-controls="row-revert" role="tab" data-toggle="tab">Row Revert</a>
                             </li>
+                            <li role="presentation">
+                                <a href="#message" aria-controls="message" role="tab" data-toggle="tab">Message</a>
+                            </li>
                         </ul>
                     </section>
                 </div>
@@ -110,8 +113,8 @@
                             <p>Add a tag with the class <strong>stripped-container</strong> and in the same tag add
                                 <strong>stripped-even (first row light)</strong>
                                 or <strong>stripped-odd (second row light)</strong>.</p>
-                            <div class="note">
-                                <span><strong>NOTE:</strong> This will only add background colors, not paddings.</span>
+                            <div class="message information">
+                                <strong>NOTE:</strong> This will only add background colors, not paddings.
                             </div>
 
                             <h4 class="section-title-l3">Example with first row light</h4>
@@ -291,8 +294,9 @@
                     <section class="module-section module-radiobutton tab-pane" role="tabpanel" id="radiobutton">
                         <h2 class="page-title-large section-title-l1">RadioButton</h2>
                         <article>
-                            <h3 class="section-title-l2">Radio button</h3>
-                            <h4 class="section-title-l3"><strong>NOTE: </strong>This markup for Radio button it's used in many places at the moment. Eventually it will be deprecated.</h4>
+                            <div class="message information">
+                                <strong>NOTE:</strong> This &darr; markup for Radio button it's used in many places at the moment. Eventually it will be deprecated.
+                            </div>
                             <pre><code class="language-markup "><script type="text/plain" class="language-markup"><label>
     <input checked="1" class="regular-radio" name="example" type="radio" value="Radio button">
     <label class="radio-style-label"></label>Text
@@ -322,8 +326,7 @@
                     <section class="module-section module-checkbox tab-pane" role="tabpanel" id="checkbox">
                         <h2 class="page-title-large section-title-l1">Checkbox</h2>
                         <article>
-                            <h3 class="section-title-l2">Checkbox</h3>
-                            <h4 class="section-title-l3"><strong>NOTE: </strong>This markup for Checkbox it's used in many places at the moment. Eventually it will be deprecated.</h4>
+                            <div class="message information"><strong>NOTE: </strong>This &darr; markup for Checkbox it's used in many places at the moment. Eventually it will be deprecated.</div>
                             <pre><code class="language-markup "><script type="text/plain" class="language-markup"><label>
     <input class="regular-checkbox" checked="checked" name="receive_info" type="checkbox" value="1">
     <label class="checkbox-style-label"></label> Quero receber ofertas e descontos exclusivos por e-mail.
@@ -356,8 +359,7 @@
                         <h2 class="page-title-large section-title-l1">Row Revert</h2>
                         <article>
                             <h3 class="section-title-l2">Revert the order of divs </h3>
-                            <p><strong>NOTE:</strong> This uses FlexBox, in IE9 things are not reverted but they look
-                                ok.</p>
+                            <div class="message information"><strong>NOTE:</strong> This uses FlexBox, in IE9 things are not reverted but they look ok.</div>
                             <p>This will only revert order, but since it uses flexbox it will also float them in most
                                 browsers. For IE9 add float or display inline to the childs you want to float.</p>
                             <p>Add class <strong>row-reverse-all</strong> to container div and classes <strong>row-flex
@@ -469,6 +471,16 @@
             Right
         </div>
     </div>
+</div></script></code></pre>
+                        </article>
+                    </section>
+                    <section class="module-section module-message-box tab-pane" role="tabpanel" id="message">
+                        <h2 class="page-title-large section-title-l1">Message</h2>
+                        <article>
+                            <h4>Information message</h4>
+                            <div class="message information">This is an example</div>
+                            <pre class="copy-to-clipboard"><code class="language-markup "><script type="text/plain" class="language-markup"><div class="message information">
+ <strong>NOTE:</strong>This is an example
 </div></script></code></pre>
                         </article>
                     </section>

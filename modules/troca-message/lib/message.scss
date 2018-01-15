@@ -1,0 +1,17 @@
+@import "../../troca-variables/troca-variables";
+@import "../../troca-mixins/troca-mixins";
+@import "../../troca-type/troca-type";
+
+.message{
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  color: $font-color-dark;
+  padding:15px;
+  @include fontSize(small);
+  box-shadow: 0 1px 0 0 rgba(64, 64, 64, 0.15);
+
+  &.information{
+    background: #faf4c8;
+  }
+}

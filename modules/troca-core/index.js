@@ -8,6 +8,7 @@ import '../troca-buttons';
 import '../troca-stripped';
 import '../troca-row-revert';
 import '../troca-forms';
+import '../troca-message';
 
 
 
