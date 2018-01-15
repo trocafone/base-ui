@@ -54,3 +54,17 @@ hr{
 .clearfix:after {
   clear: both;
 }
+
+
+a,
+area,
+button,
+[role="button"],
+input:not([type="range"]),
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+

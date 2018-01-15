@@ -1,0 +1,18 @@
+@import "../../troca-variables/troca-variables";
+@import "../../troca-mixins/troca-mixins";
+@import "../../troca-type/troca-type";
+
+
+textarea {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  @include fontSize(small);
+  @include fontWeight(normal);
+  box-shadow: none;
+  padding: 10px;
+  border: solid 1px $grayscale-50;
+  outline: none;
+  overflow: auto;
+  resize: vertical;
+}

@@ -1,0 +1,64 @@
+@import "../../troca-variables/troca-variables";
+@import "../../troca-mixins/troca-mixins";
+@import "../../troca-type/troca-type";
+
+
+input{
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  @include fontSize(small);
+  @include fontWeight(normal);
+  box-shadow: none;
+  padding: 5px 10px;
+  border: solid 1px $grayscale-50;
+  outline: none;
+
+  &::-webkit-input-placeholder {
+    @include fontSize(small);
+    @include fontWeight(normal);
+    color: $form-text-placeholder-color;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    @include fontSize(small);
+    @include fontWeight(normal);
+    color: $form-text-placeholder-color;
+  }
+  &::-moz-placeholder {  /* Firefox 19+ */
+    @include fontSize(small);
+    @include fontWeight(normal);
+    color: $form-text-placeholder-color;
+  }
+  &:-ms-input-placeholder {
+    @include fontSize(small);
+    @include fontWeight(normal);
+    color: $form-text-placeholder-color;
+  }
+
+  &:focus{
+    outline:none;
+    border: solid 1px $brand-primary;
+  }
+}
+
+input, textarea{
+  &[disabled], &[readonly]{
+    background: $grayscale-30;
+    color: $grayscale-50;
+    &:focus{
+      border: solid 1px $grayscale-50;
+    }
+    &::-webkit-input-placeholder {
+      color: $grayscale-50;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $grayscale-50;
+    }
+    &::-moz-placeholder {  /* Firefox 19+ */
+      color: $grayscale-50;
+    }
+    &:-ms-input-placeholder {
+      color: $grayscale-50;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'trocafone-icon-font';
+  src: url('./lib/font/trocafone-icon-font.eot?71648804');
+  src: url('./lib/font/trocafone-icon-font.eot?71648804#iefix') format('embedded-opentype'),
+  url('./lib/font/trocafone-icon-font.woff2?71648804') format('woff2'),
+  url('./lib/font/trocafone-icon-font.woff?71648804') format('woff'),
+  url('./lib/font/trocafone-icon-font.ttf?71648804') format('truetype'),
+  url('./lib/font/trocafone-icon-font.svg?71648804#trocafone-icon-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'trocafone-icon-font';
+    src: url('../font/trocafone-icon-font.svg?71648804#trocafone-icon-font') format('svg');
+  }
+}
+*/
+
+[class^="icon-t-"]:before, [class*=" icon-t-"]:before {
+  font-family: "trocafone-icon-font";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-t-share:before { content: '\21'; } /* '!' */
+.icon-t-card:before { content: '\22'; } /* '&quot;' */
+.icon-t-arrow-thick-down:before { content: '\e800'; } /* '' */
+.icon-t-arrow-thick-left:before { content: '\e801'; } /* '' */
+.icon-t-arrow-thick-right:before { content: '\e802'; } /* '' */
+.icon-t-arrow-thick-up:before { content: '\e803'; } /* '' */
+.icon-t-arrow-thin-down:before { content: '\e804'; } /* '' */
+.icon-t-arrow-thin-left:before { content: '\e805'; } /* '' */
+.icon-t-arrow-thin-right:before { content: '\e806'; } /* '' */
+.icon-t-arrow-thin-up:before { content: '\e807'; } /* '' */
+.icon-t-battery:before { content: '\e808'; } /* '' */
+.icon-t-body:before { content: '\e809'; } /* '' */
+.icon-t-camera:before { content: '\e80a'; } /* '' */
+.icon-t-chat-help:before { content: '\e80b'; } /* '' */
+.icon-t-check:before { content: '\e80c'; } /* '' */
+.icon-t-chip:before { content: '\e80d'; } /* '' */
+.icon-t-close-x:before { content: '\e80e'; } /* '' */
+.icon-t-connectivity:before { content: '\e80f'; } /* '' */
+.icon-t-delivery-box:before { content: '\e810'; } /* '' */
+.icon-t-digital-tv:before { content: '\e811'; } /* '' */
+.icon-t-endurance:before { content: '\e812'; } /* '' */
+.icon-t-gps:before { content: '\e813'; } /* '' */
+.icon-t-memory:before { content: '\e814'; } /* '' */
+.icon-t-minus:before { content: '\e815'; } /* '' */
+.icon-t-money:before { content: '\e816'; } /* '' */
+.icon-t-notification:before { content: '\e817'; } /* '' */
+.icon-t-operating-system:before { content: '\e818'; } /* '' */
+.icon-t-plus:before { content: '\e819'; } /* '' */
+.icon-t-power-button:before { content: '\e81a'; } /* '' */
+.icon-t-processor:before { content: '\e81b'; } /* '' */
+.icon-t-radio:before { content: '\e81c'; } /* '' */
+.icon-t-screen:before { content: '\e81d'; } /* '' */
+.icon-t-search-device:before { content: '\e81e'; } /* '' */
+.icon-t-speaker-on:before { content: '\e81f'; } /* '' */
+.icon-t-troca-logo:before { content: '\e820'; } /* '' */
+.icon-t-usb-connector:before { content: '\e821'; } /* '' */
+.icon-t-video:before { content: '\e822'; } /* '' */
+.icon-t-polygon:before { content: '\e828'; } /* '' */
+.icon-t-truck:before { content: '\e82b'; } /* '' */
+.icon-t-barcode:before { content: '\e82c'; } /* '' */
+.icon-t-paypal:before { content: '\e82d'; } /* '' */
+.icon-t-question:before { content: '\e82f'; } /* '' */
+.icon-t-network:before { content: '\e830'; } /* '' */
+.icon-t-user:before { content: '\e831'; } /* '' */
+.icon-t-box-full:before { content: '\e84b'; } /* '' */
+.icon-t-details:before { content: '\e84c'; } /* '' */
+.icon-t-diamond:before { content: '\e84d'; } /* '' */
+.icon-t-information:before { content: '\e84e'; } /* '' */
+.icon-t-star:before { content: '\e84f'; } /* '' */

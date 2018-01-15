@@ -20,7 +20,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color='#404040');
   outline: none;
 
-  &.button-disabled {
+  &.button-disabled, &[disabled] {
     background-color: $grayscale-40;
     cursor: default;
     &:hover, &:active {
@@ -41,9 +41,10 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color='#404040');
   outline: none;
 
-  &.button-disabled {
+  &.button-disabled, &[disabled] {
     background-color: $grayscale-40;
     cursor: default;
+    color: $white;
     &:hover, &:active {
       background-color: $grayscale-40;
     }
@@ -59,6 +60,10 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   @include fontWeight(normal);
 }
 
+.button-small {
+  padding: 6px 15px;
+  @include fontSize(small);
+}
 
 .button-medium {
   padding: 13px 23px;
@@ -86,7 +91,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   }
 }
 
-.button-primary-border:not(.button-disabled){
+.button-primary-border:not(.button-disabled), .button-primary-border:not([disabled]){
   background-color: $white;
   border:1px solid $brand-primary;
   color: $brand-primary;
@@ -97,7 +102,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   }
 }
 
-.button-secondary-border:not(.button-disabled){
+.button-secondary-border:not(.button-disabled), .button-primary-border:not([disabled]){
   background-color: $white;
   border:1px solid $brand-secondary;
   color: $brand-secondary;

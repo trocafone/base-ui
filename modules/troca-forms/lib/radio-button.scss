@@ -1,0 +1,71 @@
+@import "../../troca-variables/troca-variables";
+@import "../../troca-mixins/troca-mixins";
+@import "../../troca-type/troca-type";
+
+.radiobutton-container{
+  label.radio-style-label  {
+    display: inline;
+    margin-bottom: 0;
+  }
+
+  input[type=radio].regular-radio {
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    margin: 2px 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover + label.radio-style-label{
+      border-color: $brand-fifth;
+    }
+  }
+
+  .regular-radio + label.radio-style-label {
+    -webkit-appearance: none;
+    background-color: $radio-circle-bg;
+    border: 1px solid $radio-circle-bdr;
+    padding: 7px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 2px;
+    margin-left: 2px;
+    top:-2px;
+
+    &:hover{
+      border-color: $brand-fifth;
+      cursor: pointer;
+    }
+  }
+
+  .regular-radio:checked + label.radio-style-label:after {
+    content: ' ';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    background: $radio-circle-bg;
+    left: 3px;
+  }
+
+  .regular-radio:checked + label.radio-style-label {
+    background-color: $radio-circle-selected;
+    color: $radio-circle-bg;
+    border: 1px solid $radio-circle-selected;
+  }
+
+
+
+  .radiobutton-text{
+    display: inline-block;
+    margin-left: 2px;
+  }
+}
+

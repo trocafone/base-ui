@@ -51,12 +51,12 @@ h3 {
 
 h4 {
   @include fontSize(big);
-  @include fontWeight(semibold);
+  @include fontWeight(normal);
 }
 
 h5 {
   @include fontSize(base);
-  @include fontWeight(semibold);
+  @include fontWeight(normal);
 }
 
 h6 {
@@ -66,7 +66,7 @@ h6 {
 
 p {
   @include fontSize(base);
-  @include lineHeight(biggest);
+  @include lineHeight(normal);
   margin-top: 0;
   margin-bottom: 10px;
 }
