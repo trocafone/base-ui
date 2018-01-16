@@ -30,6 +30,9 @@
                 <li role="presentation" class="tab-link" data-tab="type">
                     <span>Type</span>
                 </li>
+                <li role="presentation" class="tab-link" data-tab="icons">
+                    <span>Icons</span>
+                </li>
                 <li role="presentation" class="tab-link" data-tab="buttons">
                     <span>Buttons</span>
                 </li>
@@ -104,6 +107,9 @@
                             In that case use the class <strong>content-box</strong> to add border and background
                             color or the variables <strong>$content-box-bdr</strong> and
                             <strong>$content-box-bg</strong>
+                        </div>
+                        <div class="message information">
+                            <strong>NOTE:</strong> This only adds border and background color, not padding.
                         </div>
                         <pre class="copy-to-clipboard"><code class="language-markup "><script type="text/plain" class="language-markup"><div class="content-box">Some code here</div></script></code></pre>
                     </article>
@@ -221,6 +227,272 @@
                             will be in the design.</p>
                         <pre class="copy-to-clipboard"><code class="language-markup "><script type="text/plain" class="language-markup"><a>Primary Link</a>
 <a class="link-secondary">Secondary Link</a></script></code></pre>
+                    </article>
+                </section>
+                <section class="module-section module-icons tab-content"  id="icons">
+                    <h2 class="page-title-large">Icons</h2>
+                    <article>
+                        <p>To use this icons you only have to put the class in the tag.</p>
+                        <div class="message information">Once in context modify font-size to change it's size and color for text color.</div>
+                        <span class="icon-t-share"></span>
+                        <pre class="copy-to-clipboard"><code class="language-markup "><script type="text/plain" class="language-markup"><span class="icon-t-share"></span></script></code></pre>
+
+                        <p class="m-t-30">If you can't modify HTML, and want to change it from css, use it as pseudo class (before or after)</p>
+
+                        <div class="my-icon"></div>
+                        <pre class="copy-to-clipboard"><code class="language-markup "><script type="text/plain" class="language-markup"><div class="my-icon"></div></script></code></pre>
+
+                        <pre class="copy-to-clipboard"><code class="language-css">.my-icon:before{
+  font-family: "trocafone-icon-font";
+  content: '\21';
+}</code></pre>
+                        <div class="icons">
+                            <div class="icon">
+                                <div class="character">\21</div>
+                                <div class="view"><span class="icon-t-share"></span></div>
+                                <div class="name"><span>icon-t-share</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\22</div>
+                                <div class="view"><span class="icon-t-card"></span></div>
+                                <div class="name"><span>icon-t-card</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e800</div>
+                                <div class="view"><span class="icon-t-arrow-thick-down"></span></div>
+                                <div class="name"><span>icon-t-arrow-thick-down</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e801</div>
+                                <div class="view"><span class="icon-t-arrow-thick-left"></span></div>
+                                <div class="name"><span>icon-t-arrow-thick-left</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e802</div>
+                                <div class="view"><span class="icon-t-arrow-thick-right"></span></div>
+                                <div class="name"><span>icon-t-arrow-thick-right</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e803</div>
+                                <div class="view"><span class="icon-t-arrow-thick-up"></span></div>
+                                <div class="name"><span>icon-t-arrow-thick-up</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e804</div>
+                                <div class="view"><span class="icon-t-arrow-thin-down"></span></div>
+                                <div class="name"><span>icon-t-arrow-thin-down</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e805</div>
+                                <div class="view"><span class="icon-t-arrow-thin-left"></span></div>
+                                <div class="name"><span>icon-t-arrow-thin-left</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e806</div>
+                                <div class="view"><span class="icon-t-arrow-thin-right"></span></div>
+                                <div class="name"><span>icon-t-arrow-thin-right</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e807</div>
+                                <div class="view"><span class="icon-t-arrow-thin-up"></span></div>
+                                <div class="name"><span>icon-t-arrow-thin-up</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e808</div>
+                                <div class="view"><span class="icon-t-battery"></span></div>
+                                <div class="name"><span>icon-t-battery</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e809</div>
+                                <div class="view"><span class="icon-t-body"></span></div>
+                                <div class="name"><span>icon-t-body</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e80a</div>
+                                <div class="view"><span class="icon-t-camera"></span></div>
+                                <div class="name"><span>icon-t-camera</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e80b</div>
+                                <div class="view"><span class="icon-t-chat-help"></span></div>
+                                <div class="name"><span>icon-t-chat-help</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e80c</div>
+                                <div class="view"><span class="icon-t-check"></span></div>
+                                <div class="name"><span>icon-t-check</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e80d</div>
+                                <div class="view"><span class="icon-t-chip"></span></div>
+                                <div class="name"><span>icon-t-chip</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e80e</div>
+                                <div class="view"><span class="icon-t-close-x"></span></div>
+                                <div class="name"><span>icon-t-close-x</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e80f</div>
+                                <div class="view"><span class="icon-t-connectivity"></span></div>
+                                <div class="name"><span>icon-t-connectivity</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e810</div>
+                                <div class="view"><span class="icon-t-delivery-box"></span></div>
+                                <div class="name"><span>icon-t-delivery-box</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e811</div>
+                                <div class="view"><span class="icon-t-digital-tv"></span></div>
+                                <div class="name"><span>icon-t-digital-tv</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e812</div>
+                                <div class="view"><span class="icon-t-endurance"></span></div>
+                                <div class="name"><span>icon-t-endurance</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e813</div>
+                                <div class="view"><span class="icon-t-gps"></span></div>
+                                <div class="name"><span>icon-t-gps</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e814</div>
+                                <div class="view"><span class="icon-t-memory"></span></div>
+                                <div class="name"><span>icon-t-memory</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e815</div>
+                                <div class="view"><span class="icon-t-minus"></span></div>
+                                <div class="name"><span>icon-t-minus</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e816</div>
+                                <div class="view"><span class="icon-t-money"></span></div>
+                                <div class="name"><span>icon-t-money</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e817</div>
+                                <div class="view"><span class="icon-t-notification"></span></div>
+                                <div class="name"><span>icon-t-notification</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e818</div>
+                                <div class="view"><span class="icon-t-operating-system"></span></div>
+                                <div class="name"><span>icon-t-operating-system</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e819</div>
+                                <div class="view"><span class="icon-t-plus"></span></div>
+                                <div class="name"><span>icon-t-plus</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e81a</div>
+                                <div class="view"><span class="icon-t-power-button"></span></div>
+                                <div class="name"><span>icon-t-power-button</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e81b</div>
+                                <div class="view"><span class="icon-t-processor"></span></div>
+                                <div class="name"><span>icon-t-processor</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e81c</div>
+                                <div class="view"><span class="icon-t-radio"></span></div>
+                                <div class="name"><span>icon-t-radio</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e81d</div>
+                                <div class="view"><span class="icon-t-screen"></span></div>
+                                <div class="name"><span>icon-t-screen</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e81e</div>
+                                <div class="view"><span class="icon-t-search-device"></span></div>
+                                <div class="name"><span>icon-t-search-device</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e81f</div>
+                                <div class="view"><span class="icon-t-speaker-on"></span></div>
+                                <div class="name"><span>icon-t-speaker-on</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e820</div>
+                                <div class="view"><span class="icon-t-troca-logo"></span></div>
+                                <div class="name"><span>icon-t-troca-logo</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e821</div>
+                                <div class="view"><span class="icon-t-usb-connector"></span></div>
+                                <div class="name"><span>icon-t-usb-connector</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e822</div>
+                                <div class="view"><span class="icon-t-video"></span></div>
+                                <div class="name"><span>icon-t-video</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e828</div>
+                                <div class="view"><span class="icon-t-polygon"></span></div>
+                                <div class="name"><span>icon-t-polygon</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e82b</div>
+                                <div class="view"><span class="icon-t-truck"></span></div>
+                                <div class="name"><span>icon-t-truck</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e82c</div>
+                                <div class="view"><span class="icon-t-barcode"></span></div>
+                                <div class="name"><span>icon-t-barcode</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e82d</div>
+                                <div class="view"><span class="icon-t-paypal"></span></div>
+                                <div class="name"><span>icon-t-paypal</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e82f</div>
+                                <div class="view"><span class="icon-t-question"></span></div>
+                                <div class="name"><span>icon-t-question</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e830</div>
+                                <div class="view"><span class="icon-t-network"></span></div>
+                                <div class="name"><span>icon-t-network</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e831</div>
+                                <div class="view"><span class="icon-t-user"></span></div>
+                                <div class="name"><span>icon-t-user</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e84b</div>
+                                <div class="view"><span class="icon-t-box-full"></span></div>
+                                <div class="name"><span>icon-t-box-full</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e84c</div>
+                                <div class="view"><span class="icon-t-details"></span></div>
+                                <div class="name"><span>icon-t-details</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e84d</div>
+                                <div class="view"><span class="icon-t-diamond"></span></div>
+                                <div class="name"><span>icon-t-diamond</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e84e</div>
+                                <div class="view"><span class="icon-t-information"></span></div>
+                                <div class="name"><span>icon-t-information</span></div>
+                            </div>
+                            <div class="icon">
+                                <div class="character">\e84f</div>
+                                <div class="view"><span class="icon-t-star"></span></div>
+                                <div class="name"><span>icon-t-star</span></div>
+                            </div>
+                        </div>
                     </article>
                 </section>
                 <section class="module-section module-buttons tab-content"  id="buttons">
@@ -379,9 +651,11 @@
     <option value="AL">Alabama</option>
     <option value="WY">Wyoming</option>
 </select></script></code></pre>
-                        <pre><code class="language-javascript">$(document).ready(function() { $("#e1").select2({
-    placeholder: "Select a State"
-}); });</code></pre>
+                        <pre><code class="language-javascript">$(document).ready(function() {
+    $("#e1").select2({
+        placeholder: "Select a State"
+    });
+});</code></pre>
                     </article>
 
                     <article>
@@ -470,9 +744,11 @@
         <option value="DE">Delaware</option>
     </optgroup>
 </select></script></code></pre>
-                        <pre><code class="language-javascript">$(document).ready(function() { $("#e9").select2({
-    placeholder: "Select a State"
-}); });</code></pre>
+                        <pre><code class="language-javascript">$(document).ready(function() {
+    $("#e9").select2({
+        placeholder: "Select a State"
+    });
+});</code></pre>
                     </article>
                 </section>
                 <section class="module-section module-row-revert tab-content"  id="row-revert">
@@ -597,23 +873,47 @@
                 <section class="module-section module-message tab-content"  id="message">
                     <h2 class="page-title-large section-title-l1">Message</h2>
                     <article>
-                        <h4>Information message</h4>
+                        <h3>Information message</h3>
                         <div class="message information">This is an example</div>
                         <pre class="copy-to-clipboard"><code class="language-markup "><script type="text/plain" class="language-markup"><div class="message information">
-    <strong>NOTE:</strong>This is an example
+   This is an example
 </div></script></code></pre>
                     </article>
                 </section>
                 <section class="module-section module-helpers tab-content"  id="helpers">
                     <h2 class="page-title-large section-title-l1">Helpers</h2>
                     <article>
-                        <h3>Display Block</h3>
-                        <span class="d-block">Block me!</span>
+                        <h3>Display</h3>
+                        <p>For the most used display we have a class with that property.</p>
+                        <p>This are the clases available.</p>
+                        <ul>
+                            <li>d-block</li>
+                            <li>d-inline-block</li>
+                            <li>d-inline</li>
+                            <li>d-flex</li>
+                            <li>d-table</li>
+                            <li>d-table-cell</li>
+                            <li>d-inherit</li>
+                            <li>d-inline-flex</li>
+                            <li>d-inline-table</li>
+                        </ul>
+
                         <pre><code class="language-markup "><script type="text/plain" class="language-markup"><span class="d-block">Block me!</span></script></code></pre>
                     </article>
                     <article>
-                        <h3>Text align center</h3>
+                        <h3>Text align</h3>
                         <p>Remember that text-align always should be apply to the parent of the item we want to center.</p>
+
+                        <p>This are the clases available.</p>
+                        <ul>
+                            <li>t-center</li>
+                            <li>t-left</li>
+                            <li>t-right</li>
+                            <li>t-justify</li>
+                            <li>t-inherit</li>
+                            <li>t-initial</li>
+                        </ul>
+
                         <div class="t-center" style="background: #ccc; padding: 10px;">
                             <span>Center me!</span>
                         </div>

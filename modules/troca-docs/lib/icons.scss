@@ -27,11 +27,11 @@
     .name{
       display: table;
       width: 100%;
-      padding: 5px;
+      padding: 2px 5px;
       @include fontSize(small);
       background: $brand-tertiary;
       color: $font-color-light;
-      height: 42px;
+      height: 46px;
 
       span{
         display: table-cell;
