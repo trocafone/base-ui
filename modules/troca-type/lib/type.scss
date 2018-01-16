@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i');
 @import "../../troca-variables/troca-variables";
+@import "../../troca-mixins/troca-mixins";
 
 html{
   font-size: $main-font-size;
@@ -21,17 +22,6 @@ h6 {
 }
 
 
-@mixin fontSize($size) {
-  font-size: map-get($modular-font-size, $size);
-}
-
-@mixin lineHeight($size) {
-  line-height: map-get($modular-font-size, $size);
-}
-
-@mixin fontWeight($weight) {
-  font-weight: map-get($modular-font-weight, $weight);
-}
 
 
 h1 {
