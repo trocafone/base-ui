@@ -9,6 +9,7 @@ import '../troca-stripped';
 import '../troca-row-revert';
 import '../troca-forms';
 import '../troca-message';
+import '../troca-icons';
 
 
 
