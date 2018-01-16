@@ -1,10 +1,52 @@
+/*DISPLAY*/
 .d-block{
   display: block;
 }
+.d-inline-block{
+  display: inline-block;
+}
+.d-inline{
+  display: inline;
+}
+.d-flex{
+  display: flex;
+}
+.d-table{
+  display: table;
+}
+.d-table-cell{
+  display: table-cell;
+}
+.d-inherit{
+  display: inherit;
+}
+.d-inline-flex{
+  display: inline-flex;
+}
+.d-inline-table{
+  display: inline-table;
+}
 
+/*TEXT-ALIGN*/
 .t-center{
   text-align: center;
 }
+.t-left{
+  text-align: left;
+}
+.t-right{
+  text-align: right;
+}
+.t-justify{
+  text-align: justify;
+}
+.t-initial{
+  text-align: initial;
+}
+.t-inherit{
+  text-align: inherit;
+}
+
 
 /*
 This .scss loop will create "margin helpers" and "padding helpers" for use in your web projects.

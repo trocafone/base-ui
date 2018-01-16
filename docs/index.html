@@ -105,6 +105,9 @@
                             color or the variables <strong>$content-box-bdr</strong> and
                             <strong>$content-box-bg</strong>
                         </div>
+                        <div class="message information">
+                            <strong>NOTE:</strong> This only adds border and background color, not padding.
+                        </div>
                         <pre class="copy-to-clipboard"><code class="language-markup "><script type="text/plain" class="language-markup"><div class="content-box">Some code here</div></script></code></pre>
                     </article>
                 </section>
@@ -601,23 +604,47 @@
                 <section class="module-section module-message tab-content"  id="message">
                     <h2 class="page-title-large section-title-l1">Message</h2>
                     <article>
-                        <h4>Information message</h4>
+                        <h3>Information message</h3>
                         <div class="message information">This is an example</div>
                         <pre class="copy-to-clipboard"><code class="language-markup "><script type="text/plain" class="language-markup"><div class="message information">
-    <strong>NOTE:</strong>This is an example
+   This is an example
 </div></script></code></pre>
                     </article>
                 </section>
                 <section class="module-section module-helpers tab-content"  id="helpers">
                     <h2 class="page-title-large section-title-l1">Helpers</h2>
                     <article>
-                        <h3>Display Block</h3>
-                        <span class="d-block">Block me!</span>
+                        <h3>Display</h3>
+                        <p>For the most used display we have a class with that property.</p>
+                        <p>This are the clases available.</p>
+                        <ul>
+                            <li>d-block</li>
+                            <li>d-inline-block</li>
+                            <li>d-inline</li>
+                            <li>d-flex</li>
+                            <li>d-table</li>
+                            <li>d-table-cell</li>
+                            <li>d-inherit</li>
+                            <li>d-inline-flex</li>
+                            <li>d-inline-table</li>
+                        </ul>
+
                         <pre><code class="language-markup "><script type="text/plain" class="language-markup"><span class="d-block">Block me!</span></script></code></pre>
                     </article>
                     <article>
-                        <h3>Text align center</h3>
+                        <h3>Text align</h3>
                         <p>Remember that text-align always should be apply to the parent of the item we want to center.</p>
+
+                        <p>This are the clases available.</p>
+                        <ul>
+                            <li>t-center</li>
+                            <li>t-left</li>
+                            <li>t-right</li>
+                            <li>t-justify</li>
+                            <li>t-inherit</li>
+                            <li>t-initial</li>
+                        </ul>
+
                         <div class="t-center" style="background: #ccc; padding: 10px;">
                             <span>Center me!</span>
                         </div>
