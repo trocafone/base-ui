@@ -2,7 +2,7 @@
 @import "../../troca-mixins/troca-mixins";
 
 
-input{
+input, input.form-control{
   border-radius: 0;
   -webkit-border-radius: 0;
   -ms-border-radius: 0;
@@ -12,6 +12,7 @@ input{
   padding: 5px 10px;
   border: solid 1px $grayscale-50;
   outline: none;
+  width: 100%;
 
   &::-webkit-input-placeholder {
     @include fontSize(small);
@@ -41,6 +42,7 @@ input{
 }
 
 input, textarea{
+  width: 100%;
   &[disabled], &[readonly]{
     background: $grayscale-30;
     color: $grayscale-50;
