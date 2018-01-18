@@ -14,6 +14,7 @@ select {
   height: 30px;
   border: 1px solid $grayscale-50;
   background: $white;
+  width: 100%;
   &:before{
     content: '\e804';
     font-family: "trocafone-icon-font";
@@ -45,15 +46,18 @@ html[dir="rtl"] .select2-search input {
     color: $font-color-dark;
     border-radius: 0;
     @include fontSize(small);
+    height:auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
 
     .select2-arrow {
       border: 0px;
       width: 13px;
       border: none;
-      height: 11px;
+      height: 25px;
       background-repeat: no-repeat;
       right: 8px;
-      top: calc(50% - 8px);
+      top: 3px;
       background: none;
       background-image: none;
 
@@ -112,7 +116,7 @@ html[dir="rtl"] .select2-search input {
     margin: 0;
 
     .select2-result-label {
-      padding: 10px;
+      padding: 7px;
       @include fontSize(small);
     }
     .select2-no-results{
