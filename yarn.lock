@@ -2232,6 +2232,10 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
+jquery@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
+
 js-base64@^2.1.8, js-base64@^2.1.9:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.0.tgz#9e566fee624751a1d720c966cd6226d29d4025aa"
@@ -2793,6 +2797,10 @@ normalize-url@^1.4.0:
     prepend-http "^1.0.0"
     query-string "^4.1.0"
     sort-keys "^1.0.0"
+
+normalizecss@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/normalizecss/-/normalizecss-3.0.0.tgz#d6c3d3861c98214573285a98adfc98d176ef1023"
 
 npm-run-path@^2.0.0:
   version "2.0.2"
@@ -3751,6 +3759,10 @@ scss-tokenizer@^0.2.3:
 select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
+
+select2@3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/select2/-/select2-3.5.1.tgz#f2819489bbc65fd6d328be72bbe2b95dd7e87cfe"
 
 selfsigned@^1.9.1:
   version "1.10.1"
