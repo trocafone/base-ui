@@ -1,4 +1,4 @@
-/*COLORS*/
+//COLORS
 
 $brand-primary: #ff8800;
 $brand-secondary: #385F74;
@@ -12,7 +12,6 @@ $brand-primary-lighter: #ffa53d;
 $red-discounts: #fe4d55;
 $green-discounts: $brand-success;
 
-
 $black:  #000;
 $grayscale-90:  #333333;
 $grayscale-80: #404040;
@@ -25,20 +24,20 @@ $grayscale-20: #f4f4f4;
 $grayscale-10: #fafafa;
 $white: #fff;
 
-/*PAGE CONTAINER*/
+//PAGE CONTAINER
 $body-bg: #fff;
 $page-container-bg: $grayscale-20;
 
-/*STRIPPED BACKGROUND*/
+//STRIPPED BACKGROUND
 $stripped-bg-dark: $grayscale-10;
 $stripped-bg-light: #fff;
 
-/*GRAY BOX WITH GRAY BORDER*/
+//GRAY BOX WITH GRAY BORDER
 $content-box-bg: $white;
 $content-box-bdr: $grayscale-50;
 
 
-/*BUTTONS*/
+//BUTTONS
 $link-primary-color: $brand-fourth;
 $link-primary-color-hover: $brand-primary;
 $link-primary-color-active: $brand-fifth;

@@ -6,32 +6,31 @@ input, input.form-control{
   border-radius: 0;
   -webkit-border-radius: 0;
   -ms-border-radius: 0;
-  @include fontSize(small);
-  @include fontWeight(normal);
+  @include fontSize(smaller);
+  @include fontWeight(semibold);
   box-shadow: none;
   padding: 5px 10px;
   border: solid 1px $grayscale-50;
   outline: none;
-  width: 100%;
 
   &::-webkit-input-placeholder {
-    @include fontSize(small);
-    @include fontWeight(normal);
+    @include fontSize(smaller);
+    @include fontWeight(semibold);
     color: $form-text-placeholder-color;
   }
   &:-moz-placeholder { /* Firefox 18- */
-    @include fontSize(small);
-    @include fontWeight(normal);
+    @include fontSize(smaller);
+    @include fontWeight(semibold);
     color: $form-text-placeholder-color;
   }
   &::-moz-placeholder {  /* Firefox 19+ */
-    @include fontSize(small);
-    @include fontWeight(normal);
+    @include fontSize(smaller);
+    @include fontWeight(semibold);
     color: $form-text-placeholder-color;
   }
   &:-ms-input-placeholder {
-    @include fontSize(small);
-    @include fontWeight(normal);
+    @include fontSize(smaller);
+    @include fontWeight(semibold);
     color: $form-text-placeholder-color;
   }
 
@@ -42,7 +41,6 @@ input, input.form-control{
 }
 
 input, textarea{
-  width: 100%;
   &[disabled], &[readonly]{
     background: $grayscale-30;
     color: $grayscale-50;

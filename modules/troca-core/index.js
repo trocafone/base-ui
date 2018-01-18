@@ -13,4 +13,4 @@ import '../troca-icons';
 
 
 
-import '../troca-docs';
+//import '../troca-docs';

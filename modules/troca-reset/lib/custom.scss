@@ -68,3 +68,24 @@ textarea {
   touch-action: manipulation;
 }
 
+
+.nowrap
+{
+  white-space: nowrap;
+}
+
+.not-visible
+{
+  visibility: hidden;
+}
+
+.user-select-text
+{
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+}
+
+form{
+  margin-bottom: 0px;
+}

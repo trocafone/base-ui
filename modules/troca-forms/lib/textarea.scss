@@ -6,8 +6,8 @@ textarea {
   border-radius: 0;
   -webkit-border-radius: 0;
   -ms-border-radius: 0;
-  @include fontSize(small);
-  @include fontWeight(normal);
+  @include fontSize(smaller);
+  @include fontWeight(semibold);
   box-shadow: none;
   padding: 10px;
   border: solid 1px $grayscale-50;

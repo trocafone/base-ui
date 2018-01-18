@@ -1,6 +1,9 @@
 @import "../../troca-variables/troca-variables";
 @import "../../troca-mixins/troca-mixins";
 
+
+
+
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -42,7 +45,6 @@ html[dir="rtl"] .select2-search input {
     color: $font-color-dark;
     border-radius: 0;
     @include fontSize(small);
-    height:30px;
 
     .select2-arrow {
       border: 0px;
@@ -51,7 +53,7 @@ html[dir="rtl"] .select2-search input {
       height: 11px;
       background-repeat: no-repeat;
       right: 8px;
-      top: calc(50% - 12px);
+      top: calc(50% - 8px);
       background: none;
       background-image: none;
 

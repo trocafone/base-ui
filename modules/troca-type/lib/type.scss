@@ -22,42 +22,34 @@ h6 {
 }
 
 
-
-
 h1 {
   @include fontSize(jumbo);
   @include fontWeight(semibold);
-  @include lineHeight(giant);
 }
 
 h2 {
   @include fontSize(biggest);
   @include fontWeight(semibold);
-  @include lineHeight(jumbo);
 }
 
 h3 {
   @include fontSize(bigger);
   @include fontWeight(semibold);
-  @include lineHeight(jumbo);
 }
 
 h4 {
   @include fontSize(big);
   @include fontWeight(normal);
-  @include lineHeight(biggest);
 }
 
 h5 {
   @include fontSize(base);
   @include fontWeight(normal);
-  @include lineHeight(bigger);
 }
 
 h6 {
   @include fontSize(small);
   @include fontWeight(semibold);
-  @include lineHeight(big);
 }
 
 p {
@@ -92,6 +84,9 @@ a{
   }
 }
 
+strong{
+  @include fontWeight(semibold);
+}
 
 .page-title-large{
   @include fontSize(jumbo);
