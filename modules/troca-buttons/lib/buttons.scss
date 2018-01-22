@@ -10,7 +10,6 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 .button-primary, .button-secondary, .button-primary-border, .button-secondary-border {
   @include fontSize(base);
   @include fontWeight(semibold);
-  border: none;
   color: $white;
   border-radius: 0;
   text-transform: none;
@@ -19,6 +18,10 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   -moz-box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
   filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color='#404040');
   outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   &.button-disabled, &[disabled] {
     background-color: $grayscale-40;
@@ -43,10 +46,12 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
   &.button-disabled, &[disabled] {
     background-color: $grayscale-40;
+    border:1px solid $grayscale-40;
     cursor: default;
     color: $white;
     &:hover, &:active {
       background-color: $grayscale-40;
+      border:1px solid $grayscale-40;
     }
   }
 }
@@ -77,17 +82,22 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 .button-primary {
   background-color: $brand-primary;
+  border:1px solid $brand-primary;
+
 
   &:hover, &:active {
     background-color: $brand-fifth;
+    border:1px solid $brand-fifth;
   }
 }
 
 .button-secondary {
   background-color: $brand-secondary;
+  border:1px solid $brand-secondary;
 
   &:hover, &:active {
     background-color: $brand-tertiary;
+    border:1px solid $brand-tertiary;
   }
 }
 
