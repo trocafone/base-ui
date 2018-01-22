@@ -1,4 +1,7 @@
 {
+  "name": "@trocafone/base-ui",
+  "description": "Base styles for Trocafone UI.",
+  "version": "1.0.0",
   "devDependencies": {
     "css-loader": "^0.28.8",
     "extract-text-webpack-plugin": "^3.0.2",
@@ -10,12 +13,29 @@
     "webpack-dev-server": "^2.10.0"
   },
   "scripts": {
-    "build": "node_modules/.bin/webpack -p",
+    "build": "webpack -p",
     "dev": "webpack-dev-server"
   },
   "dependencies": {
     "jquery": "^3.2.1",
     "normalizecss": "^3.0.0",
     "select2": "3.5.1"
-  }
+  },
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trocafone/base-ui.git"
+  },
+  "keywords": [
+    "trocafone",
+    "ui",
+    "base",
+    "styles"
+  ],
+  "author": "Trocafone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trocafone/base-ui/issues"
+  },
+  "homepage": "https://github.com/trocafone/base-ui#readme"
 }
