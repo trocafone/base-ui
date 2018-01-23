@@ -39,6 +39,9 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin('style.css')
     ],
+    externals: {
+        "jquery": "jQuery"
+    },
     devServer: {
         contentBase: path.join(__dirname, "modules"),
         publicPath: "/dist"
