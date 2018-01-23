@@ -1,0 +1,17 @@
+{
+  "name": "tech-trocafone-base-ui",
+  "description": "Base styles for Trocafone UI.",
+  "main": "webpack.config.js",
+  "version": "1.0.1",
+  "authors": [
+    "Trocafone"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "trocafone",
+    "ui",
+    "base",
+    "styles"
+  ],
+  "homepage": "https://github.com/trocafone/base-ui"
+}

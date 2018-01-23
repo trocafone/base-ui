@@ -1,7 +1,7 @@
 {
-  "name": "@trocafone/base-ui",
+  "name": "@tech-trocafone/base-ui",
   "description": "Base styles for Trocafone UI.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "devDependencies": {
     "css-loader": "^0.28.8",
     "extract-text-webpack-plugin": "^3.0.2",
