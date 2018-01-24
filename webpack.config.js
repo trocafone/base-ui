@@ -37,7 +37,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('style.css')
+        new ExtractTextPlugin('css/style.css')
     ],
     externals: {
         "jquery": "jQuery"
