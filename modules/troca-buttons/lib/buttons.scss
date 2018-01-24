@@ -92,6 +92,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   &:hover, &:active {
     background-color: $brand-fifth;
     border:1px solid $brand-fifth;
+    color:$white;
   }
 }
 
@@ -102,6 +103,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   &:hover, &:active {
     background-color: $brand-tertiary;
     border:1px solid $brand-tertiary;
+    color:$white;
   }
 }
 
