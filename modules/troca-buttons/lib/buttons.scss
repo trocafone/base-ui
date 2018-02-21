@@ -155,9 +155,9 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   color: $white;
 
   &:hover, &:active {
-    background-color: $brand-secondary;
+    background-color: $brand-primary;
     color: $white;
-    border-color: $brand-secondary;
+    border-color: $brand-primary;
   }
 
   &[disabled]{
