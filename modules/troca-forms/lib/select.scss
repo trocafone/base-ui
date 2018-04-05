@@ -12,13 +12,19 @@ select {
   border: 1px solid $grayscale-50;
   background: $white;
   width: 100%;
-  &:before {
-    content: '\e804';
-    font-family: "trocafone-icon-font";
-    font-style: normal;
-    font-weight: normal;
-    color: $grayscale-50;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAFVIUVZAAAABGdBTUEAALGPC/xhBQAAAQRJREFUGBljOHv2bBkDDJw5c8YbzAYy/oMwmPP//38mEOPx48ecjOfOnZPi5eV9++3bNxYw59+/f0+NjY2ZGBkZ/9+/f5/j7du331lZWXkYwXqBxIULF6T//PnzBCSor6//FSwONHwBTAGMBortBFlkCWTMRhYEGs0JNg7o2FtAiZ1AFykBBXmB9trBFDIAJW8D8SGYACPQmMtAjg5Q5QIjI6MkkAthkjAa5OJ3795tAZroDBRbDbYG5EegwAEgVgUKzjAxMckEabh9+zb7p0+fNgDFPYCGHWZhYfEE+QjuVZAikHf//v27H6QZqOghkJZHVgxSgxOANAP9MOXixYvc2BQBAFSkiQiv6/BtAAAAAElFTkSuQmCC');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 6px);
+  outline: none;
+
+  option[default]{
+    color: $grayscale-60;
   }
+  @media (max-width: 767px){
+    font-size: 14px;
+    @include fontWeight(normal);
+  }
+
 }
 
 html[dir="rtl"] .select2-search input {
