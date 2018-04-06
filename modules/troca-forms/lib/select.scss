@@ -18,9 +18,6 @@ select {
   background-position: right;
   outline: none;
 
-  option[default]{
-    color: $grayscale-60;
-  }
   @media (max-width: 767px){
     font-size: 14px;
     @include fontWeight(normal);
@@ -29,7 +26,7 @@ select {
 }
 
 .native-placeholder{
-  &.placeholder-disabled{
+  &.placeholder-color{
     color:$grayscale-60;
   }
 }
