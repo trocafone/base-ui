@@ -17,8 +17,4 @@ import '../troca-forms';
 import '../troca-message';
 import '../troca-icons';
 
-$(document).ready(function() {
-    $('.js-example-basic-single').select2();
-});
-
 //import '../troca-docs';
