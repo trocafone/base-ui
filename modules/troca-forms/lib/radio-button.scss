@@ -18,7 +18,7 @@
       cursor: pointer;
     }
 
-    &:hover + label.radio-style-label{
+    &:hover + label.radio-style-label, &:focus + label.radio-style-label{
       border-color: $brand-fifth;
     }
   }
@@ -38,7 +38,7 @@
     margin-left: 2px;
     top:-2px;
 
-    &:hover{
+    &:hover, &:focus{
       border-color: $brand-fifth;
       cursor: pointer;
     }
