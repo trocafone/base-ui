@@ -1,0 +1,4 @@
+<button class="button-content {{ className }}" (click)="onClickButton($event)">
+  <div *ngIf='isLoading' class="loading-wheel"></div>
+  <span [ngClass]="{ 'v-hidden': isLoading }">{{textButton}}</span>
+</button>

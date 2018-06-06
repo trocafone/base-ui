@@ -1,0 +1,38 @@
+.button-content{
+  position: relative;
+}
+.button-content .loading-wheel {
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: loading-wheel-spin 1.2s linear infinite;
+  vertical-align: middle;
+  position: absolute;
+  left: calc(50% - 12px);
+  top: calc(50% - 12px);
+}
+@keyframes loading-wheel-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.button-primary.button-loading .loading-wheel, .button-secondary.button-loading .loading-wheel {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-left-color: #fff;
+}
+.button-primary-border.button-loading .loading-wheel {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #f80;
+}
+.button-secondary-border.button-loading .loading-wheel {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #385F74;
+}
+.button-primary-border.button-loading:hover .loading-wheel, .button-secondary-border.button-loading:hover .loading-wheel{
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-left-color: #fff;
+}
