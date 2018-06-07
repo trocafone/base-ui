@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { InputComponent } from './input/input.component';
 import { ButtonComponent } from './button/button.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
-    ButtonComponent
+    ButtonComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule

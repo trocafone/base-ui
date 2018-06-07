@@ -1,0 +1,10 @@
+<!-- <div>
+  <input type="checkbox" id="{{guid}}" name="{{name}}" value="{{value}}">
+  <label for="{{guid}}"></label>
+</div> -->
+
+<label class="checkbox-container">
+  <input (click)="onChange($event)" id="gui" checked="checked" name="receive_info" type="checkbox" value="1">
+  <label for="{{gui}}" class="checkbox-style-label"></label>
+  <span class="checkbox-text">{{label}}</span>
+</label>
