@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 export interface DropdownValue {
-  name: string;
+  text: string;
   value: string;
 }
 
@@ -12,7 +12,7 @@ export interface DropdownValue {
 })
 export class DropdownComponent implements OnInit {
 
-  @Input() options: Array<string>;
+  @Input() options: Array<DropdownValue>;
   @Input() placeholder?: String = 'Select option...';
   @Input() value?: any;
   @Input() className?: string;

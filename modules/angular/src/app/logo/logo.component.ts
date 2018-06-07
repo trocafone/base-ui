@@ -4,10 +4,10 @@ declare var require: any;
 
 
 export enum LogoType {
-  Logo = 'logo',
-  Iso = 'iso',
-  Backoffice = 'backoffice',
-  TradeIn = 'trade-in',
+  LOGO = 'logo',
+  ISO = 'iso',
+  BACKOFFICE = 'backoffice',
+  TRADEIN = 'trade-in',
 }
 
 @Component({
@@ -26,17 +26,17 @@ export class LogoComponent {
   private getLogo = () => {
     switch (this.type) {
 
-      case LogoType.Logo :
+      case LogoType.LOGO :
         return require('./logo.png');
         break;
 
-      case LogoType.TradeIn :
+      case LogoType.TRADEIN :
         return require('./trade-in.svg');
         break;
-      case LogoType.Backoffice :
+      case LogoType.BACKOFFICE :
         return require('./trade-in.svg');
         break;
-        case LogoType.Iso :
+        case LogoType.ISO :
         return require('./iso.webp');
         break;
 
