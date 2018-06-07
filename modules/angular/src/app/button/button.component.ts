@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
+
+
 @Component({
   selector: 'tf-button',
   templateUrl: './button.component.html',
@@ -10,17 +12,22 @@ export class ButtonComponent implements OnInit {
   @Input() isLoading?: boolean;
   @Input() className?: string;
 
-  @Output() onClick;
+  @Output() onClick?: EventEmitter<any> = new EventEmitter<any>();
 
+  private INITIAL_CLASS = 'button-primary button-medium';
 
-  constructor() { }
+  constructor() {
+    if (this.className === undefined) {
+      this.className = this.INITIAL_CLASS;
+    }
+  }
 
   ngOnInit() {
   }
 
   onClickButton(e){
     if (!this.isLoading && this.onClick) {
-      this.onClick(e);
+      this.onClick.emit(e);
     }
   }
 }

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { guid } from '../utils';
 
 import '../../../../troca-icons/troca-icons.scss';
@@ -11,11 +11,16 @@ import '../../../../troca-icons/troca-icons.scss';
 export class CheckboxComponent {
 
   @Input() active: Boolean = false;
+  @Output() onChange?: EventEmitter<Boolean> = new EventEmitter<Boolean>();
+
   private guid: string = guid();
 
 
-  onChange(event: any) {
+  onClickInput(event: any) {
     this.active = !this.active;
+    if (this.onChange) {
+      this.onChange.emit(this.active as Boolean);
+    }
   }
 
 }
