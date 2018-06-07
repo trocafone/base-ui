@@ -1,4 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
 @font-face {
     font-family: 'trocafone-icon-font';
     src: url('../../../dist/fonts/trocafone-icon-font.eot?71648804');

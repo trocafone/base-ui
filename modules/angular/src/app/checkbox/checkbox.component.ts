@@ -11,12 +11,14 @@ import '../../../../troca-icons/troca-icons.scss';
 export class CheckboxComponent {
 
   @Input() active: Boolean = false;
+  @Input() label: string;
   @Output() onChange?: EventEmitter<Boolean> = new EventEmitter<Boolean>();
+  @Input() className?: string;
 
   private guid: string = guid();
 
 
-  onClickInput(event: any) {
+  onClickInput(event: any): void {
     this.active = !this.active;
     if (this.onChange) {
       this.onChange.emit(this.active as Boolean);
