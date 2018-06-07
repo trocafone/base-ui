@@ -1,0 +1,14 @@
+@import "../../../../troca-variables/troca-variables";
+@import "../../../../troca-mixins/troca-mixins";
+
+.input-control {
+  .error{
+    border-color: $brand-warning;
+  }
+  .errors{
+    display: block;
+    margin-top: 5px;
+    @include fontSize(small);
+    color: $brand-warning;
+  }
+}

@@ -1,20 +1,21 @@
-
 <h1>Button</h1>
-<tf-button translation="Hello World!"></tf-button>
+<tf-button translation="Hello World!" className="button-primary button-medium" [isLoading]="false"></tf-button>
 
 <hr>
+
 
 <h1>Checkbox</h1>
 <tf-checkbox name='dadsa' label='Feature 1'></tf-checkbox>
 <tf-checkbox name='dadsa' label='Feature 2'></tf-checkbox>
 
 <hr>
+<h1>Input</h1>
+<h3>Tamaño de base</h3>
+<tf-input value="" type="tel" placeholder="Escribir un placeholder" className="" error=""></tf-input>
 
-<h1>Logo</h1>
-<ts-logo type="logo"></ts-logo>
+<br><br>
+<h3>Tamaño large</h3>
+<tf-input value="" type="tel" placeholder="Escribir un placeholder" className="input-large" error="wer"></tf-input>
 
+<h3>Dropdown</h3>
 
-<hr>
-
-<h1>Dropdown</h1>
-<ts-dropdown [options]='dropdown.options'></ts-dropdown>

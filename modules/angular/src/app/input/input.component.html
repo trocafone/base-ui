@@ -1,4 +1,4 @@
-<p>
-  {{ value }}
-</p>
-<input value="" placeholder="{{ placeholder }}">
+<div class="input-control">
+  <input value="{{ value }}" type="{{ type }}" placeholder="{{ placeholder }}" class="{{ className }}" [ngClass]="{'error' : error} ">
+  <span class="errors" *ngIf="error">{{ error }}</span>
+</div>
