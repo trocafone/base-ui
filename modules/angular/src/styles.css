@@ -11,3 +11,10 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  html, body{
+    background: #ebe8e8;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }

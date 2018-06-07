@@ -11,6 +11,7 @@ import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { LogoComponent } from './logo/logo.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
+import { PickColorComponent } from './pick-color/pick-color.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     ButtonComponent,
     CheckboxComponent,
     LogoComponent,
-    DropdownComponent
+    DropdownComponent,
+    PickColorComponent
   ],
   imports: [
     BrowserModule,
