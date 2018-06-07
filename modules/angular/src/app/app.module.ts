@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { TextMaskModule } from 'angular2-text-mask';
 
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
@@ -18,12 +19,13 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     ButtonComponent,
     CheckboxComponent,
     LogoComponent,
-    DropdownComponent
+   // DropdownComponent
   ],
   imports: [
     BrowserModule,
     NgSelectModule,
     FormsModule,
+    TextMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]
