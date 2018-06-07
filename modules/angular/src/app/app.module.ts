@@ -19,7 +19,7 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     ButtonComponent,
     CheckboxComponent,
     LogoComponent,
-   // DropdownComponent
+    DropdownComponent
   ],
   imports: [
     BrowserModule,

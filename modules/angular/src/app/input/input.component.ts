@@ -1,12 +1,11 @@
-import { Component, Input } from '@angular/core';
-import {LogoType} from "../logo/logo.component";
+import { Component, Input, OnInit } from '@angular/core';
 
 export enum InputType {
-  text,
-  tel,
-  email,
-  password,
-  number
+  TEXT = 'text',
+  TEL = 'tel',
+  EMAIL = 'email',
+  PASSWORD = 'password',
+  NUMBER = 'number'
 }
 
 export enum Mask {
@@ -22,7 +21,7 @@ export enum Mask {
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss']
 })
-export class InputComponent {
+export class InputComponent implements OnInit {
   @Input() value?: any;
   @Input() placeholder?: any;
   @Input() className?: string;
@@ -30,7 +29,9 @@ export class InputComponent {
   @Input() error?: string;
   @Input() mask?: Mask;
 
-  private getMask = () => {
+  private tooglePasswordInputType: Boolean = false;
+
+  private getMask = (): Array<any> => {
     switch (this.mask) {
       case Mask.CPF :
         return ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
@@ -53,6 +54,24 @@ export class InputComponent {
         break;
     }
   }
+
+  private isPassword = (): boolean => this.type === InputType.PASSWORD;
+  private isMask = (): boolean => this.mask !== undefined;
+
+  private togglePasswordInput = (): void => {
+    this.tooglePasswordInputType = !this.tooglePasswordInputType;
+  }
+
+  private getInputType = (): string => {
+    if (this.type === InputType.PASSWORD) {
+      return this.tooglePasswordInputType ? InputType.TEXT : InputType.PASSWORD;
+    }
+
+    return this.type;
+  }
+
+  ngOnInit (): void { }
+
   constructor() { }
 
 }

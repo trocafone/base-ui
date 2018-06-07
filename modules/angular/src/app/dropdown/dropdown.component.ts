@@ -6,7 +6,7 @@ export interface DropdownValue {
 }
 
 @Component({
-  selector: 'ts-dropdown',
+  selector: 'tf-dropdown',
   templateUrl: './dropdown.component.html',
   styleUrls: ['./dropdown.component.css']
 })
