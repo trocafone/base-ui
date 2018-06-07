@@ -1,9 +1,7 @@
 @import "../../../../troca-variables/troca-variables";
 
-.button-content{
-  position: relative;
-}
 .button-content {
+  position: relative;
   .loading-wheel {
     display: inline-block;
     border-radius: 50%;
@@ -24,19 +22,37 @@
     transform: rotate(360deg);
   }
 }
-.button-primary.button-loading .loading-wheel, .button-secondary.button-loading .loading-wheel {
-  border: 4px solid rgba(255, 255, 255, 0.3);
-  border-left-color: $white;
+
+.button-primary, .button-secondary{
+  &.button-loading{
+    .loading-wheel{
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-left-color: $white;
+    }
+  }
 }
-.button-primary-border.button-loading .loading-wheel {
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  border-left-color: #f80;
+.button-primary-border{
+ &.button-loading{
+   .loading-wheel {
+     border: 4px solid rgba(0, 0, 0, 0.1);
+     border-left-color: $brand-primary;
+   }
+ }
 }
-.button-secondary-border.button-loading .loading-wheel {
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  border-left-color: #385F74;
+.button-secondary-border{
+  &.button-loading{
+    .loading-wheel {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-left-color: $brand-secondary;
+    }
+  }
 }
-.button-primary-border.button-loading:hover .loading-wheel, .button-secondary-border.button-loading:hover .loading-wheel{
-  border: 4px solid rgba(255, 255, 255, 0.3);
-  border-left-color: #fff;
+.button-primary-border, .button-secondary-border{
+  &.button-loading:hover, .button-loading:hover{
+    .loading-wheel, .loading-wheel{
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-left-color: #fff;
+    }
+  }
 }
+
