@@ -8,7 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['button.component.scss']
 })
 export class ButtonComponent implements OnInit {
-  @Input() translation;
+  @Input() translation:string;
   @Input() isLoading?: boolean;
   @Input() className?: string;
 
