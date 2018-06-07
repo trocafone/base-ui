@@ -3,10 +3,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'tf-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css']
+  styleUrls: ['button.component.scss']
 })
 export class ButtonComponent implements OnInit {
-  @Input() textButton;
+  @Input() translation;
   @Input() isLoading?: boolean;
   @Input() className?: string;
 

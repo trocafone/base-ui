@@ -1,25 +1,25 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KnobsComponent } from './knobs.component';
+import { InputComponent } from './input.component';
 
-describe('KnobsComponent', () => {
-  let component: KnobsComponent;
-  let fixture: ComponentFixture<KnobsComponent>;
+describe('InputComponent', () => {
+  let component: InputComponent;
+  let fixture: ComponentFixture<InputComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ KnobsComponent ]
+      declarations: [ InputComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(KnobsComponent);
+    fixture = TestBed.createComponent(InputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
