@@ -31,7 +31,7 @@ export class InputComponent implements OnInit {
 
   private tooglePasswordInputType: Boolean = false;
 
-  private getMask = (): any => {
+  private getMask = (): any[] => {
     switch (this.mask) {
       case Mask.CPF : {
         return [ /[1-9]/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-' , /\d/, /\d/ ];
