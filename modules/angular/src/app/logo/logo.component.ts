@@ -25,25 +25,21 @@ export class LogoComponent {
 
   private getLogo = () => {
     switch (this.type) {
-
-      case LogoType.LOGO :
+      case LogoType.LOGO : {
         return require('./logo.png');
-        break;
-
-      case LogoType.TRADEIN :
+      }
+      case LogoType.TRADEIN : {
         return require('./trade-in.svg');
-        break;
-      case LogoType.BACKOFFICE :
+      }
+      case LogoType.BACKOFFICE : {
         return require('./trade-in.svg');
-        break;
-        case LogoType.ISO :
+      }
+      case LogoType.ISO : {
         return require('./iso.webp');
-        break;
-
-      default :
+      }
+      default : {
         return require('./logo.png');
-        break;
+      }
     }
-
   }
 }

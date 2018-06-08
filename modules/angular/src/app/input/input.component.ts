@@ -31,27 +31,23 @@ export class InputComponent implements OnInit {
 
   private tooglePasswordInputType: Boolean = false;
 
-  private getMask = (): Array<any> => {
+  private getMask = (): any => {
     switch (this.mask) {
-      case Mask.CPF :
-        return ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
-        break;
-
-      case Mask.CNPJ :
-        return ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
-        break;
-
-      case Mask.CP :
-        return ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
-        break;
-
-      case Mask.TEL :
-        return ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
-        break;
-
-      case Mask.CEP :
-        return ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
-        break;
+      case Mask.CPF : {
+        return [ /[1-9]/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-' , /\d/, /\d/ ];
+      }
+      case Mask.CNPJ :{
+        return [ /[1-9]/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/ ];
+      }
+      case Mask.CP : {
+        return [ /[1-9]/, /\d/, /\d/, /\d/ ];
+      }
+      case Mask.TEL : {
+        return ['(', /[1-9]/, /\d/, ')', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/, /\d/ ];
+      }
+      case Mask.CEP : {
+        return [ /[1-9]/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/ ];
+      }
     }
   }
 
