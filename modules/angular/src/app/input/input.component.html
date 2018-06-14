@@ -1,28 +1,12 @@
 <div class="input-control">
-  <span *ngIf="getMask()">
-      <input 
-      [textMask]="{ mask: getMask() }" 
-      value="{{ value }}" 
-      type="{{ getInputType() }}" 
-      placeholder="{{ placeholder }}" 
-      class="{{ className }}" 
+      <input
+      mask='{{ getMask() }}'
+      [value]="value"
+      type="{{ getInputType() }}"
+      placeholder="{{ placeholder }}"
+      class="{{ className }}"
       [ngClass]="{'error' : error} "
-      
     />
-  </span>
-
-  <span *ngIf="!getMask()">
-      <input 
-      value="{{ value }}" 
-      type="{{ getInputType() }}" 
-      placeholder="{{ placeholder }}" 
-      class="{{ className }}" 
-      [ngClass]="{'error' : error} "
-      
-    />
-  </span>
-  
-
   <span *ngIf='isPassword()' (click)='togglePasswordInput()' >
     <span *ngIf='!tooglePasswordInputType'>
       show text

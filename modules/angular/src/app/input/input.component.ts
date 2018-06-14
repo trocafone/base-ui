@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FormControl } from "@angular/forms";
 
 export enum InputType {
   TEXT = 'text',
@@ -8,13 +9,15 @@ export enum InputType {
   NUMBER = 'number'
 }
 
-export enum Mask {
+export enum MaskType {
+  TEL_BR = 'tel_br',
+  TEL_AR = 'tel_ar',
   CPF = 'cpf',
-  CNPJ = 'cnpj',
   CP = 'cp',
-  TEL = 'tel',
+  CNPJ = 'cnpj',
   CEP = 'cep',
 }
+
 
 @Component({
   selector: 'tf-input',
@@ -27,29 +30,11 @@ export class InputComponent implements OnInit {
   @Input() className?: string;
   @Input() type: InputType;
   @Input() error?: string;
-  @Input() mask?: Mask;
+  @Input() mask?: MaskType;
+  @Input() formControl?: FormControl;
+  @Input() customMask?: string;
 
   private tooglePasswordInputType: Boolean = false;
-
-  private getMask = (): any[] => {
-    switch (this.mask) {
-      case Mask.CPF : {
-        return [ /[1-9]/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-' , /\d/, /\d/ ];
-      }
-      case Mask.CNPJ :{
-        return [ /[1-9]/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/ ];
-      }
-      case Mask.CP : {
-        return [ /[1-9]/, /\d/, /\d/, /\d/ ];
-      }
-      case Mask.TEL : {
-        return ['(', /[1-9]/, /\d/, ')', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/, /\d/ ];
-      }
-      case Mask.CEP : {
-        return [ /[1-9]/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/ ];
-      }
-    }
-  }
 
   private isPassword = (): boolean => this.type === InputType.PASSWORD;
   private isMask = (): boolean => this.mask !== undefined;
@@ -64,6 +49,37 @@ export class InputComponent implements OnInit {
     }
 
     return this.type;
+  }
+
+
+  private getMask = () => {
+
+    if(this.customMask){
+      return this.customMask;
+    }
+    switch (this.mask) {
+      case MaskType.CPF : {
+        return '000.000.000-00';
+      }
+      case MaskType.CEP : {
+        return '00000-000';
+      }
+      case MaskType.CP : {
+        return '0000';
+      }
+      case MaskType.TEL_BR : {
+        return '(00)0000-00000';
+      }
+      case MaskType.TEL_AR : {
+        return '(00)0000-0000';
+      }
+      case MaskType.CNPJ : {
+        return '00.000.000/0000-00';
+      }
+      default : {
+        return '000-000';
+      }
+    }
   }
 
   ngOnInit (): void { }

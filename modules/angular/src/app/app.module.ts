@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { TextMaskModule } from 'angular2-text-mask';
 
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
+import { NgxMaskModule } from 'ngx-mask';
 
 import { AppComponent } from './app.component';
 import { InputComponent } from './input/input.component';
@@ -27,7 +27,7 @@ import { PickColorComponent } from './pick-color/pick-color.component';
     BrowserModule,
     NgSelectModule,
     FormsModule,
-    TextMaskModule
+    NgxMaskModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
