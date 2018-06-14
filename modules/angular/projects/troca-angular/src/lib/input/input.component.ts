@@ -34,16 +34,16 @@ export class InputComponent implements OnInit {
   @Input() formControl?: FormControl;
   @Input() customMask?: string;
 
-  private tooglePasswordInputType: Boolean = false;
+  public tooglePasswordInputType: Boolean = false;
 
-  private isPassword = (): boolean => this.type === InputType.PASSWORD;
-  private isMask = (): boolean => this.mask !== undefined;
+  public isPassword = (): boolean => this.type === InputType.PASSWORD;
+  public isMask = (): boolean => this.mask !== undefined;
 
-  private togglePasswordInput = (): void => {
+  public togglePasswordInput = (): void => {
     this.tooglePasswordInputType = !this.tooglePasswordInputType;
   }
 
-  private getInputType = (): string => {
+  public getInputType = (): string => {
     if (this.type === InputType.PASSWORD) {
       return this.tooglePasswordInputType ? InputType.TEXT : InputType.PASSWORD;
     }
@@ -52,9 +52,9 @@ export class InputComponent implements OnInit {
   }
 
 
-  private getMask = () => {
+  public getMask = () => {
 
-    if(this.customMask){
+    if (this.customMask) {
       return this.customMask;
     }
     switch (this.mask) {

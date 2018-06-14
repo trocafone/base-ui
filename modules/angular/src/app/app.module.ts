@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -6,12 +7,13 @@ import { FormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
 import { AppComponent } from './app.component';
-import { InputComponent } from './input/input.component';
-import { ButtonComponent } from './button/button.component';
-import { CheckboxComponent } from './checkbox/checkbox.component';
-import { LogoComponent } from './logo/logo.component';
-import { DropdownComponent } from './dropdown/dropdown.component';
-import { PickColorComponent } from './pick-color/pick-color.component';
+
+import { InputComponent } from 'troca-angular';
+import { ButtonComponent } from 'troca-angular';
+import { CheckboxComponent } from 'troca-angular';
+import { LogoComponent } from 'troca-angular';
+import { DropdownComponent } from 'troca-angular';
+import { PickColorComponent } from 'troca-angular';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,7 @@ import { PickColorComponent } from './pick-color/pick-color.component';
     BrowserModule,
     NgSelectModule,
     FormsModule,
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 
 import { Component } from '@angular/core';
-import { DropdownValue } from './dropdown/dropdown.component';
-import { PickColorValue } from './pick-color/pick-color.component';
+import { DropdownValue } from 'troca-angular';
+import { PickColorValue } from 'troca-angular';
 
 @Component({
   selector: 'app-root',

@@ -122,6 +122,46 @@
           }
         }
       }
+    },
+    "troca-angular": {
+      "root": "projects/troca-angular",
+      "sourceRoot": "projects/troca-angular/src",
+      "projectType": "library",
+      "prefix": "tf",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/troca-angular/tsconfig.lib.json",
+            "project": "projects/troca-angular/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/troca-angular/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/troca-angular/src/test.ts",
+            "tsConfig": "projects/troca-angular/tsconfig.spec.json",
+            "karmaConfig": "projects/troca-angular/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/troca-angular/tsconfig.lib.json",
+              "projects/troca-angular/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular"

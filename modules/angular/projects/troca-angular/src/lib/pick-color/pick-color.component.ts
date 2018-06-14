@@ -8,7 +8,7 @@ export interface PickColorValue {
 @Component({
   selector: 'tf-pick-color',
   templateUrl: './pick-color.component.html',
-  styleUrls: ['./pick-color.component.css']
+  styleUrls: ['./pick-color.component.scss']
 })
 export class PickColorComponent implements OnInit {
 

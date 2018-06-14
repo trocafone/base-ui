@@ -1,8 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { guid } from '../utils';
 
-import '../../../../troca-icons/troca-icons.scss';
-
 @Component({
   selector: 'tf-checkbox',
   templateUrl: './checkbox.component.html',
@@ -15,7 +13,7 @@ export class CheckboxComponent {
   @Output() onChange?: EventEmitter<Boolean> = new EventEmitter<Boolean>();
   @Input() className?: string;
 
-  private guid: string = guid();
+  public guid: string = guid();
 
 
   onClickInput(event: any): void {

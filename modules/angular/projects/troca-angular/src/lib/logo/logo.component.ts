@@ -1,4 +1,6 @@
+
 import { Component, Input } from '@angular/core';
+import { Type } from '@angular/compiler/src/core';
 
 declare var require: any;
 
@@ -11,7 +13,7 @@ export enum LogoType {
 }
 
 @Component({
-  selector: 'ts-logo',
+  selector: 'tf-logo',
   templateUrl: './logo.component.html',
   styleUrls: ['./logo.component.css']
 })
@@ -21,25 +23,19 @@ export class LogoComponent {
   @Input() link?: string;
   @Input() type: LogoType;
 
-
-
-  private getLogo = () => {
+  public getLogo = () => {
     switch (this.type) {
       case LogoType.LOGO : {
-        return require('./logo.png');
+        return require('../assets/logo.png');
       }
       case LogoType.TRADEIN : {
-        return require('./trade-in.svg');
-      }
-      case LogoType.BACKOFFICE : {
-        return require('./trade-in.svg');
+        return require('../assets/trade-in.svg');
       }
       case LogoType.ISO : {
-        return require('./iso.webp');
-      }
-      default : {
-        return require('./logo.png');
+        return require('../assets/iso.webp');
       }
     }
   }
+  
+
 }
