@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormControl } from "@angular/forms";
+import { FormControl, FormGroup } from '@angular/forms';
 
 export enum InputType {
   TEXT = 'text',
@@ -33,6 +33,8 @@ export class InputComponent implements OnInit {
   @Input() mask?: MaskType;
   @Input() formControl?: FormControl;
   @Input() customMask?: string;
+  @Input() formControlName?: string;
+  @Input() formGroup?: FormGroup;
 
   public tooglePasswordInputType: Boolean = false;
 

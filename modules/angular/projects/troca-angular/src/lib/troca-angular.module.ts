@@ -9,7 +9,7 @@ import { PickColorComponent } from './pick-color/pick-color.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgSelectModule } from '@ng-select/ng-select';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
 @NgModule({
@@ -18,6 +18,7 @@ import { NgxMaskModule } from 'ngx-mask';
     BrowserModule,
     NgSelectModule,
     FormsModule,
+    ReactiveFormsModule,
     NgxMaskModule.forRoot(),
   ],
   declarations: [
