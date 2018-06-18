@@ -1,26 +1,18 @@
 <div 
   class="input-control" 
-  [formGroup]='formGroup'
+  [attr.formGroup]='formGroup ? formGroup : null'
 >
       
     <input
-      *ngIf="mask"
-      mask='{{ getMask() }}'
+      [attr.mask]="mask ? getMask() : null"
       type="{{ getInputType() }}"
       [placeholder]="placeholder"
       class="{{ className }}"
       [ngClass]="{'error' : error} "
-      [formControlName]="formControlName"
+      [attr.formControlName]='formControlName ? formControlName : null'
     />
     
-    <input
-      *ngIf="!mask"
-      type="{{ getInputType() }}"
-      [placeholder]="placeholder"
-      class="{{ className }}"
-      [ngClass]="{'error' : error} "
-      [formControlName]="formControlName"
-    />
+    
 
   <span *ngIf='isPassword()' (click)='togglePasswordInput()' class="icon" >
     <i *ngIf='!tooglePasswordInputType' class="icon-t-eye"></i>

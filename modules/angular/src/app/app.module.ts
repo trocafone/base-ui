@@ -3,11 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { NgSelectModule } from '@ng-select/ng-select';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
 import { AppComponent } from './app.component';
-
 import { InputComponent } from '../../projects/troca-angular/src/lib/input/input.component';
 import { ButtonComponent } from '../../projects/troca-angular/src/lib/button/button.component';
 import { CheckboxComponent } from '../../projects/troca-angular/src/lib/checkbox/checkbox.component';
@@ -29,6 +28,7 @@ import { PickColorComponent } from '../../projects/troca-angular/src/lib/pick-co
     BrowserModule,
     NgSelectModule,
     FormsModule,
+    ReactiveFormsModule,
     NgxMaskModule.forRoot(),
   ],
   providers: [],

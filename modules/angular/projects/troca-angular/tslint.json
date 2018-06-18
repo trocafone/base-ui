@@ -7,6 +7,7 @@
             "tf",
             "camelCase"
         ],
+        "no-output-on-prefix": false,
         "component-selector": [
             true,
             "element",
