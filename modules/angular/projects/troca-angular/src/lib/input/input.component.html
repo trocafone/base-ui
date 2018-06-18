@@ -1,20 +1,19 @@
 <div class="input-control">
-      <input
-      mask='{{ getMask() }}'
-      [value]="value"
-      type="{{ getInputType() }}"
-      placeholder="{{ placeholder }}"
-      class="{{ className }}"
-      [ngClass]="{'error' : error} "
-    />
-  <span *ngIf='isPassword()' (click)='togglePasswordInput()' >
-    <span *ngIf='!tooglePasswordInputType'>
-      show text
-    </span>
-    <span *ngIf='tooglePasswordInputType'>
-      show pass
-    </span>
-  </span>
 
+  <input
+
+    mask='{{ getMask() }}'
+    [attr.mask]="mask || customMask "
+    [value]="value"
+    type="{{ getInputType() }}"
+    placeholder="{{ placeholder }}"
+    class="{{ className }}"
+    [ngClass]="{'error' : error} "
+  />
+
+  <span *ngIf='isPassword()' (click)='togglePasswordInput()' class="icon" >
+    <i *ngIf='!tooglePasswordInputType' class="icon-t-eye"></i>
+    <i *ngIf='tooglePasswordInputType' class="icon-t-eye-cross"></i>
+  </span>
   <span class="errors" *ngIf="error">{{ error }}</span>
 </div>

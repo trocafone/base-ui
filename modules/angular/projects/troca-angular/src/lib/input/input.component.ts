@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, HostBinding } from '@angular/core';
 import { FormControl } from "@angular/forms";
 
 export enum InputType {
@@ -33,6 +33,11 @@ export class InputComponent implements OnInit {
   @Input() mask?: MaskType;
   @Input() formControl?: FormControl;
   @Input() customMask?: string;
+  @HostBinding('attr.mask') myMask = this.customDirectives();
+
+  public function customDirectives(){
+    console.log(this)
+  }
 
   public tooglePasswordInputType: Boolean = false;
 
@@ -77,7 +82,7 @@ export class InputComponent implements OnInit {
         return '00.000.000/0000-00';
       }
       default : {
-        return '000-000';
+        return 'AAAA';
       }
     }
   }

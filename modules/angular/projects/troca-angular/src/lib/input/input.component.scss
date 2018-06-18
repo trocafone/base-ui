@@ -2,6 +2,7 @@
 @import "../../../../../../troca-mixins/troca-mixins";
 
 .input-control {
+  position: relative;
   .error{
     border-color: $brand-warning;
   }
@@ -10,5 +11,18 @@
     margin-top: 5px;
     @include fontSize(small);
     color: $brand-warning;
+  }
+
+  .icon{
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 14px);
+    color: $grayscale-60;
+
+    i{
+      width: 28px;
+      height: 28px;
+      font-size: 21px;
+    }
   }
 }
