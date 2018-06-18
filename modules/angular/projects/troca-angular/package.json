@@ -5,7 +5,6 @@
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
   },
-  "dependencies": {},
   "scripts": {
     "build": "ng build --prod troca-angular && npm run copy-assets",
     "copy-assets": "node copy-assets.js"
