@@ -21,14 +21,10 @@
       [ngClass]="{'error' : error} "
       [formControlName]="formControlName"
     />
-  <span *ngIf='isPassword()' (click)='togglePasswordInput()' >
-    <span *ngIf='!tooglePasswordInputType'>
-      show text
-    </span>
-    <span *ngIf='tooglePasswordInputType'>
-      show pass
-    </span>
-  </span>
 
+  <span *ngIf='isPassword()' (click)='togglePasswordInput()' class="icon" >
+    <i *ngIf='!tooglePasswordInputType' class="icon-t-eye"></i>
+    <i *ngIf='tooglePasswordInputType' class="icon-t-eye-cross"></i>
+  </span>
   <span class="errors" *ngIf="error">{{ error }}</span>
 </div>

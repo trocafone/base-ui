@@ -8,12 +8,12 @@ import { NgxMaskModule } from 'ngx-mask';
 
 import { AppComponent } from './app.component';
 
-import { InputComponent } from 'troca-angular';
-import { ButtonComponent } from 'troca-angular';
-import { CheckboxComponent } from 'troca-angular';
-import { LogoComponent } from 'troca-angular';
-import { DropdownComponent } from 'troca-angular';
-import { PickColorComponent } from 'troca-angular';
+import { InputComponent } from '../../projects/troca-angular/src/lib/input/input.component';
+import { ButtonComponent } from '../../projects/troca-angular/src/lib/button/button.component';
+import { CheckboxComponent } from '../../projects/troca-angular/src/lib/checkbox/checkbox.component';
+import { LogoComponent } from '../../projects/troca-angular/src/lib/logo/logo.component';
+import { DropdownComponent } from '../../projects/troca-angular/src/lib/dropdown/dropdown.component';
+import { PickColorComponent } from '../../projects/troca-angular/src/lib/pick-color/pick-color.component';
 
 @NgModule({
   declarations: [

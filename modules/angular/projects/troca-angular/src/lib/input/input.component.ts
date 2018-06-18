@@ -79,7 +79,7 @@ export class InputComponent implements OnInit {
         return '00.000.000/0000-00';
       }
       default : {
-        return '000-000';
+        return 'AAAA';
       }
     }
   }
