@@ -1,15 +1,14 @@
 <div 
   class="input-control" 
-  [attr.formGroup]='formGroup ? formGroup : null'
->
-      
+  [formGroup]='formGroup'
+>     
     <input
-      [attr.mask]="mask ? getMask() : null"
+      [mask]="mask ? getMask() : null"
       type="{{ getInputType() }}"
       [placeholder]="placeholder"
       class="{{ className }}"
       [ngClass]="{'error' : error} "
-      [attr.formControlName]='formControlName ? formControlName : null'
+      [formControlName]='formControlName ? formControlName : null'
     />
     
     
