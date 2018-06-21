@@ -66,6 +66,7 @@ a:hover, a:active, a:focus, a:-webkit-any-link {
 
 a{
   color:$link-primary-color;
+  text-decoration: none;
 
   &:hover{
     color: $link-primary-color-hover;
