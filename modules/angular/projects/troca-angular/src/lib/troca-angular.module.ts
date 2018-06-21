@@ -1,3 +1,4 @@
+import { AlertComponent } from './alert/alert.component';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './button/button.component';
 import { InputComponent } from './input/input.component';
@@ -28,6 +29,7 @@ import { NgxMaskModule } from 'ngx-mask';
     DropdownComponent,
     CheckboxComponent,
     PickColorComponent,
+    AlertComponent,
   ],
   exports: [
     ButtonComponent,
@@ -36,6 +38,7 @@ import { NgxMaskModule } from 'ngx-mask';
     DropdownComponent,
     CheckboxComponent,
     PickColorComponent,
+    AlertComponent,
   ]
 })
 export class TrocaAngularModule { }

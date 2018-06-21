@@ -10,38 +10,6 @@
         <h1>Logo</h1>
         <tf-logo type='iso'></tf-logo>
     </section>
-    <section>
-    <h1>Checkbox</h1>
-    <tf-checkbox name='dadsa' label='Feature 1'></tf-checkbox>
-    <tf-checkbox name='dadsa' label='Feature 2'></tf-checkbox>
-</section>
-<form action="" [formGroup]="formGroup">
-<section >
-        
-    <h1>Input</h1>
-    <h3>Tamaño de base</h3>
-    <tf-input 
-        [formGroup]="formGroup"
-        [formControlName]="formControlName"
-         mask="tel_br" value="" type="text" placeholder="Escribir un placeholder" className="" error=""></tf-input>
-
-    <br><br>
-    <h3>Tamaño large</h3>
-    <tf-input customMask="00-00000000000"  value="" type="tel" placeholder="Escribir un placeholder" className="input-medium" error=""></tf-input>
-
-    <br><br>
-    <h3>Password</h3>
-    <tf-input value="" type="password" placeholder="Escribir un password" className="input-large" error=""></tf-input>
-    </section>
-
-    <section>
-    <h1>Dropdown</h1>
-    <tf-dropdown [options]='dropdown.options'></tf-dropdown>
-    </section>
-
-    <section>
-    <h1>Colors</h1>
-    <tf-pick-color [colors]='colors'></tf-pick-color>
-    </section>
-</form>    
+    
+    <tf-alert className="warning" content="asdfghjh" icon="icon-t-alert"></tf-alert>
 </main>

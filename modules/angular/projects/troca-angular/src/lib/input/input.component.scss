@@ -4,19 +4,19 @@
 .input-control {
   position: relative;
   .error{
-    border-color: $brand-warning;
+    border-color: $brand-danger;
   }
   .errors{
     display: block;
     margin-top: 5px;
     @include fontSize(small);
-    color: $brand-warning;
+    color: $brand-danger;
   }
 
   .icon{
     position: absolute;
     right: 10px;
-    top: calc(50% - 14px);
+    top: 8px;
     color: $grayscale-60;
 
     i{
