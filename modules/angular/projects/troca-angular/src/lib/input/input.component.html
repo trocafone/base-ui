@@ -1,7 +1,7 @@
-<div 
-  class="input-control" 
+<div
+  class="input-control"
   [formGroup]='formGroup'
->     
+>
     <input
       [mask]="mask ? getMask() : null"
       type="{{ getInputType() }}"
@@ -10,12 +10,5 @@
       [ngClass]="{'error' : error} "
       [formControlName]='formControlName ? formControlName : null'
     />
-    
-    
-
-  <span *ngIf='isPassword()' (click)='togglePasswordInput()' class="icon" >
-    <i *ngIf='!tooglePasswordInputType' class="icon-t-eye"></i>
-    <i *ngIf='tooglePasswordInputType' class="icon-t-eye-cross"></i>
-  </span>
   <span class="errors" *ngIf="error">{{ error }}</span>
 </div>
