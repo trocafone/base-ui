@@ -3,13 +3,13 @@
   <label for="{{guid}}"></label>
 </div> -->
 
-<label 
+<label
   [attr.formGroup]='formGroup ? formGroup : null'
   class="checkbox-container {{ className }}"
 >
-  <input 
-    [attr.formControlName]='formControlName ? formControlName : null' 
-    (click)="onClickInput($event)" id="guid" [checked]="active" name="receive_info" type="checkbox" value="0">
+  <input
+    [attr.formControlName]='formControlName ? formControlName : null'
+    (click)="onClickInput($event)" id="{{guid}}" [checked]="active" name="receive_info" type="checkbox" value="0">
   <label for="{{guid}}" class="checkbox-style-label"></label>
   <span class="checkbox-text">{{label}}</span>
 </label>
