@@ -5,6 +5,9 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
+import { PickColorComponent } from './pick-color/pick-color.component';
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,10 +18,10 @@ import { NgxMaskModule } from 'ngx-mask';
     NgxMaskModule.forRoot(),
   ],
   declarations: [
-
+    PickColorComponent,
   ],
   exports: [
-
+    PickColorComponent,
   ]
 })
 export class TrocaAngularModule { }

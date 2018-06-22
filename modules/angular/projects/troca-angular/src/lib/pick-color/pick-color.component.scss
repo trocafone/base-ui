@@ -1,0 +1,22 @@
+
+.pick-color{
+    display: flex;
+}
+
+.pick-color-item{
+    cursor: pointer;
+    text-align: center;
+    margin-right: 20px;
+
+    &.active{
+        border: 1px solid #ccc;
+    }
+}
+
+.circle-color{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 5px;
+}
