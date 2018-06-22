@@ -49,7 +49,12 @@
 .t-inherit{
   text-align: inherit;
 }
-
+.v-hidden{
+  visibility: hidden;
+}
+.v-visible{
+  visibility: visible;
+}
 
 /*
 This .scss loop will create "margin helpers" and "padding helpers" for use in your web projects.
