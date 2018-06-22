@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { InputComponent } from './input/input.component';
 import { TradeinLogoComponent } from './tradein-logo/tradein-logo.component';
 import { TrocafoneLogoComponent } from './trocafone-logo/trocafone-logo.component';
 import { AlertComponent } from './alert/alert.component';
@@ -26,6 +27,7 @@ import { ButtonComponent } from './button/button.component';
     TrocafoneLogoComponent,
     ButtonComponent,
     AlertComponent,
+    InputComponent,
   ],
   exports: [
     CheckboxComponent,
@@ -33,6 +35,7 @@ import { ButtonComponent } from './button/button.component';
     TrocafoneLogoComponent,
     AlertComponent,
     ButtonComponent,
+    InputComponent,
   ]
 })
 export class TrocaAngularModule { }
