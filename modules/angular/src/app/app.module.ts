@@ -12,6 +12,7 @@ import { ButtonComponent } from '../../projects/troca-angular/src/lib/button/but
 import { AlertComponent } from '../../projects/troca-angular/src/lib/alert/alert.component';
 import { InputComponent } from '../../projects/troca-angular/src/lib/input/input.component';
 import { LogoComponent } from '../../projects/troca-angular/src/lib/logo/logo.component';
+import { PickColorComponent } from '../../projects/troca-angular/src/lib/pick-color/pick-color.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { LogoComponent } from '../../projects/troca-angular/src/lib/logo/logo.co
     AlertComponent,
     InputComponent,
     LogoComponent,
+    PickColorComponent,
   ],
   imports: [
     BrowserModule,
