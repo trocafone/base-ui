@@ -9,3 +9,4 @@ export * from './lib/dropdown/dropdown.component';
 export * from './lib/input/input.component';
 export * from './lib/logo/logo.component';
 export * from './lib/pick-color/pick-color.component';
+export * from './lib/checkbox/checkbox.component';

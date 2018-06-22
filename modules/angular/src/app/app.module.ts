@@ -13,6 +13,7 @@ import { AlertComponent } from '../../projects/troca-angular/src/lib/alert/alert
 import { InputComponent } from '../../projects/troca-angular/src/lib/input/input.component';
 import { LogoComponent } from '../../projects/troca-angular/src/lib/logo/logo.component';
 import { PickColorComponent } from '../../projects/troca-angular/src/lib/pick-color/pick-color.component';
+import { CheckboxComponent } from '../../projects/troca-angular/src/lib/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { PickColorComponent } from '../../projects/troca-angular/src/lib/pick-co
     InputComponent,
     LogoComponent,
     PickColorComponent,
+    CheckboxComponent,
   ],
   imports: [
     BrowserModule,

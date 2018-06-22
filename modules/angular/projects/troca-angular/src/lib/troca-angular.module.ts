@@ -11,7 +11,7 @@ import { DropdownComponent } from './dropdown/dropdown.component';
 import { InputComponent } from './input/input.component';
 import { LogoComponent } from './logo/logo.component';
 import { PickColorComponent } from './pick-color/pick-color.component';
-
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
   imports: [
@@ -29,6 +29,7 @@ import { PickColorComponent } from './pick-color/pick-color.component';
     InputComponent,
     LogoComponent,
     PickColorComponent,
+    CheckboxComponent,
   ],
   exports: [
     ButtonComponent,
@@ -37,6 +38,7 @@ import { PickColorComponent } from './pick-color/pick-color.component';
     InputComponent,
     LogoComponent,
     PickColorComponent,
+    CheckboxComponent,
   ]
 })
 export class TrocaAngularModule { }
