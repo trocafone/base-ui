@@ -7,11 +7,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
 import { AppComponent } from './app.component';
-
+import { PickColorComponent } from '../../projects/troca-angular/src/lib/pick-color/pick-color.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PickColorComponent,
   ],
   imports: [
     BrowserModule,
