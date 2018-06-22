@@ -7,11 +7,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
 import { AppComponent } from './app.component';
-
+import { InputComponent } from '../../projects/troca-angular/src/lib/input/input.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InputComponent,
   ],
   imports: [
     BrowserModule,
