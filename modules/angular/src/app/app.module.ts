@@ -7,6 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
 import { AppComponent } from './app.component';
+import { InputComponent } from '../../projects/troca-angular/src/lib/input/input.component';
 import { TradeinLogoComponent } from '../../projects/troca-angular/src/lib/tradein-logo/tradein-logo.component';
 import { TrocafoneLogoComponent } from '../../projects/troca-angular/src/lib/trocafone-logo/trocafone-logo.component';
 import { AlertComponent } from '../../projects/troca-angular/src/lib/alert/alert.component';
@@ -15,6 +16,7 @@ import { ButtonComponent } from '../../projects/troca-angular/src/lib/button/but
 @NgModule({
   declarations: [
     AppComponent,
+    InputComponent,
     TradeinLogoComponent,
     TrocafoneLogoComponent,
     AlertComponent,
