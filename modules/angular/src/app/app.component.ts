@@ -19,6 +19,14 @@ export class AppComponent {
     <PickColorValue>{ text: 'Blue', hex: 0xff00ff },
     <PickColorValue>{ text: 'Green', hex: 0x0000ff },
   ];
+  
+  private dropdown: object = {
+     options: [
+      <DropdownValue>{ text: 'Option 1', value: '1' },
+      <DropdownValue>{ text: 'Option 2', value: '2' },
+      <DropdownValue>{ text: 'Option 3', value: '3' },
+    ]
+  };
 
   constructor(private fb: FormBuilder) {
     this.formGroup = this.fb.group({
