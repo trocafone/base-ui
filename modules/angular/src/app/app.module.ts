@@ -7,12 +7,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
 import { AppComponent } from './app.component';
-import { LogoComponent } from '../../projects/troca-angular/src/lib/logo/logo.component';
+import { TradeinLogoComponent } from '../../projects/troca-angular/src/lib/tradein-logo/tradein-logo.component';
+import { TrocafoneLogoComponent } from '../../projects/troca-angular/src/lib/trocafone-logo/trocafone-logo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LogoComponent,
+    TradeinLogoComponent,
+    TrocafoneLogoComponent,
   ],
   imports: [
     BrowserModule,

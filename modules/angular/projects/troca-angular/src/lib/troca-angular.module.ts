@@ -5,7 +5,9 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
-import { LogoComponent } from './logo/logo.component';
+
+import { TradeinLogoComponent } from './tradein-logo/tradein-logo.component';
+import { TrocafoneLogoComponent } from './trocafone-logo/trocafone-logo.component';
 
 @NgModule({
   imports: [
@@ -17,10 +19,12 @@ import { LogoComponent } from './logo/logo.component';
     NgxMaskModule.forRoot(),
   ],
   declarations: [
-    LogoComponent,
+    TradeinLogoComponent,
+    TrocafoneLogoComponent,
   ],
   exports: [
-    LogoComponent,
+    TradeinLogoComponent,
+    TrocafoneLogoComponent,
   ]
 })
 export class TrocaAngularModule { }

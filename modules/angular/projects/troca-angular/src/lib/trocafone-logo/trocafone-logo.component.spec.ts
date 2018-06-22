@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LogoComponent } from './logo.component';
+import { TrocafoneLogoComponent } from './trocafone-logo.component';
 
-describe('LogoComponent', () => {
-  let component: LogoComponent;
-  let fixture: ComponentFixture<LogoComponent>;
+describe('TrocafoneLogoComponent', () => {
+  let component: TrocafoneLogoComponent;
+  let fixture: ComponentFixture<TrocafoneLogoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LogoComponent ]
+      declarations: [ TrocafoneLogoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LogoComponent);
+    fixture = TestBed.createComponent(TrocafoneLogoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
