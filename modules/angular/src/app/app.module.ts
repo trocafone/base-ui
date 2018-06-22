@@ -17,14 +17,7 @@ import { AlertComponent } from '../../projects/troca-angular/src/lib/alert/alert
 
 @NgModule({
   declarations: [
-    AppComponent,
-    InputComponent,
-    ButtonComponent,
-    CheckboxComponent,
-    LogoComponent,
-    DropdownComponent,
-    PickColorComponent,
-    AlertComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
