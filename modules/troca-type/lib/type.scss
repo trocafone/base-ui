@@ -9,6 +9,7 @@ body {
   font-family: $font-family-base;
   font-size: $main-font-size;
   color: $font-color-dark;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -65,6 +66,7 @@ a:hover, a:active, a:focus, a:-webkit-any-link {
 
 a{
   color:$link-primary-color;
+  text-decoration: none;
 
   &:hover{
     color: $link-primary-color-hover;

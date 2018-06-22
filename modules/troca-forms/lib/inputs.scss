@@ -7,7 +7,7 @@ input, input.form-control{
   -webkit-border-radius: 0;
   -ms-border-radius: 0;
   @include fontSize(smaller);
-  @include fontWeight(semibold);
+  @include fontWeight(normal);
   box-shadow: none;
   padding: 5px 10px;
   border: solid 1px $grayscale-50;
@@ -15,23 +15,50 @@ input, input.form-control{
 
   &::-webkit-input-placeholder {
     @include fontSize(smaller);
-    @include fontWeight(semibold);
+    @include fontWeight(normal);
     color: $form-text-placeholder-color;
   }
   &:-moz-placeholder { /* Firefox 18- */
     @include fontSize(smaller);
-    @include fontWeight(semibold);
+    @include fontWeight(normal);
     color: $form-text-placeholder-color;
   }
   &::-moz-placeholder {  /* Firefox 19+ */
     @include fontSize(smaller);
-    @include fontWeight(semibold);
+    @include fontWeight(normal);
     color: $form-text-placeholder-color;
   }
   &:-ms-input-placeholder {
     @include fontSize(smaller);
-    @include fontWeight(semibold);
+    @include fontWeight(normal);
     color: $form-text-placeholder-color;
+  }
+
+  &.input-medium, &.input-large{
+    @include fontSize(small);
+    @include fontWeight(normal);
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      @include fontSize(small);
+      @include fontWeight(normal);
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      @include fontSize(small);
+      @include fontWeight(normal);
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      @include fontSize(small);
+      @include fontWeight(normal);
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      @include fontSize(small);
+      @include fontWeight(normal);
+    }
+  }
+  &.input-medium{
+    padding: 6px 13px;
+  }
+  &.input-large{
+    padding: 12px 13px;
   }
 
   &:focus{
