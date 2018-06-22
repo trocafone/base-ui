@@ -7,11 +7,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
 import { AppComponent } from './app.component';
-
+import { CheckboxComponent } from '../../projects/troca-angular/src/lib/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CheckboxComponent,
   ],
   imports: [
     BrowserModule,
