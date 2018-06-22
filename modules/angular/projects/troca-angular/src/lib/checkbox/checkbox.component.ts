@@ -5,7 +5,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 @Component({
   selector: 'tf-checkbox',
   templateUrl: './checkbox.component.html',
-  styleUrls: ['./checkbox.component.css']
+  styleUrls: ['./checkbox.component.scss']
 })
 export class CheckboxComponent {
 
