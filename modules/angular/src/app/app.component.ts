@@ -14,7 +14,6 @@ export class AppComponent {
   private formGroup;
   private formControlName: String = 's';
 
-
   private dropdown: object = {
     options: [
       <DropdownValue>{ text: 'Option 1', value: '1' },
