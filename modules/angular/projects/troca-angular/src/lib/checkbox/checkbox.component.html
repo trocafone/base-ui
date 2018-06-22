@@ -4,7 +4,7 @@
 >
   <input
     [attr.formControlName]='formControlName ? formControlName : null'
-    (click)="onClickInput($event)" id="{{guid}}" [checked]="active" [name]="name" type="checkbox" value="0">
+    (click)="onClickInput($event)" id="{{guid}}" [checked]="checked" [name]="name" type="checkbox" value="0">
   <label for="{{guid}}" class="checkbox-style-label"></label>
   <span class="checkbox-text">{{label}}</span>
 </label>

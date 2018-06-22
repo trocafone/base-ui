@@ -9,7 +9,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class CheckboxComponent {
   @Input() name?: string;
-  @Input() active: Boolean = false;
+  @Input() checked: Boolean = false;
   @Input() label: string;
   @Output() onChange?: EventEmitter<Boolean> = new EventEmitter<Boolean>();
   @Input() className?: string;
@@ -19,9 +19,9 @@ export class CheckboxComponent {
   public guid: string = guid();
 
   onClickInput(event: any): void {
-    this.active = !this.active;
+    this.checked = !this.checked;
     if (this.onChange) {
-      this.onChange.emit(this.active as Boolean);
+      this.onChange.emit(this.checked as Boolean);
     }
   }
 
