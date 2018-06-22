@@ -5,6 +5,8 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
+import { LogoComponent } from './logo/logo.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,10 +17,10 @@ import { NgxMaskModule } from 'ngx-mask';
     NgxMaskModule.forRoot(),
   ],
   declarations: [
-
+    LogoComponent,
   ],
   exports: [
-
+    LogoComponent,
   ]
 })
 export class TrocaAngularModule { }
