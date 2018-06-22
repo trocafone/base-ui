@@ -7,6 +7,7 @@ import { NgxMaskModule } from 'ngx-mask';
 
 import { ButtonComponent } from './button/button.component';
 import { AlertComponent } from './alert/alert.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 @NgModule({
   imports: [
@@ -20,10 +21,12 @@ import { AlertComponent } from './alert/alert.component';
   declarations: [
     ButtonComponent,
     AlertComponent,
+    DropdownComponent,
   ],
   exports: [
     ButtonComponent,
     AlertComponent,
+    DropdownComponent,
   ]
 })
 export class TrocaAngularModule { }

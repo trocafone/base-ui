@@ -7,6 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
 import { AppComponent } from './app.component';
+import { DropdownComponent } from '../../projects/troca-angular/src/lib/dropdown/dropdown.component';
 import { ButtonComponent } from '../../projects/troca-angular/src/lib/button/button.component';
 import { AlertComponent } from '../../projects/troca-angular/src/lib/alert/alert.component';
 
@@ -14,6 +15,7 @@ import { AlertComponent } from '../../projects/troca-angular/src/lib/alert/alert
 @NgModule({
   declarations: [
     AppComponent,
+    DropdownComponent,
     ButtonComponent,
     AlertComponent
   ],

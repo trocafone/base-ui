@@ -1,6 +1,7 @@
 import { FormControl, FormControlName, FormBuilder, Validators } from '@angular/forms';
 
 import { Component } from '@angular/core';
+import { DropdownValue } from 'troca-angular';
 
 
 @Component({
