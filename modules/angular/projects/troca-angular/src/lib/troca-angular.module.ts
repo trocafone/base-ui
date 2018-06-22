@@ -7,6 +7,8 @@ import { NgxMaskModule } from 'ngx-mask';
 
 import { AlertComponent } from './alert/alert.component';
 
+import { ButtonComponent } from './button/button.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -17,10 +19,12 @@ import { AlertComponent } from './alert/alert.component';
     NgxMaskModule.forRoot(),
   ],
   declarations: [
+    ButtonComponent,
     AlertComponent,
   ],
   exports: [
     AlertComponent,
+    ButtonComponent,
   ]
 })
 export class TrocaAngularModule { }

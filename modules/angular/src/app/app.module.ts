@@ -8,12 +8,14 @@ import { NgxMaskModule } from 'ngx-mask';
 
 import { AppComponent } from './app.component';
 import { AlertComponent } from '../../projects/troca-angular/src/lib/alert/alert.component';
+import { ButtonComponent } from '../../projects/troca-angular/src/lib/button/button.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlertComponent
+    AlertComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
