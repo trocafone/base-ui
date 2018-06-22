@@ -5,6 +5,8 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
+import { AlertComponent } from './alert/alert.component';
+
 import { ButtonComponent } from './button/button.component';
 
 @NgModule({
@@ -18,8 +20,10 @@ import { ButtonComponent } from './button/button.component';
   ],
   declarations: [
     ButtonComponent,
+    AlertComponent,
   ],
   exports: [
+    AlertComponent,
     ButtonComponent,
   ]
 })
