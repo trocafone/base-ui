@@ -11,6 +11,7 @@ import { DropdownComponent } from '../../projects/troca-angular/src/lib/dropdown
 import { ButtonComponent } from '../../projects/troca-angular/src/lib/button/button.component';
 import { AlertComponent } from '../../projects/troca-angular/src/lib/alert/alert.component';
 import { InputComponent } from '../../projects/troca-angular/src/lib/input/input.component';
+import { LogoComponent } from '../../projects/troca-angular/src/lib/logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { InputComponent } from '../../projects/troca-angular/src/lib/input/input
     ButtonComponent,
     AlertComponent,
     InputComponent,
+    LogoComponent,
   ],
   imports: [
     BrowserModule,

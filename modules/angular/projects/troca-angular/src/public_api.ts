@@ -7,3 +7,4 @@ export * from './lib/button/button.component';
 export * from './lib/alert/alert.component';
 export * from './lib/dropdown/dropdown.component';
 export * from './lib/input/input.component';
+export * from './lib/logo/logo.component';

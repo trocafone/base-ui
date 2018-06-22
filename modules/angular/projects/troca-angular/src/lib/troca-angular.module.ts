@@ -9,6 +9,7 @@ import { ButtonComponent } from './button/button.component';
 import { AlertComponent } from './alert/alert.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { InputComponent } from './input/input.component';
+import { LogoComponent } from './logo/logo.component';
 
 @NgModule({
   imports: [
@@ -24,12 +25,14 @@ import { InputComponent } from './input/input.component';
     AlertComponent,
     DropdownComponent,
     InputComponent,
+    LogoComponent,
   ],
   exports: [
     ButtonComponent,
     AlertComponent,
     DropdownComponent,
     InputComponent,
+    LogoComponent,
   ]
 })
 export class TrocaAngularModule { }
