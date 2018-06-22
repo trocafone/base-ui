@@ -5,6 +5,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
+import { CheckboxComponent } from './checkbox/checkbox.component';
 import { InputComponent } from './input/input.component';
 import { TradeinLogoComponent } from './tradein-logo/tradein-logo.component';
 import { TrocafoneLogoComponent } from './trocafone-logo/trocafone-logo.component';
@@ -21,6 +22,7 @@ import { ButtonComponent } from './button/button.component';
     NgxMaskModule.forRoot(),
   ],
   declarations: [
+    CheckboxComponent,
     TradeinLogoComponent,
     TrocafoneLogoComponent,
     ButtonComponent,
@@ -28,6 +30,7 @@ import { ButtonComponent } from './button/button.component';
     InputComponent,
   ],
   exports: [
+    CheckboxComponent,
     TradeinLogoComponent,
     TrocafoneLogoComponent,
     AlertComponent,
