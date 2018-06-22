@@ -1,0 +1,14 @@
+<div
+  class="input-control"
+  [formGroup]='formGroup'
+>
+    <input
+      [mask]="mask ? getMask() : null"
+      type="{{ getInputType() }}"
+      [placeholder]="placeholder"
+      class="{{ className }}"
+      [ngClass]="{'error' : error} "
+      [formControlName]='formControlName ? formControlName : null'
+    />
+  <span class="errors" *ngIf="error">{{ error }}</span>
+</div>

@@ -45,6 +45,9 @@ module.exports = {
     },
     devServer: {
         contentBase: path.join(__dirname, "modules"),
-        publicPath: "/dist"
+        publicPath: "/dist",
+        ignored: [
+            path.resolve(__dirname, 'modules/angular')
+        ]
     }
 };
