@@ -20,7 +20,6 @@
     height: 20px;
     -webkit-appearance: none;
 
-
     &:hover + .checkbox-style-label{
       border-color: $brand-primary;
     }
@@ -61,4 +60,22 @@
     color: $white;
     line-height: 14px;
   }
+
+
+  &.checkbox-small{
+    input[type=checkbox] {
+      width: 16px;
+      height: 16px;
+    }
+    input[type=checkbox] + label.checkbox-style-label {
+      width: 16px;
+      height: 16px;
+    }
+
+    input[type=checkbox]:checked + label.checkbox-style-label:after {
+      font-size: 11px;
+      top: 0;
+    }
+  }
+
 }
