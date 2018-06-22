@@ -3,6 +3,10 @@
 
 .input-control {
   position: relative;
+
+  input{
+    width: 100%;
+  }
   .error{
     border-color: $brand-danger;
   }
