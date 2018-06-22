@@ -1,0 +1,9 @@
+<div class="alert {{ className }}" *ngIf="content" >
+  <div class="icon">
+    <i class="{{ icon }}"></i>
+  </div>
+  <div class="content">
+    <button class="close icon-t-close-x" (click)="onClickAlert($event)"></button>
+    <span>{{ content }}</span>
+  </div>
+</div>

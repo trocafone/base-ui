@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
 import { ButtonComponent } from './button/button.component';
+import { AlertComponent } from './alert/alert.component';
 
 @NgModule({
   imports: [
@@ -18,9 +19,11 @@ import { ButtonComponent } from './button/button.component';
   ],
   declarations: [
     ButtonComponent,
+    AlertComponent,
   ],
   exports: [
     ButtonComponent,
+    AlertComponent,
   ]
 })
 export class TrocaAngularModule { }
