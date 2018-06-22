@@ -7,11 +7,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 
 import { AppComponent } from './app.component';
+import { DropdownComponent } from '../../projects/troca-angular/src/lib/dropdown/dropdown.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DropdownComponent,
   ],
   imports: [
     BrowserModule,
