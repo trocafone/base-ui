@@ -8,7 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./checkbox.component.scss']
 })
 export class CheckboxComponent {
-
+  @Input() name?: string;
   @Input() active: Boolean = false;
   @Input() label: string;
   @Output() onChange?: EventEmitter<Boolean> = new EventEmitter<Boolean>();
