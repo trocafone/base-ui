@@ -12,7 +12,7 @@ export class TrocafoneLogoComponent implements OnInit {
   @Input() text?: string;
   @Input() link?: string;
 
-  public url = require('../assets/trocafone.png');
+  public url = require('../assets/trocafone.svg');
 
   constructor() { }
 

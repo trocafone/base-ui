@@ -11,6 +11,7 @@ import { InputComponent } from '../../projects/troca-angular/src/lib/input/input
 import { CheckboxComponent } from '../../projects/troca-angular/src/lib/checkbox/checkbox.component';
 import { TradeinLogoComponent } from '../../projects/troca-angular/src/lib/tradein-logo/tradein-logo.component';
 import { TrocafoneLogoComponent } from '../../projects/troca-angular/src/lib/trocafone-logo/trocafone-logo.component';
+import { IsoLogoComponent } from '../../projects/troca-angular/src/lib/iso-logo/iso-logo.component';
 import { AlertComponent } from '../../projects/troca-angular/src/lib/alert/alert.component';
 import { ButtonComponent } from '../../projects/troca-angular/src/lib/button/button.component';
 
@@ -21,6 +22,7 @@ import { ButtonComponent } from '../../projects/troca-angular/src/lib/button/but
     CheckboxComponent,
     TradeinLogoComponent,
     TrocafoneLogoComponent,
+    IsoLogoComponent,
     AlertComponent,
     ButtonComponent,
   ],

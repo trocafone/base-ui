@@ -7,5 +7,6 @@ export * from './lib/checkbox/checkbox.component';
 export * from './lib/input/input.component';
 export * from './lib/tradein-logo/tradein-logo.component';
 export * from './lib/trocafone-logo/trocafone-logo.component';
+export * from './lib/iso-logo/iso-logo.component';
 export * from './lib/alert/alert.component';
 export * from './lib/button/button.component';
