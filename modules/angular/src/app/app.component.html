@@ -1,10 +1,23 @@
 <main>
     <h1>Trocafone Angular UI Components</h1>
 
-  
-
   <section>
     <h1>Button</h1>
     <tf-button translation="Hello World!" className="button-primary button-medium" loadingText="Cargan" [isLoading]="true"></tf-button>
+  </section>
+
+  <section>
+    <h1>Input</h1>
+    <form action="" *ngIf="formGroup" [formGroup]="formGroup">
+      <tf-input
+        formControlName="search"
+        className="input-large"
+        placeholder="Buscar"
+        ngDefaultControl
+        type="search"
+        [formGroup]="formGroup"
+      ></tf-input>
+    </form>
+
   </section>
 </main>

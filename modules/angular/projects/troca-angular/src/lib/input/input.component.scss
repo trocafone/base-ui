@@ -29,4 +29,45 @@
       cursor: pointer;
     }
   }
+  input[type=search]{
+    padding-left: 48px;
+    padding-right:35px;
+
+    &:focus + .search-icon{
+      color:$brand-primary;
+    }
+  }
+
+  .search-icon{
+    padding: 13px 15px;
+    color: $grayscale-60;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+
+    i{
+      line-height: 0;
+      display: block;
+    }
+  }
+
+  .search-close{
+    padding:15px 10px;
+    color: $grayscale-60;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    position: absolute;
+    right:0;
+
+    i{
+      line-height: 0;
+      display: block;
+    }
+  }
+
+  ::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+  ::-webkit-search-results-button { -webkit-appearance: none; }
 }

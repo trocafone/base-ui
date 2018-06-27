@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 export enum InputType {
@@ -6,7 +6,8 @@ export enum InputType {
   TEL = 'tel',
   EMAIL = 'email',
   PASSWORD = 'password',
-  NUMBER = 'number'
+  NUMBER = 'number',
+  SEARCH = 'search'
 }
 
 
@@ -26,9 +27,17 @@ export class InputComponent implements OnInit {
   @Input() formControlName?: string;
   @Input() formGroup?: FormGroup;
 
+  @Output() onClick?: EventEmitter<any> = new EventEmitter<any>();
+
   public tooglePasswordInputType: Boolean = false;
 
   public isPassword = (): boolean => this.type === InputType.PASSWORD;
+
+  public isSearch = (): boolean => this.type === InputType.SEARCH;
+
+  public showCloseButton : boolean = false;
+
+  static readonly SEARCH_MIN_CHARACTERS = 3;
 
   public togglePasswordInput = (): void => {
     this.tooglePasswordInputType = !this.tooglePasswordInputType;
@@ -42,8 +51,26 @@ export class InputComponent implements OnInit {
     return this.type;
   }
 
+  getInputCharacters () {
+    const VALUE = this.formGroup.controls[this.formControlName].value;
 
-  ngOnInit (): void { }
+    if(VALUE.length > InputComponent.SEARCH_MIN_CHARACTERS){
+      return this.showCloseButton = true;
+    }
+
+    return this.showCloseButton = false;
+  }
+
+  onClickCloseButton(e): void {
+    this.formGroup.setValue({
+      [this.formControlName]:''
+    })
+
+    this.showCloseButton = false;
+  }
+
+  ngOnInit (): void {
+  }
 
   constructor() { }
 

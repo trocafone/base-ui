@@ -2,6 +2,7 @@
   class="input-control"
   [formGroup]='formGroup'
 >
+
     <input
       [mask]="mask"
       type="{{ getInputType() }}"
@@ -9,6 +10,13 @@
       class="{{ className }}"
       [ngClass]="{'error' : error} "
       [formControlName]='formControlName ? formControlName : null'
+      (keyup)="getInputCharacters($event)"
     />
+  <div class="search-icon" *ngIf="isSearch()">
+    <i class="icon-t-magnifying-glass"></i>
+  </div>
+  <a class="search-close" *ngIf="showCloseButton" (click)="onClickCloseButton($event)">
+    <i class="icon-t-close-x"></i>
+  </a>
   <span class="errors" *ngIf="error">{{ error }}</span>
 </div>
