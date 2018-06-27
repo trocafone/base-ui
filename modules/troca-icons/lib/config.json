@@ -733,6 +733,20 @@
       "search": [
         "alert"
       ]
+    },
+    {
+      "uid": "63523745489f36c1ccf0d700f26ebcf8",
+      "css": "magnifying-glass",
+      "code": 59444,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M980.5 886.1L725.8 631.4A400.8 400.8 0 1 0 632 725.2L886.7 979.8A66.7 66.7 0 1 0 980.5 886.1ZM400 667.3A266.7 266.7 0 1 1 666.7 400 266.7 266.7 0 0 1 400 666.7Z",
+        "width": 1000
+      },
+      "search": [
+        "magnifying-glass"
+      ]
     }
   ]
 }
