@@ -9,7 +9,7 @@ import { constructDependencies } from '@angular/core/src/di/reflective_provider'
 })
 export class ButtonComponent implements OnChanges {
 
-  public SPINNER_WIDTH = 24;
+  public SPINNER_WIDTH = 18;
 
   @Input() translation: string;
   @Input() isLoading?: Boolean = false;
