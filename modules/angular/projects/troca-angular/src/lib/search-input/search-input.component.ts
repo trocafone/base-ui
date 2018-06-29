@@ -1,12 +1,13 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import {InputComponent, InputType} from "../input/input.component";
+import { Subject } from 'rxjs';
+import { tap } from 'rxjs/operators';
 
 export interface ItemResults {
-  title :string,
-  description? :string,
-  icon? :string,
-  link? :string
+  title: string;
+  description?: string;
+  icon?: string;
+  link?: string;
 }
 
 
@@ -16,7 +17,10 @@ export interface ItemResults {
   styleUrls: ['./search-input.component.scss']
 })
 
-export class SearchInputComponent implements OnInit {
+export class SearchInputComponent {
+
+  static readonly SEARCH_MIN_CHARACTERS = 3;
+
   @Input() value?: any;
   @Input() placeholder?: any;
   @Input() className?: string;
@@ -29,75 +33,82 @@ export class SearchInputComponent implements OnInit {
   @Output() onChange?: EventEmitter<KeyboardEvent> = new EventEmitter<KeyboardEvent>();
   @Output() onClear?: EventEmitter<any> = new EventEmitter<any>();
 
-  public showClearButton : boolean = false;
+  public keyboardStream = new Subject<KeyboardEvent>();
+  public keyboardObservable = this.keyboardStream.asObservable();
 
-  static readonly SEARCH_MIN_CHARACTERS = 3;
+  public showClearButton: boolean = <boolean>false;
 
-  public resultOnFocusIndex : number = -1;
+  public resultOnFocusIndex: number = <number>-1;
 
-  getInputCharacters (keyboardEvent: KeyboardEvent) {
-    this.nextResult(keyboardEvent);
-    this.previousResult(keyboardEvent);
-    this.goToResult(keyboardEvent);
-    this.updateClearInputButton();
-    this.refreshResults(keyboardEvent);
+  constructor() {
+    this.keyboardObservable
+        .pipe(
+          tap(this.nextResult),
+          tap(this.previousResult),
+          tap(this.goToResult),
+          tap(this.updateClearInputButton),
+          tap(this.refreshResults),
+        )
+        .subscribe();
+  }
+  public getInputCharacters (keyboardEvent: KeyboardEvent) {
+    this.keyboardStream.next(keyboardEvent);
   }
 
-  nextResult(keyboardEvent){
+  public nextResult = (keyboardEvent) => {
     const isLastItem = (this.resultOnFocusIndex >= this.results.length - 1);
-    if (keyboardEvent.key !== 'ArrowDown' || isLastItem){
+
+    if (keyboardEvent.key !== 'ArrowDown' || isLastItem) {
       return;
     }
+
     this.resultOnFocusIndex++;
   }
 
-  previousResult(keyboardEvent){
+  public previousResult = (keyboardEvent) => {
+
     const isFirstItem = (this.resultOnFocusIndex < 1);
+
     if (keyboardEvent.key !== 'ArrowUp' || isFirstItem ) {
       return;
     }
+
     this.resultOnFocusIndex --;
   }
 
-  goToResult(keyboardEvent){
-    if(keyboardEvent.key === 'Enter' && this.resultOnFocusIndex !== -1){
+  public goToResult = (keyboardEvent) => {
+    if (keyboardEvent.key === 'Enter' && this.resultOnFocusIndex !== -1) {
       return this.onClickResult(this.results[this.resultOnFocusIndex]);
     }
   }
 
-  updateClearInputButton(){
+  public updateClearInputButton = () => {
     const value = this.formGroup.controls[this.formControlName].value || '';
-    if(value.length >= SearchInputComponent.SEARCH_MIN_CHARACTERS){
+    if (value.length >= SearchInputComponent.SEARCH_MIN_CHARACTERS) {
       return this.showClearButton = true;
     }
     this.showClearButton = false;
   }
 
-  refreshResults(keyboardEvent){
+  public refreshResults = (keyboardEvent) => {
     this.onChange.emit(keyboardEvent);
   }
 
-  onRollOver(i){
+  public onRollOver = (i) => {
     this.resultOnFocusIndex = i;
   }
 
-  onClickCloseButton(e): void {
+  public onClickCloseButton = (e): void => {
     this.formGroup.setValue({
-      [this.formControlName]:''
-    })
+      [this.formControlName]: ''
+    });
 
     this.showClearButton = false;
     this.onClear.emit();
   }
 
-  onClickResult(result: ItemResults ){
+  public onClickResult = (result: ItemResults) => {
     this.onSelect.emit(result);
   }
-
-  ngOnInit (): void {
-  }
-
-  constructor() { }
-
 
 }
