@@ -12,6 +12,7 @@ import { TrocafoneLogoComponent } from './trocafone-logo/trocafone-logo.componen
 import { IsoLogoComponent } from './iso-logo/iso-logo.component';
 import { AlertComponent } from './alert/alert.component';
 import { ButtonComponent } from './button/button.component';
+import { SearchInputComponent } from "./search-input/search-input.component";
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { ButtonComponent } from './button/button.component';
     ButtonComponent,
     AlertComponent,
     InputComponent,
+    SearchInputComponent,
   ],
   exports: [
     CheckboxComponent,
@@ -39,6 +41,7 @@ import { ButtonComponent } from './button/button.component';
     AlertComponent,
     ButtonComponent,
     InputComponent,
+    SearchInputComponent,
   ]
 })
 export class TrocaAngularModule { }

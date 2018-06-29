@@ -1,0 +1,116 @@
+@import "../../index";
+
+.search-container{
+  position: relative;
+}
+.input-control {
+  position: relative;
+
+  input[type=search]{
+    width: 100%;
+    padding-left: 48px;
+    padding-right:35px;
+
+    &:focus{
+      box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &:focus + .search-icon{
+      color:$brand-primary;
+    }
+  }
+
+  .search-icon{
+    padding: 13px 15px;
+    color: $grayscale-60;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+
+    i{
+      line-height: 0;
+      display: block;
+    }
+  }
+
+  .search-close{
+    padding:15px 10px;
+    color: $grayscale-60;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    position: absolute;
+    right:0;
+
+    i{
+      line-height: 0;
+      display: block;
+    }
+  }
+
+  ::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+  ::-webkit-search-results-button { -webkit-appearance: none; }
+}
+
+.search-results{
+  width: 100%;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.15);
+  border: solid 1px $grayscale-50;
+  border-top: none;
+  position: absolute;
+
+  .result{
+    background-color: $grayscale-20;
+    border-bottom: 1px solid $grayscale-30;
+    padding: 10px 15px;
+    min-height: 48px;
+    vertical-align: middle;
+    cursor:pointer;
+
+    &:last-child{
+      border-bottom: none;
+    }
+
+    &.focus{
+      background: $brand-primary;
+      outline: none;
+
+      .icon, .title, .description{
+        color: $white;
+      }
+    }
+    .icon{
+      font-size: 17px;
+      display: inline-block;
+      margin-right: 11px;
+      color: $grayscale-70;
+      vertical-align: top;
+      padding-top: 5px;
+
+      i{
+        line-height: 0;
+        display: block;
+      }
+    }
+    .info{
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
+      word-break: break-word;
+    }
+    .icon + .info{
+      width: calc(100% - 30px);
+    }
+    .title{
+      display: block;
+      font-size: 13px;
+    }
+    .description{
+      display: block;
+      font-size: 11px;
+      color: $grayscale-60;
+    }
+  }
+}

@@ -6,10 +6,8 @@ export enum InputType {
   TEL = 'tel',
   EMAIL = 'email',
   PASSWORD = 'password',
-  NUMBER = 'number',
-  SEARCH = 'search'
+  NUMBER = 'number'
 }
-
 
 @Component({
   selector: 'tf-input',
@@ -33,12 +31,6 @@ export class InputComponent implements OnInit {
 
   public isPassword = (): boolean => this.type === InputType.PASSWORD;
 
-  public isSearch = (): boolean => this.type === InputType.SEARCH;
-
-  public showCloseButton : boolean = false;
-
-  static readonly SEARCH_MIN_CHARACTERS = 3;
-
   public togglePasswordInput = (): void => {
     this.tooglePasswordInputType = !this.tooglePasswordInputType;
   }
@@ -51,23 +43,6 @@ export class InputComponent implements OnInit {
     return this.type;
   }
 
-  getInputCharacters () {
-    const VALUE = this.formGroup.controls[this.formControlName].value;
-
-    if(VALUE.length > InputComponent.SEARCH_MIN_CHARACTERS){
-      return this.showCloseButton = true;
-    }
-
-    return this.showCloseButton = false;
-  }
-
-  onClickCloseButton(e): void {
-    this.formGroup.setValue({
-      [this.formControlName]:''
-    })
-
-    this.showCloseButton = false;
-  }
 
   ngOnInit (): void {
   }

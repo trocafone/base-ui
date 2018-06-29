@@ -1,0 +1,33 @@
+<div class="search-container">
+  <div
+    class="input-control"
+    [formGroup]='formGroup'
+  >
+    <input
+      [placeholder]="placeholder"
+      class="input-large {{ className }}"
+      [formControlName]='formControlName ? formControlName : null'
+      (keyup)="getInputCharacters($event)"
+      type="search"
+    />
+    <div class="search-icon">
+      <i class="icon-t-magnifying-glass"></i>
+    </div>
+    <a class="search-close" *ngIf="showCloseButton" (click)="onClickCloseButton($event)">
+      <i class="icon-t-close-x"></i>
+    </a>
+  </div>
+
+  <div class="search-results">
+    <div class="result" (mouseenter)="onRollOver(i)"   [ngClass]="{'focus': resultOnFocus == i }" (click)="onClickResult(result)" *ngFor="let result of results; let i = index">
+      <div class="icon" *ngIf="result?.icon">
+        <i class="icon-t-{{result?.icon}}"></i>
+      </div>
+      <div class="info">
+        <span class="title">{{result.title}}</span>
+        <span class="description" *ngIf="result?.description">{{result?.description}}</span>
+      </div>
+    </div>
+  </div>
+
+</div>
