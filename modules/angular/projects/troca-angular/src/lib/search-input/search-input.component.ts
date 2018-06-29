@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { Subject } from 'rxjs';
+import { Subject, Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
 export interface ItemResults {
@@ -34,13 +34,14 @@ export class SearchInputComponent {
   @Output() onClear?: EventEmitter<any> = new EventEmitter<any>();
 
   public keyboardStream = new Subject<KeyboardEvent>();
-  public keyboardObservable = this.keyboardStream.asObservable();
+  public keyboardObservable: Observable<KeyboardEvent> = this.keyboardStream.asObservable();
 
   public showClearButton: boolean = <boolean>false;
 
   public resultOnFocusIndex: number = <number>-1;
 
   constructor() {
+
     this.keyboardObservable
         .pipe(
           tap(this.nextResult),
@@ -51,7 +52,7 @@ export class SearchInputComponent {
         )
         .subscribe();
   }
-  public getInputCharacters (keyboardEvent: KeyboardEvent) {
+  public getInputCharacters = (keyboardEvent: KeyboardEvent) => {
     this.keyboardStream.next(keyboardEvent);
   }
 
