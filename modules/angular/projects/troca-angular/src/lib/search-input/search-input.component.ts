@@ -65,7 +65,7 @@ export class SearchInputComponent {
     this.resultOnFocusIndex++;
   }
 
-  public previousResult = (keyboardEvent) => {
+  public previousResult = (keyboardEvent: KeyboardEvent) => {
 
     const isFirstItem = (this.resultOnFocusIndex < 1);
 
@@ -76,7 +76,7 @@ export class SearchInputComponent {
     this.resultOnFocusIndex --;
   }
 
-  public goToResult = (keyboardEvent) => {
+  public goToResult = (keyboardEvent: KeyboardEvent) => {
     if (keyboardEvent.key === 'Enter' && this.resultOnFocusIndex !== -1) {
       return this.onClickResult(this.results[this.resultOnFocusIndex]);
     }
@@ -90,7 +90,7 @@ export class SearchInputComponent {
     this.showClearButton = false;
   }
 
-  public refreshResults = (keyboardEvent) => {
+  public refreshResults = (keyboardEvent: KeyboardEvent) => {
     this.onChange.emit(keyboardEvent);
   }
 
