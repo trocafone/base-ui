@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component,  Input, OnInit} from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 export enum InputType {
@@ -25,8 +25,6 @@ export class InputComponent implements OnInit {
   @Input() formControlName?: string;
   @Input() formGroup?: FormGroup;
 
-  @Output() onClick?: EventEmitter<any> = new EventEmitter<any>();
-
   public tooglePasswordInputType: Boolean = false;
 
   public isPassword = (): boolean => this.type === InputType.PASSWORD;
@@ -44,8 +42,7 @@ export class InputComponent implements OnInit {
   }
 
 
-  ngOnInit (): void {
-  }
+  ngOnInit (): void { }
 
   constructor() { }
 
