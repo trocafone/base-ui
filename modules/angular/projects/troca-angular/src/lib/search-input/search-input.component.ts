@@ -44,11 +44,11 @@ export class SearchInputComponent {
 
     this.keyboardObservable
         .pipe(
-          tap(this.nextResult),
-          tap(this.previousResult),
-          tap(this.goToResult),
-          tap(this.updateClearInputButton),
-          tap(this.refreshResults),
+          tap(this.nextResultFilter),
+          tap(this.previousResultFilter),
+          tap(this.goToResultFilter),
+          tap(this.updateClearInputButtonFilter),
+          tap(this.refreshResultsFilter),
         )
         .subscribe();
   }
@@ -56,7 +56,7 @@ export class SearchInputComponent {
     this.keyboardStream.next(keyboardEvent);
   }
 
-  public nextResult = (keyboardEvent) => {
+  public nextResultFilter = (keyboardEvent) => {
     const isLastItem = (this.resultOnFocusIndex >= this.results.length - 1);
 
     if (keyboardEvent.key !== 'ArrowDown' || isLastItem) {
@@ -66,7 +66,7 @@ export class SearchInputComponent {
     this.resultOnFocusIndex++;
   }
 
-  public previousResult = (keyboardEvent: KeyboardEvent) => {
+  public previousResultFilter = (keyboardEvent: KeyboardEvent) => {
 
     const isFirstItem = (this.resultOnFocusIndex < 1);
 
@@ -77,21 +77,25 @@ export class SearchInputComponent {
     this.resultOnFocusIndex --;
   }
 
-  public goToResult = (keyboardEvent: KeyboardEvent) => {
-    if (keyboardEvent.key === 'Enter' && this.resultOnFocusIndex !== -1) {
-      return this.onClickResult(this.results[this.resultOnFocusIndex]);
+  public goToResultFilter = (keyboardEvent: KeyboardEvent) => {
+    const isFocusingOnResult = (this.resultOnFocusIndex !== -1);
+    if (!this.isEnter(keyboardEvent) || !isFocusingOnResult ) {
+      return;
     }
+
+    this.onClickResult(this.results[this.resultOnFocusIndex]);
   }
 
-  public updateClearInputButton = () => {
+  public updateClearInputButtonFilter = () => {
     const value = this.formGroup.controls[this.formControlName].value || '';
-    if (value.length >= SearchInputComponent.SEARCH_MIN_CHARACTERS) {
-      return this.showClearButton = true;
-    }
-    this.showClearButton = false;
+    this.showClearButton = (value.length >= SearchInputComponent.SEARCH_MIN_CHARACTERS);
   }
 
-  public refreshResults = (keyboardEvent: KeyboardEvent) => {
+  public refreshResultsFilter = (keyboardEvent: KeyboardEvent) => {
+
+    if ( this.isEnter(keyboardEvent) || this.isArrow(keyboardEvent)) {
+     return;
+    }
     this.onChange.emit(keyboardEvent);
   }
 
@@ -111,5 +115,9 @@ export class SearchInputComponent {
   public onClickResult = (result: ItemResults) => {
     this.onSelect.emit(result);
   }
+
+  public isArrow = (keyboardEvent: KeyboardEvent): boolean => keyboardEvent.key === 'ArrowUp' ||  keyboardEvent.key === 'ArrowDown';
+
+  public isEnter = (keyboardEvent: KeyboardEvent): boolean => keyboardEvent.key === 'Enter';
 
 }
