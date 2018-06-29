@@ -13,13 +13,13 @@
     <div class="search-icon">
       <i class="icon-t-magnifying-glass"></i>
     </div>
-    <a class="search-close" *ngIf="showCloseButton" (click)="onClickCloseButton($event)">
+    <a class="search-close" *ngIf="showClearButton" (click)="onClickCloseButton($event)">
       <i class="icon-t-close-x"></i>
     </a>
   </div>
 
   <div class="search-results">
-    <div class="result" (mouseenter)="onRollOver(i)"   [ngClass]="{'focus': resultOnFocus == i }" (click)="onClickResult(result)" *ngFor="let result of results; let i = index">
+    <div class="result" (mouseenter)="onRollOver(i)"   [ngClass]="{'focus': resultOnFocusIndex == i }" (click)="onClickResult(result)" *ngFor="let result of results; let i = index">
       <div class="icon" *ngIf="result?.icon">
         <i class="icon-t-{{result?.icon}}"></i>
       </div>

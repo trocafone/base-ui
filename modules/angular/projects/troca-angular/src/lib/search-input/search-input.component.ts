@@ -29,47 +29,56 @@ export class SearchInputComponent implements OnInit {
   @Output() onChange?: EventEmitter<KeyboardEvent> = new EventEmitter<KeyboardEvent>();
   @Output() onClear?: EventEmitter<any> = new EventEmitter<any>();
 
-  public showCloseButton : boolean = false;
+  public showClearButton : boolean = false;
 
   static readonly SEARCH_MIN_CHARACTERS = 3;
 
-  public resultOnFocus : number = -1;
+  public resultOnFocusIndex : number = -1;
 
   getInputCharacters (keyboardEvent: KeyboardEvent) {
-    if(keyboardEvent.key === 'ArrowDown'){
-      return this.arrowDown();
-    }
-    if(keyboardEvent.key === 'ArrowUp'){
-      return this.arrowUp();
-    }
-    if(keyboardEvent.key === 'Enter' && this.resultOnFocus !== -1){
-      return this.onClickResult(this.results[this.resultOnFocus]);
-    }
-    const VALUE = this.formGroup.controls[this.formControlName].value;
+    this.nextResult(keyboardEvent);
+    this.previousResult(keyboardEvent);
+    this.goToResult(keyboardEvent);
+    this.updateClearInputButton();
+    this.refreshResults(keyboardEvent);
+  }
 
+  nextResult(keyboardEvent){
+    const isLastItem = (this.resultOnFocusIndex >= this.results.length - 1);
+    if (keyboardEvent.key !== 'ArrowDown' || isLastItem){
+      return;
+    }
+    this.resultOnFocusIndex++;
+  }
+
+  previousResult(keyboardEvent){
+    const isFirstItem = (this.resultOnFocusIndex < 1);
+    if (keyboardEvent.key !== 'ArrowUp' || isFirstItem ) {
+      return;
+    }
+    this.resultOnFocusIndex --;
+  }
+
+  goToResult(keyboardEvent){
+    if(keyboardEvent.key === 'Enter' && this.resultOnFocusIndex !== -1){
+      return this.onClickResult(this.results[this.resultOnFocusIndex]);
+    }
+  }
+
+  updateClearInputButton(){
+    const value = this.formGroup.controls[this.formControlName].value || '';
+    if(value.length >= SearchInputComponent.SEARCH_MIN_CHARACTERS){
+      return this.showClearButton = true;
+    }
+    this.showClearButton = false;
+  }
+
+  refreshResults(keyboardEvent){
     this.onChange.emit(keyboardEvent);
-
-    if(VALUE.length > SearchInputComponent.SEARCH_MIN_CHARACTERS){
-      return this.showCloseButton = true;
-    }
-
-    this.showCloseButton = false;
-  }
-
-  arrowDown(){
-    if( this.resultOnFocus < this.results.length -1){
-      this.resultOnFocus ++;
-    }
-  }
-
-  arrowUp(){
-    if( this.resultOnFocus > 0){
-      this.resultOnFocus --;
-    }
   }
 
   onRollOver(i){
-    this.resultOnFocus = i;
+    this.resultOnFocusIndex = i;
   }
 
   onClickCloseButton(e): void {
@@ -77,7 +86,7 @@ export class SearchInputComponent implements OnInit {
       [this.formControlName]:''
     })
 
-    this.showCloseButton = false;
+    this.showClearButton = false;
     this.onClear.emit();
   }
 
