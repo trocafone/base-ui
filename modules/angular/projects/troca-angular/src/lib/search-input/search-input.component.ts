@@ -29,6 +29,7 @@ export class SearchInputComponent implements OnInit {
   @Input() formControlName?: string;
   @Input() formGroup?: FormGroup;
   @Input() results?: ItemResults[] = [];
+  @Input() showResults: boolean = false;
 
   @Output() onSelect?: EventEmitter<ItemResults> = new EventEmitter<ItemResults>();
   @Output() onChange?: EventEmitter<KeyboardEvent> = new EventEmitter<KeyboardEvent>();
@@ -55,7 +56,12 @@ export class SearchInputComponent implements OnInit {
         .subscribe();
   }
 
-  public onFocusInput = (event: any) => this.onFocus ? this.onFocus.emit(event) : null;
+  public onFocusInput = (event: any) => {
+    if (this.onFocus ){
+      this.onFocus.emit(event)
+    }
+    this.showResults = true;
+  }
 
   public getInputCharacters = (keyboardEvent: KeyboardEvent) => {
     this.keyboardStream.next(keyboardEvent);
@@ -117,8 +123,16 @@ export class SearchInputComponent implements OnInit {
     this.onClear.emit();
   }
 
+  public onBlurInput = () =>{
+    if(this.showResults){
+      this.showResults = false;
+      this.resultOnFocusIndex = -1;
+    }
+  }
+
   public onClickResult = (result: ItemResults) => {
     this.onSelect.emit(result);
+    this.onBlurInput();
   }
 
   public isArrow = (keyboardEvent: KeyboardEvent): boolean => keyboardEvent.key === 'ArrowUp' ||  keyboardEvent.key === 'ArrowDown';

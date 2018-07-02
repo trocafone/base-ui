@@ -10,6 +10,7 @@
       (keyup)="getInputCharacters($event)"
       (focus)="onFocusInput($event)"
       type="search"
+      (blur)="onBlurInput($event)"
     />
     <div class="search-icon">
       <i class="icon-t-magnifying-glass"></i>
@@ -19,7 +20,7 @@
     </a>
   </div>
 
-  <div class="search-results">
+  <div class="search-results" *ngIf="showResults">
     <div class="result" (mouseenter)="onRollOver(i)"   [ngClass]="{'focus': resultOnFocusIndex == i }" (click)="onClickResult(result)" *ngFor="let result of results; let i = index">
       <div class="icon" *ngIf="result?.icon">
         <i class="icon-t-{{result?.icon}}"></i>
