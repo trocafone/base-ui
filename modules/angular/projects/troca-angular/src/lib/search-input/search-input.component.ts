@@ -30,6 +30,7 @@ export class SearchInputComponent implements OnInit {
   @Input() formGroup?: FormGroup;
   @Input() results?: ItemResults[] = [];
   @Input() showResults: boolean = false;
+  @Input() hoverResult: boolean = false;
 
   @Output() onSelect?: EventEmitter<ItemResults> = new EventEmitter<ItemResults>();
   @Output() onChange?: EventEmitter<KeyboardEvent> = new EventEmitter<KeyboardEvent>();
@@ -111,7 +112,13 @@ export class SearchInputComponent implements OnInit {
   }
 
   public onRollOver = (i) => {
+    this.hoverResult = true;
     this.resultOnFocusIndex = i;
+  }
+
+  public onRollOut = (i) => {
+    this.hoverResult = false;
+    this.resultOnFocusIndex = -1;
   }
 
   public onClickCloseButton = (e): void => {
@@ -124,14 +131,15 @@ export class SearchInputComponent implements OnInit {
   }
 
   public onBlurInput = () =>{
-    if(this.showResults){
-      this.showResults = false;
+    if(this.showResults && this.hoverResult === false){
+     this.showResults = false;
       this.resultOnFocusIndex = -1;
     }
   }
 
   public onClickResult = (result: ItemResults) => {
     this.onSelect.emit(result);
+    this.hoverResult = false;
     this.onBlurInput();
   }
 
