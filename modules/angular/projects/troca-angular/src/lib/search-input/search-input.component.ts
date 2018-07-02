@@ -68,7 +68,7 @@ export class SearchInputComponent {
 
   public previousResultFilter = (keyboardEvent: KeyboardEvent) => {
 
-    const isFirstItem = (this.resultOnFocusIndex < 1);
+    const isFirstItem = (this.resultOnFocusIndex <= 0);
 
     if (keyboardEvent.key !== 'ArrowUp' || isFirstItem ) {
       return;
