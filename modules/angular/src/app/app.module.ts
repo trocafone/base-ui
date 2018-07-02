@@ -14,6 +14,7 @@ import { TrocafoneLogoComponent } from '../../projects/troca-angular/src/lib/tro
 import { IsoLogoComponent } from '../../projects/troca-angular/src/lib/iso-logo/iso-logo.component';
 import { AlertComponent } from '../../projects/troca-angular/src/lib/alert/alert.component';
 import { ButtonComponent } from '../../projects/troca-angular/src/lib/button/button.component';
+import { SearchInputComponent } from '../../projects/troca-angular/src/lib/search-input/search-input.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ButtonComponent } from '../../projects/troca-angular/src/lib/button/but
     IsoLogoComponent,
     AlertComponent,
     ButtonComponent,
+    SearchInputComponent,
   ],
   imports: [
     BrowserModule,

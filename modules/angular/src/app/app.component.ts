@@ -1,6 +1,7 @@
-import { FormControl, FormControlName, FormBuilder, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormControlName, FormBuilder, Validators } from '@angular/forms';
 
 import { Component } from '@angular/core';
+import {ItemResults} from "../../projects/troca-angular/src/lib/search-input/search-input.component";
 
 
 @Component({
@@ -10,13 +11,34 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  private formGroup;
-  private formControlName: String = 's';
+  private formGroup: FormGroup;
 
+  private searchItems: ItemResults[] = [
+   <ItemResults> {
+     title :'hola',
+     description :'dfg',
+     icon :'history',
+     link :'dfgf'
+    },
+    <ItemResults> {
+      title :'sdsd',
+      icon :'magnifying-glass',
+      link :'dftytytygf'
+    },
+    <ItemResults> {
+      title :'ytytyuygbvfg',
+      description :'dfgfgfgg',
+      link :'dfgfgfgf'
+    }
+  ];
+
+   onChangeSearch(result){
+    console.log(result);
+  }
 
   constructor(private fb: FormBuilder) {
     this.formGroup = this.fb.group({
-      s: ['', Validators.required],
+      search: new FormControl()
     });
   }
 }

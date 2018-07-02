@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {Component,  Input, OnInit} from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 export enum InputType {
@@ -8,7 +8,6 @@ export enum InputType {
   PASSWORD = 'password',
   NUMBER = 'number'
 }
-
 
 @Component({
   selector: 'tf-input',
