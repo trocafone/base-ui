@@ -10,6 +10,8 @@
     width: 100%;
     padding-left: 48px;
     padding-right:35px;
+    position: relative;
+    z-index: 2;
 
     &:focus{
       box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.15);
@@ -27,6 +29,7 @@
     display: inline-block;
     position: absolute;
     left: 0;
+    z-index: 100;
 
     i{
       line-height: 0;
@@ -42,7 +45,7 @@
     display: inline-block;
     position: absolute;
     right:0;
-
+    z-index: 100;
     i{
       line-height: 0;
       display: block;
