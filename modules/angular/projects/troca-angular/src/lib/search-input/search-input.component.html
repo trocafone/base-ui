@@ -8,6 +8,7 @@
       class="input-large {{ className }}"
       [formControlName]='formControlName ? formControlName : null'
       (keyup)="getInputCharacters($event)"
+      (focus)="onFocusInput($event)"
       type="search"
     />
     <div class="search-icon">
