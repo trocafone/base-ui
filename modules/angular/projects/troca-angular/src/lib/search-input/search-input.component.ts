@@ -17,7 +17,7 @@ export interface ItemResults {
   styleUrls: ['./search-input.component.scss']
 })
 
-export class SearchInputComponent {
+export class SearchInputComponent implements OnInit {
 
   static readonly SEARCH_MIN_CHARACTERS = 3;
 
@@ -27,11 +27,12 @@ export class SearchInputComponent {
   @Input() formControl?: FormControl;
   @Input() formControlName?: string;
   @Input() formGroup?: FormGroup;
-  @Input() results?: ItemResults[];
+  @Input() results?: ItemResults[] = [];
 
   @Output() onSelect?: EventEmitter<ItemResults> = new EventEmitter<ItemResults>();
   @Output() onChange?: EventEmitter<KeyboardEvent> = new EventEmitter<KeyboardEvent>();
   @Output() onClear?: EventEmitter<any> = new EventEmitter<any>();
+  @Output() onFocus?: EventEmitter<any> = new EventEmitter<any>();
 
   public keyboardStream = new Subject<KeyboardEvent>();
   public keyboardObservable: Observable<KeyboardEvent> = this.keyboardStream.asObservable();
@@ -52,6 +53,9 @@ export class SearchInputComponent {
         )
         .subscribe();
   }
+
+  public onFocusInput = (event: any) => this.onFocus ? this.onFocus.emit(event) : null;
+
   public getInputCharacters = (keyboardEvent: KeyboardEvent) => {
     this.keyboardStream.next(keyboardEvent);
   }
@@ -119,5 +123,7 @@ export class SearchInputComponent {
   public isArrow = (keyboardEvent: KeyboardEvent): boolean => keyboardEvent.key === 'ArrowUp' ||  keyboardEvent.key === 'ArrowDown';
 
   public isEnter = (keyboardEvent: KeyboardEvent): boolean => keyboardEvent.key === 'Enter';
+
+  ngOnInit (): void { }
 
 }
