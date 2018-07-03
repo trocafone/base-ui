@@ -6,6 +6,7 @@ input, input.form-control{
   border-radius: 0;
   -webkit-border-radius: 0;
   -ms-border-radius: 0;
+  -webkit-appearance: none;
   @include fontSize(smaller);
   @include fontWeight(normal);
   box-shadow: none;
