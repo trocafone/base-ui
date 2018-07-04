@@ -1,1 +1,6 @@
-<a href="{{ link }}"><img [src]="url" alt="{{ text }}"></a>
+<a href="{{ link }}" *ngIf="link">
+  <img [src]="url" alt="{{ text }}">
+</a>
+<div *ngIf="!link">
+  <img [src]="url" alt="{{ text }}">
+</div>
