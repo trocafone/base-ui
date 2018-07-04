@@ -31,6 +31,7 @@ export class SearchInputComponent implements OnInit {
   @Input() results?: ItemResults[] = [];
   @Input() showResults: boolean = false;
   @Input() hoverResult: boolean = false;
+  @Input() noResultsText: string;
 
   @Output() onSelect?: EventEmitter<ItemResults> = new EventEmitter<ItemResults>();
   @Output() onChange?: EventEmitter<KeyboardEvent> = new EventEmitter<KeyboardEvent>();
@@ -91,7 +92,7 @@ export class SearchInputComponent implements OnInit {
 
   public goToResultFilter = (keyboardEvent: KeyboardEvent) => {
     const isFocusingOnResult = (this.resultOnFocusIndex !== -1);
-    if (!this.isEnter(keyboardEvent) || !isFocusingOnResult ) {
+    if (!this.isEnter(keyboardEvent) || !isFocusingOnResult || this.results.length === 0) {
       return;
     }
 
