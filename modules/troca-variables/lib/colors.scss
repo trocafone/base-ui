@@ -9,15 +9,15 @@ $brand-secondary: #385F74;
 $brand-secondary-light: #607D8B;
 $brand-secondary-lighter: #8997ac;
 
-$brand-danger-dark: #d0292d;
-$brand-danger-light: #fe4d55;
+$danger-dark: #d0292d;
+$danger-light: #fe4d55;
 
-$brand-warning-dark: #efda23;
-$brand-warning-light: #f9f4c8;
+$warning-dark: #efda23;
+$warning-light: #f9f4c8;
 
-$brand-info-dark:    #0088cc;
+$info-dark:    #0088cc;
 
-$brand-success-dark: #52cb7b;
+$success-dark: #52cb7b;
 
 $black:  #000;
 $grayscale-90:  #333333;
@@ -45,7 +45,7 @@ $content-box-bdr: $grayscale-50;
 
 
 //BUTTONS
-$link-primary-color: $brand-info-dark;
+$link-primary-color: $info-dark;
 $link-primary-color-hover: $brand-primary;
 $link-primary-color-active: $brand-primary-dark;
 $link-secondary-color: $brand-secondary-light;

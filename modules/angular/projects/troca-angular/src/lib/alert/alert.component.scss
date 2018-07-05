@@ -34,10 +34,10 @@
   }
 
   &.warning{
-    background:  $brand-warning-light;
+    background: $warning-light;
 
     .icon{
-      background: $brand-warning-dark;
+      background: $warning-dark;
       i{
         color: $white;
       }
@@ -57,10 +57,10 @@
   }
 
   &.danger{
-    background: $brand-danger-light;
+    background: $danger-light;
 
     .icon{
-      background: $brand-danger-dark;
+      background: $danger-dark;
       i{
         color: $white;
       }
