@@ -94,7 +94,7 @@ strong{
   @include fontSize(jumbo);
   @include lineHeight(giant);
   @include fontWeight(semibold);
-  color: $brand-tertiary;
+  color: $brand-secondary-light;
   margin-bottom: 15px;
   margin-top: 0;
   @media (max-width: 767px){
@@ -107,7 +107,7 @@ strong{
   @include fontSize(bigger);
   @include lineHeight(biggest);
   @include fontWeight(semibold);
-  color: $brand-tertiary;
+  color: $brand-secondary-light;
   margin-bottom: 15px;
   margin-top: 0;
   @media (max-width: 767px){

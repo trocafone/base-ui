@@ -88,8 +88,8 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 
   &:hover, &:active {
-    background-color: $brand-fifth;
-    border:1px solid $brand-fifth;
+    background-color: $brand-primary-dark;
+    border:1px solid $brand-primary-dark;
     color:$white;
   }
 }
@@ -99,8 +99,8 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   border:1px solid $brand-secondary;
 
   &:hover, &:active {
-    background-color: $brand-tertiary;
-    border:1px solid $brand-tertiary;
+    background-color: $brand-secondary-light;
+    border:1px solid $brand-secondary-light;
     color:$white;
   }
 }

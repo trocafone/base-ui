@@ -19,7 +19,7 @@
     }
 
     &:hover + label.radio-style-label, &:focus + label.radio-style-label{
-      border-color: $brand-fifth;
+      border-color: $brand-primary-dark;
     }
   }
 
@@ -39,7 +39,7 @@
     top:-2px;
 
     &:hover, &:focus{
-      border-color: $brand-fifth;
+      border-color: $brand-primary-dark;
       cursor: pointer;
     }
   }

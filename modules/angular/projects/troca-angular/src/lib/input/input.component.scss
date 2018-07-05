@@ -7,13 +7,13 @@
     width: 100%;
   }
   .error{
-    border-color: $brand-danger;
+    border-color: $brand-danger-light;
   }
   .errors{
     display: block;
     margin-top: 5px;
     @include fontSize(small);
-    color: $brand-danger;
+    color: $brand-danger-light;
   }
 
   .icon{
