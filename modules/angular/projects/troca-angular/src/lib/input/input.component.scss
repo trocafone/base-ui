@@ -29,4 +29,33 @@
       cursor: pointer;
     }
   }
+
+
+  input.has-left-icon{
+    padding-left: 48px;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+
+    &:focus + .left-icon{
+      color:$brand-primary;
+    }
+  }
+
+
+  .left-icon{
+    padding: 14px 15px;
+    color: $grayscale-60;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+
+    i{
+      line-height: 0;
+      display: block;
+    }
+  }
+
 }

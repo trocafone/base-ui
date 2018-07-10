@@ -7,8 +7,11 @@
       type="{{ getInputType() }}"
       [placeholder]="placeholder"
       class="{{ className }}"
-      [ngClass]="{'error' : error} "
+      [ngClass]="{'error' : error, 'has-left-icon' : leftIcon } "
       [formControlName]='formControlName ? formControlName : null'
     />
+  <div class="left-icon" *ngIf="leftIcon">
+    <i class="{{ leftIcon }}"></i>
+  </div>
   <span class="errors" *ngIf="error">{{ error }}</span>
 </div>
