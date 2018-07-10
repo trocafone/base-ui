@@ -25,6 +25,7 @@ export class InputComponent implements OnInit {
   @Input() formControlName?: string;
   @Input() formGroup?: FormGroup;
   @Input() leftIcon?:string;
+  @Input() rightIcon?:string;
 
   public tooglePasswordInputType: Boolean = false;
 

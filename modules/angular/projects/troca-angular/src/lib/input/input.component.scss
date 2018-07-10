@@ -58,4 +58,33 @@
     }
   }
 
+  input.has-right-icon{
+    padding-right: 48px;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+  }
+
+  .right-icon{
+    padding: 14px 15px;
+    color: $grayscale-60;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    border: none;
+    background: transparent;
+
+    :hover{
+      color: $brand-primary;
+    }
+
+    i{
+      line-height: 0;
+      display: block;
+    }
+  }
+
+
 }
