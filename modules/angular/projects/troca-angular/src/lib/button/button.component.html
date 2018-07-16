@@ -1,9 +1,0 @@
-<button type="" class="button-content button-loading {{ className }}" (click)="onClickButton($event)">
-  <div *ngIf='isLoading' class="loading" >
-    <div id='preloader-container-{{guid}}'>
-      <div class="loading-wheel"></div>
-      <span id='preloader-text-{{guid}}' class="loading-text">{{loadingText}}</span>
-    </div>
-  </div>
-  <span [ngClass]="{ 'v-hidden': isLoading }" id='translation-container-{{guid}}'>{{translation}}</span>
-</button>
