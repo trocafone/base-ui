@@ -6,6 +6,7 @@ input, input.form-control{
   border-radius: 0;
   -webkit-border-radius: 0;
   -ms-border-radius: 0;
+  -webkit-appearance: none;
   @include fontSize(smaller);
   @include fontWeight(normal);
   box-shadow: none;
@@ -58,7 +59,7 @@ input, input.form-control{
     padding: 6px 13px;
   }
   &.input-large{
-    padding: 12px 13px;
+    padding: 13px 13px;
   }
 
   &:focus{

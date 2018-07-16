@@ -1,18 +1,23 @@
 //COLORS
 
+$brand-primary-dark: #f06f31;
 $brand-primary: #ff8800;
+$brand-primary-light: #ffa53d;
+
+$brand-secondary-dark: #495a81;
 $brand-secondary: #385F74;
-$brand-tertiary: #607D8B;
-$brand-fourth: #0088cc;
-$brand-fifth: #f06f31;
-$brand-info:    #3f8aeb;
-$brand-error: #d02828;
-$brand-success: #52cb7b;
-$brand-primary-lighter: #ffa53d;
-$brand-danger: #fe4d55;
-$brand-warning: #efda23;
-$red-discounts: #fe4d55;
-$green-discounts: $brand-success;
+$brand-secondary-light: #607D8B;
+$brand-secondary-lighter: #8997ac;
+
+$danger-dark: #d0292d;
+$danger-light: #fe4d55;
+
+$warning-dark: #efda23;
+$warning-light: #f9f4c8;
+
+$info-dark:    #0088cc;
+
+$success-dark: #52cb7b;
 
 $black:  #000;
 $grayscale-90:  #333333;
@@ -40,10 +45,10 @@ $content-box-bdr: $grayscale-50;
 
 
 //BUTTONS
-$link-primary-color: $brand-fourth;
+$link-primary-color: $info-dark;
 $link-primary-color-hover: $brand-primary;
-$link-primary-color-active: $brand-fifth;
-$link-secondary-color: $brand-tertiary;
+$link-primary-color-active: $brand-primary-dark;
+$link-secondary-color: $brand-secondary-light;
 $link-secondary-color-hover: $brand-primary;
-$link-secondary-color-active: $brand-fifth;
+$link-secondary-color-active: $brand-primary-dark;
 
