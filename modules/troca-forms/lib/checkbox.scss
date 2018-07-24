@@ -1,11 +1,23 @@
 .checkbox-container{
-  display: inline-block;
+  display: flex;
   position: relative;
   vertical-align: middle;
 
   label, &{
     @include fontWeight(normal);
+    @include fontSize(small);
   }
+
+  &.label-left{
+    display: flex;
+    flex-direction:row-reverse;
+
+    input[type=checkbox] + .checkbox-style-label{
+      margin-right: 0;
+      margin-left: 10px;
+    }
+  }
+
   .checkbox-style-label  {
     display: inline;
     margin-bottom: 0;
@@ -29,7 +41,7 @@
     @include fontSize(small);
   }
 
-  input[type=checkbox] + label.checkbox-style-label {
+  input[type=checkbox] + .checkbox-style-label {
     background-color: $white;
     border: 2px solid $grayscale-50;
     display: inline-block;
@@ -44,13 +56,13 @@
     }
   }
 
-  input[type=checkbox]:checked + label.checkbox-style-label {
+  input[type=checkbox]:checked + .checkbox-style-label {
     background-color: $success-dark;
     border: 2px solid $success-dark;
     color: $white;
   }
 
-  input[type=checkbox]:checked + label.checkbox-style-label:after {
+  input[type=checkbox]:checked + .checkbox-style-label:after {
     content: "\e80c";
     font-family: 'trocafone-icon-font';
     font-size: 14px;
@@ -67,12 +79,12 @@
       width: 16px;
       height: 16px;
     }
-    input[type=checkbox] + label.checkbox-style-label {
+    input[type=checkbox] + .checkbox-style-label {
       width: 16px;
       height: 16px;
     }
 
-    input[type=checkbox]:checked + label.checkbox-style-label:after {
+    input[type=checkbox]:checked + .checkbox-style-label:after {
       font-size: 11px;
       top: 0;
     }
