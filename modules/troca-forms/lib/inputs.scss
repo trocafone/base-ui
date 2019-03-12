@@ -12,6 +12,7 @@ input, input.form-control{
   box-shadow: none;
   padding: 5px 10px;
   border: solid 1px $grayscale-50;
+  background: $white;
 
   &::-webkit-input-placeholder {
     @include fontSize(smaller);
