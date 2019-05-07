@@ -7,7 +7,7 @@ This is a repository that will hold all base UI styles and components for all Tr
 ## Prequisites
 
 This appication uses yarn and webpack for asset management.
-You must have nodejs installed. Yarn requires Node 6 or higher, we recommend 8 or higher. To use it:
+You must have nodejs installed. Yarn requires Node 6 or 8. To use it:
 
 
 ## Installation
