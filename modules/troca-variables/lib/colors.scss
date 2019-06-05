@@ -1,8 +1,13 @@
 //COLORS
 
-$brand-primary-dark: #f06f31;
-$brand-primary: #ff8800;
-$brand-primary-light: #ffa53d;
+
+$primary-lighter: #F9BA48;
+$primary-light: #FFA53D;
+$primary-middle:#FF8800;
+$primary-dark: #F06F31;
+$primary-darker: rgb(201, 83, 28);
+
+
 
 $brand-secondary-dark: #495a81;
 $brand-secondary: #385F74;
@@ -46,9 +51,9 @@ $content-box-bdr: $grayscale-50;
 
 //BUTTONS
 $link-primary-color: $info-dark;
-$link-primary-color-hover: $brand-primary;
-$link-primary-color-active: $brand-primary-dark;
+$link-primary-color-hover: $primary-middle;
+$link-primary-color-active: $primary-dark;
 $link-secondary-color: $brand-secondary-light;
-$link-secondary-color-hover: $brand-primary;
-$link-secondary-color-active: $brand-primary-dark;
+$link-secondary-color-hover: $primary-middle;
+$link-secondary-color-active: $primary-dark;
 

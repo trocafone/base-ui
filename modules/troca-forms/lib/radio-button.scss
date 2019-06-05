@@ -19,7 +19,7 @@
     }
 
     &:hover + label.radio-style-label, &:focus + label.radio-style-label{
-      border-color: $brand-primary-dark;
+      border-color: $primary-dark;
     }
   }
 
@@ -39,7 +39,7 @@
     top:-2px;
 
     &:hover, &:focus{
-      border-color: $brand-primary-dark;
+      border-color: $primary-dark;
       cursor: pointer;
     }
   }
@@ -88,7 +88,7 @@
     }
 
     &:hover + .radio-btn{
-      border-color: $brand-primary-dark;
+      border-color: $primary-dark;
     }
   }
 
@@ -108,6 +108,6 @@
 
   input[type=radio]:checked + .radio-btn {
     background: $white;
-    border: solid 5px $brand-primary;
+    border: solid 5px $primary-middle;
   }
 }

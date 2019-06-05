@@ -75,13 +75,13 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 }
 
 .button-primary {
-  background-color: $brand-primary;
-  border:1px solid $brand-primary;
+  background-color: $primary-middle;
+  border:1px solid $primary-middle;
 
 
   &:hover, &:active {
-    background-color: $brand-primary-dark;
-    border:1px solid $brand-primary-dark;
+    background-color: $primary-dark;
+    border:1px solid $primary-dark;
     color:$white;
   }
 }
@@ -99,11 +99,11 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 .button-primary-border:not(.button-disabled){
   background-color: $white;
-  border:1px solid $brand-primary;
-  color: $brand-primary;
+  border:1px solid $primary-middle;
+  color: $primary-middle;
 
   &:hover, &:active {
-    background-color: $brand-primary;
+    background-color: $primary-middle;
     color: $white;
   }
 
@@ -146,8 +146,8 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   color: $grayscale-60;
 
   &:hover, &:active {
-    background-color: $brand-primary;
-    border:1px solid $brand-primary;
+    background-color: $primary-middle;
+    border:1px solid $primary-middle;
     color: $white;
   }
 
@@ -168,9 +168,9 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   color: $white;
 
   &:hover, &:active {
-    background-color: $brand-primary;
+    background-color: $primary-middle;
     color: $white;
-    border-color: $brand-primary;
+    border-color: $primary-middle;
   }
 
   &[disabled]{
