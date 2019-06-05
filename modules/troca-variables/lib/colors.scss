@@ -1,6 +1,5 @@
 //COLORS
 
-
 $primary-lighter: #F9BA48;
 $primary-light: #FFA53D;
 $primary-middle:#FF8800;
@@ -13,7 +12,16 @@ $secondary-middle: #6C8EDB;
 $secondary-dark:#4D649B;
 $secondary-darker:#1D2656;
 
+$gray-1:#FAFAFA;
+$gray-2:#F0F0F0;
+$gray-3:#D7D7D7;
+$gray-4:#C0C0C0;
+$gray-5:#A7A7A7;
+$gray-6:#696969;
+$gray-7:#404040;
+$gray-8:#202020;
 
+$white: #fff;
 
 
 
@@ -27,29 +35,17 @@ $info-dark:    #0088cc;
 
 $success-dark: #52cb7b;
 
-$black:  #000;
-$grayscale-90:  #333333;
-$grayscale-80: #404040;
-$grayscale-70: #808080;
-$grayscale-60:  #999999;
-$grayscale-50: #cccccc;
-$grayscale-40: #d5d5d5;
-$grayscale-30: #ececec;
-$grayscale-20: #f4f4f4;
-$grayscale-10: #fafafa;
-$white: #fff;
-
 //PAGE CONTAINER
 $body-bg: #fff;
-$page-container-bg: $grayscale-20;
+$page-container-bg: $gray-2;
 
 //STRIPPED BACKGROUND
-$stripped-bg-dark: $grayscale-10;
+$stripped-bg-dark: $gray-1;
 $stripped-bg-light: #fff;
 
 //GRAY BOX WITH GRAY BORDER
 $content-box-bg: $white;
-$content-box-bdr: $grayscale-50;
+$content-box-bdr: $gray-4;
 
 
 //BUTTONS

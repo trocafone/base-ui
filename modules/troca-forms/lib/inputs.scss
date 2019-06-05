@@ -11,7 +11,7 @@ input, input.form-control{
   @include fontWeight(normal);
   box-shadow: none;
   padding: 5px 10px;
-  border: solid 1px $grayscale-50;
+  border: solid 1px $gray-4;
   background: $white;
 
   &::-webkit-input-placeholder {
@@ -70,22 +70,22 @@ input, input.form-control{
 
 input, textarea{
   &[disabled], &[readonly]{
-    background: $grayscale-30;
-    color: $grayscale-50;
+    background: $gray-2;
+    color: $gray-4;
     &:focus{
-      border: solid 1px $grayscale-50;
+      border: solid 1px $gray-4;
     }
     &::-webkit-input-placeholder {
-      color: $grayscale-50;
+      color: $gray-4;
     }
     &:-moz-placeholder { /* Firefox 18- */
-      color: $grayscale-50;
+      color: $gray-4;
     }
     &::-moz-placeholder {  /* Firefox 19+ */
-      color: $grayscale-50;
+      color: $gray-4;
     }
     &:-ms-input-placeholder {
-      color: $grayscale-50;
+      color: $gray-4;
     }
   }
 }
