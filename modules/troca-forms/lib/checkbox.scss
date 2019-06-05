@@ -61,8 +61,8 @@
   }
 
   input[type=checkbox]:checked + .checkbox-style-label {
-    background-color: $success-dark;
-    border: 2px solid $success-dark;
+    background-color: $success-middle;
+    border: 2px solid $success-middle;
     color: $white;
   }
 

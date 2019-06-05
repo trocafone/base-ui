@@ -23,17 +23,34 @@ $gray-8:#202020;
 
 $white: #fff;
 
+$success-lighter:#E3F1DF ;
+$success-light: #BBE5B3;
+$success-middle: #399D25;
+$success-dark: #035227;
+$success-darker: #012e15;
+
+$danger-lighter:#FBEAE5;
+$danger-light: #FEAD9A;
+$danger-middle: #DE3618;
+$danger-dark: #BF0711;
+$danger-darker: rgb(155, 5, 12);
+
+$warning-lighter: #FCF1CD;
+$warning-light: #FFEA8A;
+$warning-middle: #F8CD0E;
+$warning-dark: rgb(219, 180, 4);
+$warning-darker: rgb(190, 156, 1);
+
+$complementary-gray-lighter: #F9FAFB;
+$complementary-gray-light: #F3F6F8;
+$complementary-gray-middle: #DFE3E8;
+$complementary-gray-dark: #C3CCD5;
+$complementary-gray-darker: rgb(156, 167, 179);
 
 
-$danger-dark: #d0292d;
-$danger-light: #fe4d55;
 
-$warning-dark: #efda23;
-$warning-light: #f9f4c8;
+secondary-middle:    #0088cc;
 
-$info-dark:    #0088cc;
-
-$success-dark: #52cb7b;
 
 //PAGE CONTAINER
 $body-bg: #fff;
@@ -49,7 +66,7 @@ $content-box-bdr: $gray-4;
 
 
 //BUTTONS
-$link-primary-color: $info-dark;
+$link-primary-color: secondary-middle;
 $link-primary-color-hover: $primary-middle;
 $link-primary-color-active: $primary-dark;
 $link-secondary-color: $secondary-light;
