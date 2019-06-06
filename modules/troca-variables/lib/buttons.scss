@@ -1,0 +1,44 @@
+@import "colors";
+
+//BUTTONS
+$button-primary-bg: $primary-middle;
+$button-primary-bg-hover: $primary-dark;
+$button-primary-border: $primary-middle;
+$button-primary-border-hover: $primary-dark;
+$button-primary-color: $white;
+$button-primary-color-hover: $white;
+
+$button-secondary-bg: $secondary-middle;
+$button-secondary-bg-hover: $secondary-dark;
+$button-secondary-border: $secondary-middle;
+$button-secondary-border-hover: $secondary-dark;
+$button-secondary-color: $white;
+$button-secondary-color-hover: $white;
+
+$button-primary-border-bg: $white;
+$button-primary-border-bg-hover: $primary-middle;
+$button-primary-border-border: $primary-middle;
+$button-primary-border-border-hover: $primary-middle;
+$button-primary-border-color: $primary-middle;
+$button-primary-border-color-hover: $white;
+
+
+$button-secondary-border-bg: $white;
+$button-secondary-border-bg-hover: $secondary-middle;
+$button-secondary-border-border: $secondary-middle;
+$button-secondary-border-border-hover: $secondary-middle;
+$button-secondary-border-color: $secondary-middle;
+$button-secondary-border-color-hover: $white;
+
+$button-disabled-bg: $gray-3;
+$button-disabled-border: $gray-3;
+$button-disabled-color: $white;
+
+
+$button-small-padding: 7px 15px;
+$button-small-font-size: 'small';
+$button-medium-padding: 13px 25px;
+$button-medium-font-size: 'small';
+$button-large-padding: 15px 30px;
+$button-large-font-size: 'base';
+

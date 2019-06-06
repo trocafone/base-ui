@@ -36,25 +36,11 @@ figure {
 img {
   vertical-align: middle;
 }
-.img-responsive{
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 hr{
   margin: 20px 0;
   border:none;
   border-bottom: 1px solid $gray-3;
-}
-
-
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: " ";
-}
-.clearfix:after {
-  clear: both;
 }
 
 
@@ -68,24 +54,6 @@ select,
 summary,
 textarea {
   touch-action: manipulation;
-}
-
-
-.nowrap
-{
-  white-space: nowrap;
-}
-
-.not-visible
-{
-  visibility: hidden;
-}
-
-.user-select-text
-{
-  -moz-user-select: text;
-  -webkit-user-select: text;
-  -ms-user-select: text;
 }
 
 form{

@@ -10,7 +10,7 @@ input, input.form-control{
   @include fontSize(small);
   @include fontWeight(normal);
   box-shadow: none;
-  padding: 6px 13px;
+  padding: 7px 13px;
   border: solid 1px $gray-4;
   background: $white;
 
@@ -60,7 +60,7 @@ input, input.form-control{
     padding: 5px 10px;
   }
   &.input-medium{
-    padding: 6px 13px;
+    padding: 7px 13px;
   }
   &.input-large{
     padding: 13px 15px;

@@ -91,4 +91,38 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 .content-box{
   border: 1px solid $content-box-bdr;
   background: $content-box-bg;
+  border-radius: $rounded-corners-medium;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.nowrap
+{
+  white-space: nowrap;
+}
+
+.not-visible
+{
+  visibility: hidden;
+}
+
+.user-select-text
+{
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
 }

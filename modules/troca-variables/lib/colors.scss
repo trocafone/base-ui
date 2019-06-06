@@ -51,7 +51,7 @@ $complementary-gray-darker: #aab3bc;
 
 
 //PAGE CONTAINER
-$body-bg: #fff;
+$body-bg: $white;
 $page-container-bg: $gray-2;
 
 //STRIPPED BACKGROUND
@@ -63,12 +63,9 @@ $content-box-bg: $white;
 $content-box-bdr: $gray-4;
 
 
-//BUTTONS
-$link-primary-color: $secondary-middle;
-$link-primary-color-hover: $primary-middle;
-$link-primary-color-active: $primary-dark;
-$link-secondary-color: $secondary-light;
-$link-secondary-color-hover: $primary-middle;
-$link-secondary-color-active: $primary-dark;
-
+//LINKS
+$link-color: $secondary-middle;
+$link-color-hover: $secondary-dark;
+$link-color-active: $secondary-darker;
+$link-color-visited: $secondary-darker;
 
