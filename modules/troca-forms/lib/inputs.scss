@@ -3,14 +3,14 @@
 
 
 input, input.form-control{
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -ms-border-radius: 0;
+  border-radius: $rounded-corners-medium;
+  -webkit-border-radius: $rounded-corners-medium;
+  -ms-border-radius: $rounded-corners-medium;
   -webkit-appearance: none;
-  @include fontSize(smaller);
+  @include fontSize(small);
   @include fontWeight(normal);
   box-shadow: none;
-  padding: 5px 10px;
+  padding: 6px 13px;
   border: solid 1px $gray-4;
   background: $white;
 
@@ -55,11 +55,15 @@ input, input.form-control{
       @include fontWeight(normal);
     }
   }
+  &.input-small{
+    @include fontSize(smaller);
+    padding: 5px 10px;
+  }
   &.input-medium{
     padding: 6px 13px;
   }
   &.input-large{
-    padding: 13px 13px;
+    padding: 13px 15px;
   }
 
   &:focus{

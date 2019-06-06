@@ -11,7 +11,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   @include fontSize(base);
   @include fontWeight(semibold);
   color: $white;
-  border-radius: 0;
+  border-radius: $rounded-corners-medium;
   text-transform: none;
   box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
   -webkit-box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
@@ -35,7 +35,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 .button-primary, .button-secondary, .button-primary-border, .button-secondary-border, .button-gray-border {
   border: none;
   color: $white;
-  border-radius: 0;
+  border-radius: $rounded-corners-medium;
   text-transform: none;
   box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
   -webkit-box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
@@ -91,8 +91,8 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   border:1px solid $secondary-middle;
 
   &:hover, &:active {
-    background-color: $secondary-light;
-    border:1px solid $secondary-light;
+    background-color: $secondary-dark;
+    border:1px solid $secondary-dark;
     color:$white;
   }
 }
