@@ -13,14 +13,14 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   color: $white;
   border-radius: $rounded-corners-medium;
   text-transform: none;
-  box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
-  -webkit-box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
-  -moz-box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
+  box-shadow: 0 2px 1px 0 rgba(64, 64, 64, 0.15);
   filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color='#404040');
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  display: inline-block;
 
   &:visited {
     color: $white;
@@ -37,8 +37,10 @@ button, html input[type=button], input[type=reset], input[type=submit] {
       color: $button-disabled-color;
     }
   }
-  [class*='icon-t']{
-    margin-right: 5px;
+  [class*='icon-t'], [class*='fa-']{
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
   }
 }
 
@@ -46,16 +48,70 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 .button-small {
   padding: $button-small-padding;
   @include fontSize($button-small-font-size);
+  line-height: $button-small-line-height;
+
+  &.button-icon-text {
+    padding: $button-small-with-icon-and-text-padding;
+    line-height: $button-small-icon-and-text-line-height;
+
+    [class*='icon-t'], [class*='fa-']{
+      margin-right: $button-small-icon-margin-right;
+      font-size: $button-small-icon-with-text-font-size;
+    }
+  }
+  &.button-icon-only {
+    padding: $button-small-with-icon-only-padding;
+
+    [class*='icon-t'], [class*='fa-']{
+      font-size: $button-small-icon-only-font-size;
+    }
+  }
 }
 
 .button-medium {
   padding: $button-medium-padding;
   @include fontSize($button-medium-font-size);
+  line-height: $button-medium-line-height;
+
+  &.button-icon-text {
+    padding: $button-medium-with-icon-and-text-padding;
+    line-height: $button-medium-icon-and-text-line-height;
+
+    [class*='icon-t'], [class*='fa-']{
+      margin-right: $button-medium-icon-margin-right;
+      font-size: $button-medium-icon-with-text-font-size;
+    }
+  }
+  &.button-icon-only {
+    padding: $button-medium-with-icon-only-padding; 
+
+    [class*='icon-t'], [class*='fa-']{
+      font-size: $button-medium-icon-only-font-size;
+    }
+  }
 }
 
 .button-large {
   padding: $button-large-padding;
   @include fontSize($button-large-font-size);
+  line-height: $button-large-line-height;
+
+  &.button-icon-text {
+    padding: $button-large-with-icon-and-text-padding;
+    line-height: $button-large-icon-and-text-line-height;
+
+    [class*='icon-t'], [class*='fa-']{
+      margin-right: $button-large-icon-margin-right;
+      font-size: $button-large-icon-with-text-font-size;
+    }
+  }
+  &.button-icon-only {
+    padding: $button-large-with-icon-only-padding;
+    
+    [class*='icon-t'], [class*='fa-']{
+      font-size: $button-large-icon-only-font-size;
+    }
+  }
 }
 
 .button-primary {

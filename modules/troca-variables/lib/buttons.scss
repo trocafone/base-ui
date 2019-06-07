@@ -30,15 +30,64 @@ $button-secondary-border-border-hover: $secondary-middle;
 $button-secondary-border-color: $secondary-middle;
 $button-secondary-border-color-hover: $white;
 
+//-----------------------------------------------------------------------------------------------
 $button-disabled-bg: $gray-3;
 $button-disabled-border: $gray-3;
 $button-disabled-color: $white;
 
+//-----------------------------------------------------------------------------------------------
+//PADDING
+//top and bottom 1px less because the border counts
+$button-small-padding: 6px 15px;
+$button-medium-padding: 12px 25px;
+$button-large-padding: 14px 30px;
 
-$button-small-padding: 7px 15px;
+//PADDING----ICON AND TEXT
+//top and bottom may differ in 1px because line height and border change the total height
+$button-small-with-icon-and-text-padding: 7px 10px;
+$button-medium-with-icon-and-text-padding: 11px 15px;
+$button-large-with-icon-and-text-padding: 13px 17px;
+
+//PADDING----ICON ONLY
+$button-small-with-icon-only-padding: 6px 10px;
+$button-medium-with-icon-only-padding: 11px 15px;
+$button-large-with-icon-only-padding: 13px 17px;
+
+//-----------------------------------------------------------------------------------------------
+//FONT SIZE
 $button-small-font-size: 'small';
-$button-medium-padding: 13px 25px;
 $button-medium-font-size: 'small';
-$button-large-padding: 15px 30px;
 $button-large-font-size: 'base';
 
+//-----------------------------------------------------------------------------------------------
+
+//LINE HEIGHT
+//Don't use mixin and rem for this, because can't reach this numbers and total height of button it's wrong
+$button-small-line-height: 18px;
+$button-medium-line-height: 18px;
+$button-large-line-height: 20px;
+
+//LINE HEIGHT-----ICON AND TEXT
+$button-small-icon-and-text-line-height: 15px;
+$button-medium-icon-and-text-line-height: 18px;
+$button-large-icon-and-text-line-height: 20px;
+
+//-----------------------------------------------------------------------------------------------
+
+//MARGIN
+$button-small-icon-margin-right: 5px;
+$button-medium-icon-margin-right: 5px;
+$button-large-icon-margin-right: 10px;
+
+//-----------------------------------------------------------------------------------------------
+// ICON FONT SIZE ---- WITH TEXT
+$button-small-icon-with-text-font-size: 15px;
+$button-medium-icon-with-text-font-size: 18px;
+$button-large-icon-with-text-font-size: 20px;
+
+//ICON FONT SIZE ---- ICON ONLY
+$button-small-icon-only-font-size: 18px;
+$button-medium-icon-only-font-size: 18px;
+$button-large-icon-only-font-size: 20px;
+
+//-----------------------------------------------------------------------------------------------
