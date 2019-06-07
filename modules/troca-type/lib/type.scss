@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,600i,700,700i,800,800i');
 @import "../../troca-variables/troca-variables";
 @import "../../troca-mixins/troca-mixins";
 
@@ -65,24 +66,14 @@ a:hover, a:active, a:focus, a:-webkit-any-link {
 }
 
 a{
-  color:$link-primary-color;
+  color:$link-color;
   text-decoration: none;
-
-  &:hover{
-    color: $link-primary-color-hover;
-  }
+ 
   &:active{
-    color: $link-primary-color-active;
+    color: $link-color-active;
   }
-}
-.link-secondary{
-  color:$link-secondary-color;
-
   &:hover{
-    color: $link-secondary-color-hover;
-  }
-  &:active{
-    color: $link-secondary-color-active;
+    color: $link-color-hover;
   }
 }
 
@@ -94,7 +85,8 @@ strong{
   @include fontSize(jumbo);
   @include lineHeight(giant);
   @include fontWeight(semibold);
-  color: $brand-secondary-light;
+  font-family: $font-family-title;
+  color: $secondary-light;
   margin-bottom: 15px;
   margin-top: 0;
   @media (max-width: 767px){
@@ -107,7 +99,8 @@ strong{
   @include fontSize(bigger);
   @include lineHeight(biggest);
   @include fontWeight(semibold);
-  color: $brand-secondary-light;
+  font-family: $font-family-title;
+  color: $secondary-light;
   margin-bottom: 15px;
   margin-top: 0;
   @media (max-width: 767px){

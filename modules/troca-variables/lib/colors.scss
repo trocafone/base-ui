@@ -1,54 +1,73 @@
 //COLORS
 
-$brand-primary-dark: #f06f31;
-$brand-primary: #ff8800;
-$brand-primary-light: #ffa53d;
+$primary-lighter: #F9BA48;
+$primary-light: #FFA53D;
+$primary-middle:#FF8800;
+$primary-dark: #F06F31;
+$primary-darker: rgb(201, 83, 28);
 
-$brand-secondary-dark: #495a81;
-$brand-secondary: #385F74;
-$brand-secondary-light: #607D8B;
-$brand-secondary-lighter: #8997ac;
+$secondary-lighter: #A9CEFF;
+$secondary-light:#7CA7F2; 
+$secondary-middle: #6C8EDB;
+$secondary-dark:#4D649B;
+$secondary-darker:#1D2656;
 
-$danger-dark: #d0292d;
-$danger-light: #fe4d55;
+$gray-1:#FAFAFA;
+$gray-2:#F0F0F0;
+$gray-3:#D7D7D7;
+$gray-4:#C0C0C0;
+$gray-5:#A7A7A7;
+$gray-6:#696969;
+$gray-7:#404040;
+$gray-8:#202020;
 
-$warning-dark: #efda23;
-$warning-light: #f9f4c8;
-
-$info-dark:    #0088cc;
-
-$success-dark: #52cb7b;
-
-$black:  #000;
-$grayscale-90:  #333333;
-$grayscale-80: #404040;
-$grayscale-70: #808080;
-$grayscale-60:  #999999;
-$grayscale-50: #cccccc;
-$grayscale-40: #d5d5d5;
-$grayscale-30: #ececec;
-$grayscale-20: #f4f4f4;
-$grayscale-10: #fafafa;
 $white: #fff;
 
+$success-lighter:#E3F1DF ;
+$success-light: #BBE5B3;
+$success-middle: #399D25;
+$success-dark: #035227;
+$success-darker: #012e15;
+
+$danger-lighter:#FBEAE5;
+$danger-light: #FEAD9A;
+$danger-middle: #DE3618;
+$danger-dark: #BF0711;
+$danger-darker: #92070e;
+
+$warning-lighter: #FCF1CD;
+$warning-light: #FFEA8A;
+$warning-middle: #F8CD0E;
+$warning-dark: #d9b309;
+$warning-darker: #947a05;
+
+$complementary-gray-lighter: #F9FAFB;
+$complementary-gray-light: #F3F6F8;
+$complementary-gray-middle: #DFE3E8;
+$complementary-gray-dark: #C3CCD5;
+$complementary-gray-darker: #aab3bc;
+
+
+
 //PAGE CONTAINER
-$body-bg: #fff;
-$page-container-bg: $grayscale-20;
+$body-bg: $white;
+$page-container-bg: $gray-2;
 
 //STRIPPED BACKGROUND
-$stripped-bg-dark: $grayscale-10;
+$stripped-bg-dark: $gray-1;
 $stripped-bg-light: #fff;
 
 //GRAY BOX WITH GRAY BORDER
 $content-box-bg: $white;
-$content-box-bdr: $grayscale-50;
+$content-box-bdr: $gray-4;
 
 
-//BUTTONS
-$link-primary-color: $info-dark;
-$link-primary-color-hover: $brand-primary;
-$link-primary-color-active: $brand-primary-dark;
-$link-secondary-color: $brand-secondary-light;
-$link-secondary-color-hover: $brand-primary;
-$link-secondary-color-active: $brand-primary-dark;
+//LINKS
+$link-color: $secondary-middle;
+$link-color-hover: $secondary-dark;
+$link-color-active: $secondary-darker;
+
+
+
+
 

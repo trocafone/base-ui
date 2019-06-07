@@ -4,137 +4,183 @@
 
 button, html input[type=button], input[type=reset], input[type=submit] {
   -webkit-appearance: button;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .button-primary, .button-secondary, .button-primary-border, .button-secondary-border, .button-gray-border {
   @include fontSize(base);
   @include fontWeight(semibold);
   color: $white;
-  border-radius: 0;
+  border-radius: $rounded-corners-medium;
   text-transform: none;
-  box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
-  -webkit-box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
-  -moz-box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
+  box-shadow: 0 2px 1px 0 rgba(64, 64, 64, 0.15);
   filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color='#404040');
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 
-  &.button-disabled, &[disabled] {
-    background-color: $grayscale-40;
-    cursor: default;
-    &:hover, &:active {
-      background-color: $grayscale-40;
-    }
-  }
-}
-
-
-.button-primary, .button-secondary, .button-primary-border, .button-secondary-border, .button-gray-border {
-  border: none;
-  color: $white;
-  border-radius: 0;
-  text-transform: none;
-  box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
-  -webkit-box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
-  -moz-box-shadow: 0 1px 1px rgba(64, 64, 64, 0.25);
-  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color='#404040');
+  display: inline-block;
 
   &.button-disabled, &[disabled] {
-    background-color: $grayscale-40;
-    border:1px solid $grayscale-40;
+    background-color: $button-disabled-bg;
+    border:1px solid $button-disabled-border;
+    color: $button-disabled-color;
     cursor: default;
-    color: $white;
     &:hover, &:active {
-      background-color: $grayscale-40;
-      border:1px solid $grayscale-40;
+      background-color: $button-disabled-bg;
+      border:1px solid $button-disabled-border;
+      color: $button-disabled-color;
     }
   }
-
-  [class*='icon-t']{
-    margin-right: 5px;
+  [class*='icon-t'], [class*='fa-']{
+    display: inline-block;
+    line-height: 0;
+    vertical-align: middle;
   }
 }
 
 
 .button-small {
-  padding: 6px 15px;
-  @include fontSize(small);
+  padding: $button-small-padding;
+  @include fontSize($button-small-font-size);
+  line-height: $button-small-line-height;
+
+  &.button-icon-text {
+    padding: $button-small-with-icon-and-text-padding;
+    line-height: $button-small-icon-and-text-line-height;
+
+    [class*='icon-t'], [class*='fa-']{
+      margin-right: $button-small-icon-margin-right;
+      font-size: $button-small-icon-with-text-font-size;
+    }
+  }
+  &.button-icon-only {
+    padding: $button-small-with-icon-only-padding;
+
+    [class*='icon-t'], [class*='fa-']{
+      font-size: $button-small-icon-only-font-size;
+    }
+  }
 }
 
 .button-medium {
-  padding: 13px 25px;
-  @include fontSize(small);
+  padding: $button-medium-padding;
+  @include fontSize($button-medium-font-size);
+  line-height: $button-medium-line-height;
+
+  &.button-icon-text {
+    padding: $button-medium-with-icon-and-text-padding;
+    line-height: $button-medium-icon-and-text-line-height;
+
+    [class*='icon-t'], [class*='fa-']{
+      margin-right: $button-medium-icon-margin-right;
+      font-size: $button-medium-icon-with-text-font-size;
+    }
+  }
+  &.button-icon-only {
+    padding: $button-medium-with-icon-only-padding; 
+
+    [class*='icon-t'], [class*='fa-']{
+      font-size: $button-medium-icon-only-font-size;
+    }
+  }
 }
 
 .button-large {
-  padding: 15px 30px;
-  @include fontSize(base);
+  padding: $button-large-padding;
+  @include fontSize($button-large-font-size);
+  line-height: $button-large-line-height;
+
+  &.button-icon-text {
+    padding: $button-large-with-icon-and-text-padding;
+    line-height: $button-large-icon-and-text-line-height;
+
+    [class*='icon-t'], [class*='fa-']{
+      margin-right: $button-large-icon-margin-right;
+      font-size: $button-large-icon-with-text-font-size;
+    }
+  }
+  &.button-icon-only {
+    padding: $button-large-with-icon-only-padding;
+    
+    [class*='icon-t'], [class*='fa-']{
+      font-size: $button-large-icon-only-font-size;
+    }
+  }
 }
 
 .button-primary {
-  background-color: $brand-primary;
-  border:1px solid $brand-primary;
-
+  background-color: $button-primary-bg;
+  border:1px solid $button-primary-border;
+  color:$button-primary-color;
 
   &:hover, &:active {
-    background-color: $brand-primary-dark;
-    border:1px solid $brand-primary-dark;
-    color:$white;
+    background-color: $button-primary-bg-hover;
+    border:1px solid $button-primary-border-hover;
+    color:$button-primary-color-hover;
   }
 }
 
 .button-secondary {
-  background-color: $brand-secondary;
-  border:1px solid $brand-secondary;
+  background-color: $button-secondary-bg;
+  border:1px solid $button-secondary-border;
+  color:$button-secondary-color;
 
   &:hover, &:active {
-    background-color: $brand-secondary-light;
-    border:1px solid $brand-secondary-light;
-    color:$white;
+    background-color: $button-secondary-bg-hover;
+    border:1px solid $button-secondary-border-hover;
+    color:$button-secondary-color-hover;
   }
 }
 
 .button-primary-border:not(.button-disabled){
-  background-color: $white;
-  border:1px solid $brand-primary;
-  color: $brand-primary;
+  background-color: $button-primary-border-bg;
+  border:1px solid $button-primary-border-border;
+  color: $button-primary-border-color;
+
 
   &:hover, &:active {
-    background-color: $brand-primary;
-    color: $white;
+    background-color: $button-primary-border-bg-hover;
+    border:1px solid $button-primary-border-border-hover;
+    color: $button-primary-border-color-hover;
   }
 
   &[disabled]{
-    background-color: $grayscale-40;
-    border:$grayscale-40;
+    background-color: $button-disabled-bg;
+    border:1px solid $button-disabled-border;
+    color: $button-disabled-color;
     cursor: default;
-    color: $white;
+
     &:hover, &:active {
-      background-color: $grayscale-40;
+      background-color: $button-disabled-bg;
+      border:1px solid $button-disabled-border;
+      color: $button-disabled-color;
     }
   }
 }
 
 .button-secondary-border:not(.button-disabled){
-  background-color: $white;
-  border:1px solid $brand-secondary;
-  color: $brand-secondary;
+  background-color: $button-secondary-border-bg;
+  border:1px solid $button-secondary-border-border;
+  color: $button-secondary-border-color;
 
   &:hover, &:active {
-    background-color: $brand-secondary;
-    color: $white;
+    background-color: $button-secondary-border-bg-hover;
+    border:1px solid $button-secondary-border-border-hover;
+    color: $button-secondary-border-color-hover;
   }
 
   &[disabled]{
-    background-color: $grayscale-40;
-    border:$grayscale-40;
+    background-color: $button-disabled-bg;
+    border:1px solid $button-disabled-border;
+    color: $button-disabled-color;
     cursor: default;
-    color: $white;
+
     &:hover, &:active {
-      background-color: $grayscale-40;
+      background-color: $button-disabled-bg;
+      border:1px solid $button-disabled-border;
+      color: $button-disabled-color;
     }
   }
 }
@@ -142,22 +188,25 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 .button-gray-border:not(.button-disabled){
   background-color: $white;
-  border:1px solid $grayscale-50;
-  color: $grayscale-60;
+  border:1px solid $gray-4;
+  color: $gray-5;
 
   &:hover, &:active {
-    background-color: $brand-primary;
-    border:1px solid $brand-primary;
+    background-color: $primary-middle;
+    border:1px solid $primary-middle;
     color: $white;
   }
 
   &[disabled]{
-    background-color: $grayscale-40;
-    border:$grayscale-40;
+    background-color: $button-disabled-bg;
+    border:1px solid $button-disabled-border;
+    color: $button-disabled-color;
     cursor: default;
-    color: $white;
+
     &:hover, &:active {
-      background-color: $grayscale-40;
+      background-color: $button-disabled-bg;
+      border:1px solid $button-disabled-border;
+      color: $button-disabled-color;
     }
   }
 }
@@ -167,19 +216,23 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   border:1px solid $white;
   color: $white;
 
+
   &:hover, &:active {
-    background-color: $brand-primary;
+    background-color: $primary-middle;
     color: $white;
-    border-color: $brand-primary;
+    border-color: $primary-middle;
   }
 
   &[disabled]{
-    background-color: $grayscale-40;
-    border:$grayscale-40;
+    background-color: $button-disabled-bg;
+    border:1px solid $button-disabled-border;
+    color: $button-disabled-color;
     cursor: default;
-    color: $white;
+
     &:hover, &:active {
-      background-color: $grayscale-40;
+      background-color: $button-disabled-bg;
+      border:1px solid $button-disabled-border;
+      color: $button-disabled-color;
     }
   }
 }

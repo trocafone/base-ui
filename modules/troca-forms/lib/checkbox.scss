@@ -37,7 +37,7 @@
     -webkit-appearance: none;
 
     &:hover + .checkbox-style-label,  &:focus + .checkbox-style-label{
-      border-color: $brand-primary;
+      border-color: $primary-middle;
     }
   }
   .checkbox-text{
@@ -47,7 +47,7 @@
 
   input[type=checkbox] + .checkbox-style-label {
     background-color: $white;
-    border: 2px solid $grayscale-50;
+    border: 2px solid $gray-4;
     display: inline-block;
     position: relative;
     width: 20px;
@@ -56,13 +56,13 @@
     vertical-align: middle;
 
     &:hover, &:focus{
-      border-color: $brand-primary;
+      border-color: $primary-middle;
     }
   }
 
   input[type=checkbox]:checked + .checkbox-style-label {
-    background-color: $success-dark;
-    border: 2px solid $success-dark;
+    background-color: $success-middle;
+    border: 2px solid $success-middle;
     color: $white;
   }
 

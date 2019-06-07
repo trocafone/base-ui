@@ -3,14 +3,14 @@
 
 
 textarea {
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -ms-border-radius: 0;
-  @include fontSize(smaller);
+  border-radius: $rounded-corners-medium;
+  -webkit-border-radius: $rounded-corners-medium;
+  -ms-border-radius: $rounded-corners-medium;
+  @include fontSize(small);
   @include fontWeight(semibold);
   box-shadow: none;
   padding: 10px;
-  border: solid 1px $grayscale-50;
+  border: solid 1px $gray-4;
   outline: none;
   overflow: auto;
   resize: vertical;
