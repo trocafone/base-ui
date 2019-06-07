@@ -69,7 +69,7 @@ a{
   color:$link-color;
   text-decoration: none;
  
-  &:active, &:visited{
+  &:active{
     color: $link-color-active;
   }
   &:hover{

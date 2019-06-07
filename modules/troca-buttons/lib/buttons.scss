@@ -22,10 +22,6 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
   display: inline-block;
 
-  &:visited {
-    color: $white;
-  }
-
   &.button-disabled, &[disabled] {
     background-color: $button-disabled-bg;
     border:1px solid $button-disabled-border;
@@ -119,10 +115,6 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   border:1px solid $button-primary-border;
   color:$button-primary-color;
 
-  &:visited {
-    color: $button-primary-color;
-  }
-
   &:hover, &:active {
     background-color: $button-primary-bg-hover;
     border:1px solid $button-primary-border-hover;
@@ -134,10 +126,6 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   background-color: $button-secondary-bg;
   border:1px solid $button-secondary-border;
   color:$button-secondary-color;
-
-  &:visited {
-    color: $button-secondary-color;
-  }
 
   &:hover, &:active {
     background-color: $button-secondary-bg-hover;
@@ -151,9 +139,6 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   border:1px solid $button-primary-border-border;
   color: $button-primary-border-color;
 
-  &:visited {
-    color: $button-primary-border-color;
-  }
 
   &:hover, &:active {
     background-color: $button-primary-border-bg-hover;
@@ -179,10 +164,6 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   background-color: $button-secondary-border-bg;
   border:1px solid $button-secondary-border-border;
   color: $button-secondary-border-color;
-
-  &:visited {
-    color: $button-secondary-border-color;
-  }
 
   &:hover, &:active {
     background-color: $button-secondary-border-bg-hover;
@@ -210,10 +191,6 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   border:1px solid $gray-4;
   color: $gray-5;
 
-  &:visited {
-    color: $gray-5;
-  }
-
   &:hover, &:active {
     background-color: $primary-middle;
     border:1px solid $primary-middle;
@@ -239,9 +216,6 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   border:1px solid $white;
   color: $white;
 
-  &:visited {
-    color: $white;
-  }
 
   &:hover, &:active {
     background-color: $primary-middle;
