@@ -47,6 +47,7 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+
 .icon-t-share:before { content: '\21'; } /* '!' */
 .icon-t-card:before { content: '\22'; } /* '&quot;' */
 .icon-t-arrow-thick-down:before { content: '\e800'; } /* '' */
@@ -107,6 +108,8 @@
 .icon-t-home:before { content: '\e83e'; } /* '' */
 .icon-t-shopping-cart:before { content: '\e83f'; } /* '' */
 .icon-t-copy-to-clipboard:before { content: '\e840'; } /* '' */
+.icon-t-tienda:before { content: '\e841'; } /* '' */
+.icon-t-lista-valores:before { content: '\e842'; } /* '' */
 .icon-t-box-full:before { content: '\e84b'; } /* '' */
 .icon-t-details:before { content: '\e84c'; } /* '' */
 .icon-t-diamond:before { content: '\e84d'; } /* '' */
