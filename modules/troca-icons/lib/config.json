@@ -904,7 +904,7 @@
     },
     {
       "uid": "1169819d82113182f2de8a87796c0b00",
-      "css": "tienda",
+      "css": "shop",
       "code": 59457,
       "src": "custom_icons",
       "selected": true,
@@ -913,7 +913,7 @@
         "width": 872
       },
       "search": [
-        "tienda"
+        "shop"
       ]
     },
     {
@@ -932,7 +932,7 @@
     },
     {
       "uid": "e9e6d210e71a918dce8bd94001b2f66e",
-      "css": "lista-valores",
+      "css": "price-list",
       "code": 59458,
       "src": "custom_icons",
       "selected": true,
@@ -941,7 +941,7 @@
         "width": 1000
       },
       "search": [
-        "lista-valores"
+        "price-list"
       ]
     }
   ]
