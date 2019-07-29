@@ -44,7 +44,8 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   padding: $button-small-padding;
   @include fontSize($button-small-font-size);
   line-height: $button-small-line-height;
-
+  height: 32px;
+  
   &.button-icon-text {
     padding: $button-small-with-icon-and-text-padding;
     line-height: $button-small-icon-and-text-line-height;
@@ -52,6 +53,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     [class*='icon-t'], [class*='fa-']{
       margin-right: $button-small-icon-margin-right;
       font-size: $button-small-icon-with-text-font-size;
+      vertical-align: top;
     }
   }
   &.button-icon-only {
@@ -67,6 +69,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   padding: $button-medium-padding;
   @include fontSize($button-medium-font-size);
   line-height: $button-medium-line-height;
+  height: 44px;
 
   &.button-icon-text {
     padding: $button-medium-with-icon-and-text-padding;
@@ -90,6 +93,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   padding: $button-large-padding;
   @include fontSize($button-large-font-size);
   line-height: $button-large-line-height;
+  height: 50px;
 
   &.button-icon-text {
     padding: $button-large-with-icon-and-text-padding;
