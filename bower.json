@@ -2,7 +2,7 @@
   "name": "tech-trocafone-base-ui",
   "description": "Base styles for Trocafone UI.",
   "main": "webpack.config.js",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "authors": [
     "Trocafone"
   ],
