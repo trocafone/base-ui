@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "### Login to NPM ###"
+echo "### Login to NPM services ###"
 npm-cli-login -u tech-trocafone -p $NPM_PASS -e opensource@trocafone.com
 
 
