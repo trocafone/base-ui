@@ -1,7 +1,6 @@
 @import "../../troca-variables/troca-variables";
 @import "../../troca-mixins/troca-mixins";
 
-
 .radiobutton-container{
   label.radio-style-label  {
     display: inline;
@@ -12,7 +11,9 @@
     position: absolute;
     z-index: 10;
     opacity: 0;
-    margin: 2px 5px;
+    height: $radio-button-width-height;
+    width: $radio-button-width-height;
+    margin: -2px 2px;
 
     &:hover {
       cursor: pointer;
@@ -28,8 +29,8 @@
     background-color: $radio-circle-bg;
     border: 1px solid $radio-circle-bdr;
     padding: 7px;
-    height: 15px;
-    width: 15px;
+    height: $radio-button-width-height;
+    width: $radio-button-width-height;
     border-radius: 50%;
     display: inline-block;
     position: relative;
@@ -46,19 +47,18 @@
 
   .regular-radio:checked + label.radio-style-label:after {
     content: ' ';
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     position: absolute;
     top: 3px;
-    background: $radio-circle-bg;
+    background: $radio-circle-selected;
     left: 3px;
   }
 
   .regular-radio:checked + label.radio-style-label {
-    background-color: $radio-circle-selected;
     color: $radio-circle-bg;
-    border: 1px solid $radio-circle-selected;
+    border: 2px solid $radio-circle-selected;
   }
 
 
