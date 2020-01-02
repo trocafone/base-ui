@@ -1,13 +1,19 @@
-@import "../../troca-variables/troca-variables";
-@import "../../troca-mixins/troca-mixins";
+@import '../../troca-variables/troca-variables';
+@import '../../troca-mixins/troca-mixins';
 
-
-button, html input[type=button], input[type=reset], input[type=submit] {
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
   cursor: pointer;
 }
 
-.button-primary, .button-secondary, .button-primary-border, .button-secondary-border, .button-gray-border {
+.button-primary,
+.button-secondary,
+.button-primary-border,
+.button-secondary-border,
+.button-gray-border {
   @include fontSize(base);
   @include fontWeight(semibold);
   color: $white;
@@ -49,34 +55,38 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   }
 
   &.button-disabled, &[disabled] {
+  &.button-disabled,
+  &[disabled] {
     background-color: $button-disabled-bg;
-    border:1px solid $button-disabled-border;
+    border: 1px solid $button-disabled-border;
     color: $button-disabled-color;
     cursor: default;
-    &:hover, &:active {
+    &:hover,
+    &:active {
       background-color: $button-disabled-bg;
-      border:1px solid $button-disabled-border;
+      border: 1px solid $button-disabled-border;
       color: $button-disabled-color;
     }
   }
-  [class*='icon-t'], [class*='fa-']{
+  [class*='icon-t'],
+  [class*='fa-'] {
     display: inline-block;
     line-height: 0;
-    vertical-align: middle;
+    margin-right: 5px;
   }
-
 }
 .button-small {
   padding: $button-small-padding;
   @include fontSize($button-small-font-size);
   line-height: $button-small-line-height;
   height: 32px;
-  
+
   &.button-icon-text {
     padding: $button-small-with-icon-and-text-padding;
     line-height: $button-small-icon-and-text-line-height;
 
-    [class*='icon-t'], [class*='fa-']{
+    [class*='icon-t'],
+    [class*='fa-'] {
       margin-right: $button-small-icon-margin-right;
       font-size: $button-small-icon-with-text-font-size;
       vertical-align: top;
@@ -85,13 +95,14 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   &.button-icon-only {
     padding: $button-small-with-icon-only-padding;
 
-    [class*='icon-t'], [class*='fa-']{
+    [class*='icon-t'],
+    [class*='fa-'] {
       font-size: $button-small-icon-only-font-size;
     }
   }
 }
 
-.button-medium  {
+.button-medium {
   padding: $button-medium-padding;
   @include fontSize($button-medium-font-size);
   line-height: $button-medium-line-height;
@@ -101,21 +112,23 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     padding: $button-medium-with-icon-and-text-padding;
     line-height: $button-medium-icon-and-text-line-height;
 
-    [class*='icon-t'], [class*='fa-']{
+    [class*='icon-t'],
+    [class*='fa-'] {
       margin-right: $button-medium-icon-margin-right;
       font-size: $button-medium-icon-with-text-font-size;
     }
   }
   &.button-icon-only {
-    padding: $button-medium-with-icon-only-padding; 
+    padding: $button-medium-with-icon-only-padding;
 
-    [class*='icon-t'], [class*='fa-']{
+    [class*='icon-t'],
+    [class*='fa-'] {
       font-size: $button-medium-icon-only-font-size;
     }
   }
 }
 
-.button-large  {
+.button-large {
   padding: $button-large-padding;
   @include fontSize($button-large-font-size);
   line-height: $button-large-line-height;
@@ -125,15 +138,17 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     padding: $button-large-with-icon-and-text-padding;
     line-height: $button-large-icon-and-text-line-height;
 
-    [class*='icon-t'], [class*='fa-']{
+    [class*='icon-t'],
+    [class*='fa-'] {
       margin-right: $button-large-icon-margin-right;
       font-size: $button-large-icon-with-text-font-size;
     }
   }
   &.button-icon-only {
     padding: $button-large-with-icon-only-padding;
-    
-    [class*='icon-t'], [class*='fa-']{
+
+    [class*='icon-t'],
+    [class*='fa-'] {
       font-size: $button-large-icon-only-font-size;
     }
   }
@@ -141,137 +156,142 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
 .button-primary {
   background-color: $button-primary-bg;
-  border:1px solid $button-primary-border;
-  color:$button-primary-color;
+  border: 1px solid $button-primary-border;
+  color: $button-primary-color;
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     background-color: $button-primary-bg-hover;
-    border:1px solid $button-primary-border-hover;
-    color:$button-primary-color-hover;
+    border: 1px solid $button-primary-border-hover;
+    color: $button-primary-color-hover;
   }
-  
 }
 
 .button-secondary {
   background-color: $button-secondary-bg;
-  border:1px solid $button-secondary-border;
-  color:$button-secondary-color;
+  border: 1px solid $button-secondary-border;
+  color: $button-secondary-color;
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     background-color: $button-secondary-bg-hover;
-    border:1px solid $button-secondary-border-hover;
-    color:$button-secondary-color-hover;
+    border: 1px solid $button-secondary-border-hover;
+    color: $button-secondary-color-hover;
   }
 }
 
-.button-primary-border:not(.button-disabled){
+.button-primary-border:not(.button-disabled) {
   background-color: $button-primary-border-bg;
-  border:1px solid $button-primary-border-border;
+  border: 1px solid $button-primary-border-border;
   color: $button-primary-border-color;
 
-
-  &:hover, &:active {
+  &:hover,
+  &:active {
     background-color: $button-primary-border-bg-hover;
-    border:1px solid $button-primary-border-border-hover;
+    border: 1px solid $button-primary-border-border-hover;
     color: $button-primary-border-color-hover;
   }
 
-  &[disabled]{
+  &[disabled] {
     background-color: $button-disabled-bg;
-    border:1px solid $button-disabled-border;
+    border: 1px solid $button-disabled-border;
     color: $button-disabled-color;
     cursor: default;
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
       background-color: $button-disabled-bg;
-      border:1px solid $button-disabled-border;
+      border: 1px solid $button-disabled-border;
       color: $button-disabled-color;
     }
   }
 }
 
-.button-secondary-border:not(.button-disabled){
+.button-secondary-border:not(.button-disabled) {
   background-color: $button-secondary-border-bg;
-  border:1px solid $button-secondary-border-border;
+  border: 1px solid $button-secondary-border-border;
   color: $button-secondary-border-color;
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     background-color: $button-secondary-border-bg-hover;
-    border:1px solid $button-secondary-border-border-hover;
+    border: 1px solid $button-secondary-border-border-hover;
     color: $button-secondary-border-color-hover;
   }
 
-  &[disabled]{
+  &[disabled] {
     background-color: $button-disabled-bg;
-    border:1px solid $button-disabled-border;
+    border: 1px solid $button-disabled-border;
     color: $button-disabled-color;
     cursor: default;
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
       background-color: $button-disabled-bg;
-      border:1px solid $button-disabled-border;
+      border: 1px solid $button-disabled-border;
       color: $button-disabled-color;
     }
   }
 }
 
-
-.button-gray-border:not(.button-disabled){
+.button-gray-border:not(.button-disabled) {
   background-color: $white;
-  border:1px solid $gray-4;
+  border: 1px solid $gray-4;
   color: $gray-5;
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     background-color: $primary-middle;
-    border:1px solid $primary-middle;
+    border: 1px solid $primary-middle;
     color: $white;
   }
 
-  &[disabled]{
+  &[disabled] {
     background-color: $button-disabled-bg;
-    border:1px solid $button-disabled-border;
+    border: 1px solid $button-disabled-border;
     color: $button-disabled-color;
     cursor: default;
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
       background-color: $button-disabled-bg;
-      border:1px solid $button-disabled-border;
+      border: 1px solid $button-disabled-border;
       color: $button-disabled-color;
     }
   }
 }
 
-.button-white-border:not(.button-disabled){
+.button-white-border:not(.button-disabled) {
   background-color: transparent;
-  border:1px solid $white;
+  border: 1px solid $white;
   color: $white;
 
-
-  &:hover, &:active {
+  &:hover,
+  &:active {
     background-color: $primary-middle;
     color: $white;
     border-color: $primary-middle;
   }
 
-  &[disabled]{
+  &[disabled] {
     background-color: $button-disabled-bg;
-    border:1px solid $button-disabled-border;
+    border: 1px solid $button-disabled-border;
     color: $button-disabled-color;
     cursor: default;
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
       background-color: $button-disabled-bg;
-      border:1px solid $button-disabled-border;
+      border: 1px solid $button-disabled-border;
       color: $button-disabled-color;
     }
   }
 }
 
-
-
-.button-primary-ghost, .button-secondary-ghost {
+.button-primary-ghost,
+.button-secondary-ghost {
   background: none;
-  border:none;
+  border: none;
   @include fontWeight(semibold);
   text-transform: none;
   -webkit-user-select: none;
@@ -295,29 +315,32 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     padding: 0;
   }
 
-  &.button-disabled, &[disabled] {
+  &.button-disabled,
+  &[disabled] {
     color: $button-ghost-disabled-color;
     cursor: default;
-    &:hover, &:active {
+    &:hover,
+    &:active {
       color: $button-ghost-disabled-color;
     }
   }
 }
 
-
 .button-primary-ghost {
-  color:$button-primary-ghost-color;
+  color: $button-primary-ghost-color;
 
-  &:hover, &:active {
-    color:$button-primary-ghost-color-hover;
+  &:hover,
+  &:active {
+    color: $button-primary-ghost-color-hover;
   }
 }
 
 .button-secondary-ghost {
-  color:$button-secondary-ghost-color;
+  color: $button-secondary-ghost-color;
 
-  &:hover, &:active {
-    color:$button-secondary-ghost-color-hover;
+  &:hover,
+  &:active {
+    color: $button-secondary-ghost-color-hover;
   }
 }
 
