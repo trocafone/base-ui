@@ -22,6 +22,32 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
   display: inline-block;
 
+  &.loading{
+    position:relative;
+    background-color: $button-primary-bg-hover;
+    color: $button-primary-bg-hover;
+    
+    &:after{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: " ";
+      border-radius: 50%;
+      width: 26px;
+      height: 26px;
+      animation: LoadingWheelAnimation 1.2s linear infinite;
+      vertical-align: middle;
+      border: 2px solid $white;
+      border-left-color: transparent;
+      margin: auto;
+      margin-top: -9px;
+      margin-left: -9px;
+      width: 18px;
+      height: 18px;
+    }
+    
+  }
+
   &.button-disabled, &[disabled] {
     background-color: $button-disabled-bg;
     border:1px solid $button-disabled-border;
@@ -122,32 +148,6 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     background-color: $button-primary-bg-hover;
     border:1px solid $button-primary-border-hover;
     color:$button-primary-color-hover;
-  }
-
-  &.loading{
-    position:relative;
-    background-color: $button-primary-bg-hover !important;
-    color: $button-primary-bg-hover !important;
-    
-    &:after{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      content: " ";
-      border-radius: 50%;
-      width: 26px;
-      height: 26px;
-      animation: LoadingWheelAnimation 1.2s linear infinite;
-      vertical-align: middle;
-      border: 2px solid $white;
-      border-left-color: transparent;
-      margin: auto;
-      margin-top: -9px;
-      margin-left: -9px;
-      width: 18px;
-      height: 18px;
-    }
-    
   }
   
 }
@@ -318,5 +318,14 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 
   &:hover, &:active {
     color:$button-secondary-ghost-color-hover;
+  }
+}
+
+@keyframes LoadingWheelAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
