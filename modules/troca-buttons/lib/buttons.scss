@@ -39,8 +39,6 @@ input[type='submit'] {
       left: 50%;
       content: " ";
       border-radius: 50%;
-      width: 26px;
-      height: 26px;
       animation: LoadingWheelAnimation 1.2s linear infinite;
       vertical-align: middle;
       border: 2px solid $white;
