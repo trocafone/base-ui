@@ -1,11 +1,13 @@
 @font-face {
-  font-family: 'trocafone-icon-font';
-  src: url('./lib/font/trocafone-icon-font.eot?71648804');
-  src: url('./lib/font/trocafone-icon-font.eot?71648804#iefix') format('embedded-opentype'),
-  url('./lib/font/trocafone-icon-font.woff2?71648804') format('woff2'),
-  url('./lib/font/trocafone-icon-font.woff?71648804') format('woff'),
-  url('./lib/font/trocafone-icon-font.ttf?71648804') format('truetype'),
-  url('./lib/font/trocafone-icon-font.svg?71648804#trocafone-icon-font') format('svg');
+  font-family: "trocafone-icon-font";
+  src: url("./lib/font/trocafone-icon-font.eot?71648804");
+  src: url("./lib/font/trocafone-icon-font.eot?71648804#iefix")
+      format("embedded-opentype"),
+    url("./lib/font/trocafone-icon-font.woff2?71648804") format("woff2"),
+    url("./lib/font/trocafone-icon-font.woff?71648804") format("woff"),
+    url("./lib/font/trocafone-icon-font.ttf?71648804") format("truetype"),
+    url("./lib/font/trocafone-icon-font.svg?71648804#trocafone-icon-font")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -20,7 +22,8 @@
 }
 */
 
-[class^="icon-t-"]:before, [class*=" icon-t-"]:before {
+[class^="icon-t-"]:before,
+[class*=" icon-t-"]:before {
   font-family: "trocafone-icon-font";
   font-style: normal;
   font-weight: normal;
@@ -46,7 +49,6 @@
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-
 
 .icon-t-share:before { content: '\21'; } /* '!' */
 .icon-t-card:before { content: '\22'; } /* '&quot;' */
@@ -130,3 +132,4 @@
 .icon-t-color-palette-outline:before { content: '\e898'; } /* '' */
 .icon-t-location:before { content: '\e89e'; } /* '' */
 .icon-t-menu-dots:before { content: '\e8a1'; } /* '' */
+.icon-t-location-map:before { content: '\e8a4'; } /* '' */

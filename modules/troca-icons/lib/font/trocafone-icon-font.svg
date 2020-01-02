@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg">
-<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
 <defs>
 <font id="trocafone-icon-font" horiz-adv-x="1000" >
 <font-face font-family="trocafone-icon-font" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
@@ -169,6 +169,8 @@
 <glyph glyph-name="location" unicode="&#xe89e;" d="M406 850c-218 0-400-181-400-406 0-44 13-81 25-125l44-81c31-50 69-100 106-150 50-63 100-119 157-176l68-62 69 62c56 57 113 113 156 176 38 43 75 93 107 150l43 81c19 37 25 81 25 125 0 225-181 406-400 406z m0-594c-106 0-193 88-193 194s87 194 193 194 194-88 194-194-87-194-194-194z" horiz-adv-x="813" />
 
 <glyph glyph-name="menu-dots" unicode="&#xe8a1;" d="M119 88a119 119 0 1 1 119-119 119 119 0 0 1-119 119z m0 381a119 119 0 1 1 119-119 119 119 0 0 1-119 119z m0 143a119 119 0 1 1-119 119 119 119 0 0 1 119-119z" horiz-adv-x="238" />
+
+<glyph glyph-name="location-map" unicode="&#xe8a4;" d="M850 28l-200-122v472c0 0 6 0 6 0l194 122v-472z m-233-134l-339 150c0 0-6 0-11 0l-6 0v139l17-11c5-5 5-5 11-5 5 0 11 0 11 5l39 39c0 0 55 50 105 117 34 33 56 66 73 94l94-44c0 0 0 0 0 0v-484z m-428 678c0 56 44 100 100 100 55 0 100-44 100-100 0-55-45-100-100-100-56 0-100 45-100 100l0 0z m33-533l-183-117v472l28 17c16-28 39-55 61-83 39-50 78-89 94-106v-183z m656 511c-6 6-11 6-17 0l-217-139-5 0c0 0-6 0-6 0 0 0-5 0-5 0l0 0-95 45 17 33c0 0 0 0 0 0 11 28 17 55 17 78 0 155-128 283-278 283-156 0-278-128-278-283 0-28 6-56 17-84 0 0 0 0 0 0l16-39-33-22c-5-5-11-11-11-16v-517c0-6 6-11 11-17 6-5 11-5 17 0l216 139 17 0 356-161c0 0 5 0 5 0 0 0 0 0 0 0 0 0 0 0 0 0 6 0 11 6 17 11l233 145c6 5 11 11 11 16v517c6 5 0 11-5 11l0 0z" horiz-adv-x="889" />
 </font>
 </defs>
 </svg>
