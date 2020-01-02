@@ -124,30 +124,6 @@ button, html input[type=button], input[type=reset], input[type=submit] {
     color:$button-primary-color-hover;
   }
   
-  &.loading{
-    position:relative;
-    background-color: $button-primary-bg-hover !important;
-    color: $button-primary-bg-hover !important;
-    &:after{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      content: " ";
-      border-radius: 50%;
-      width: 26px;
-      height: 26px;
-      animation: LoadingWheelAnimation 1.2s linear infinite;
-      vertical-align: middle;
-      border: 2px solid #fff;
-      border-left-color: transparent;
-      margin: auto;
-      margin-top: -9px;
-      margin-left: -9px;
-      width: 18px;
-      height: 18px;
-    }
-    
-  }
 }
 
 .button-secondary {
