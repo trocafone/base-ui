@@ -30,8 +30,6 @@ input[type='submit'] {
 
   &.loading{
     position:relative;
-    background-color: $button-primary-bg-hover;
-    color: $button-primary-bg-hover;
     
     &:after{
       position: absolute;
@@ -44,10 +42,6 @@ input[type='submit'] {
       border: 2px solid $white;
       border-left-color: transparent;
       margin: auto;
-      margin-top: -9px;
-      margin-left: -9px;
-      width: 18px;
-      height: 18px;
     }
     
   }
@@ -79,6 +73,15 @@ input[type='submit'] {
   line-height: $button-small-line-height;
   height: 32px;
 
+  &.loading{
+    &:after{
+      margin-top: -7.5px;
+      margin-left: -7.5px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
   &.button-icon-text {
     padding: $button-small-with-icon-and-text-padding;
     line-height: $button-small-icon-and-text-line-height;
@@ -106,6 +109,15 @@ input[type='submit'] {
   line-height: $button-medium-line-height;
   height: 44px;
 
+  &.loading{
+    &:after{
+      margin-top: -9px;
+      margin-left: -9px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
   &.button-icon-text {
     padding: $button-medium-with-icon-and-text-padding;
     line-height: $button-medium-icon-and-text-line-height;
@@ -132,6 +144,16 @@ input[type='submit'] {
   line-height: $button-large-line-height;
   height: 50px;
 
+  &.loading{
+    &:after{
+      margin-top: -10px;
+      margin-left: -10px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+
   &.button-icon-text {
     padding: $button-large-with-icon-and-text-padding;
     line-height: $button-large-icon-and-text-line-height;
@@ -157,6 +179,11 @@ input[type='submit'] {
   border: 1px solid $button-primary-border;
   color: $button-primary-color;
 
+  &.loading{
+    background-color: $button-primary-bg-hover;
+    color: $button-primary-bg-hover;
+  }
+
   &:hover,
   &:active {
     background-color: $button-primary-bg-hover;
@@ -170,6 +197,11 @@ input[type='submit'] {
   border: 1px solid $button-secondary-border;
   color: $button-secondary-color;
 
+  &.loading{
+    background-color: $button-secondary-bg-hover;
+    color: $button-secondary-bg-hover;
+  }
+
   &:hover,
   &:active {
     background-color: $button-secondary-bg-hover;
@@ -182,6 +214,11 @@ input[type='submit'] {
   background-color: $button-primary-border-bg;
   border: 1px solid $button-primary-border-border;
   color: $button-primary-border-color;
+
+  &.loading{
+    background-color: $button-primary-border-bg-hover;
+    color: $button-primary-border-bg-hover;
+  }
 
   &:hover,
   &:active {
@@ -210,6 +247,11 @@ input[type='submit'] {
   border: 1px solid $button-secondary-border-border;
   color: $button-secondary-border-color;
 
+  &.loading{
+    background-color: $button-secondary-border-bg-hover;
+    color: $button-secondary-border-bg-hover;
+  }
+
   &:hover,
   &:active {
     background-color: $button-secondary-border-bg-hover;
@@ -237,6 +279,11 @@ input[type='submit'] {
   border: 1px solid $gray-4;
   color: $gray-5;
 
+  &.loading{
+    background-color: $primary-middle;
+    color: $primary-middle;
+  }
+
   &:hover,
   &:active {
     background-color: $primary-middle;
@@ -263,6 +310,11 @@ input[type='submit'] {
   background-color: transparent;
   border: 1px solid $white;
   color: $white;
+
+  &.loading{
+    background-color: $primary-middle;
+    color: $primary-middle;
+  }
 
   &:hover,
   &:active {
@@ -327,6 +379,11 @@ input[type='submit'] {
 .button-primary-ghost {
   color: $button-primary-ghost-color;
 
+  &.loading{
+    background-color: $button-primary-ghost-color;
+    color: $button-primary-ghost-color;
+  }
+
   &:hover,
   &:active {
     color: $button-primary-ghost-color-hover;
@@ -335,6 +392,11 @@ input[type='submit'] {
 
 .button-secondary-ghost {
   color: $button-secondary-ghost-color;
+
+  &.loading{
+    background-color: $button-secondary-ghost-color-hover;
+    color: $button-secondary-ghost-color-hover;
+  }
 
   &:hover,
   &:active {
