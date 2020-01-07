@@ -61,8 +61,8 @@ p {
   margin-bottom: 10px;
 }
 
-a:hover, a:active, a:focus, a:-webkit-any-link {
-  text-decoration: none;
+a:hover, a:active, a:focus {
+  text-decoration: underline;
 }
 
 a{
