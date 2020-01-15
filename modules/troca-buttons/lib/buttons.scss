@@ -182,6 +182,11 @@ input[type='submit'] {
   &.loading{
     background-color: $button-primary-bg-hover;
     color: $button-primary-bg-hover;
+
+    &:hover,
+    &:active {
+      color: $button-primary-bg-hover;
+    }
   }
 
   &:hover,
@@ -200,6 +205,11 @@ input[type='submit'] {
   &.loading{
     background-color: $button-secondary-bg-hover;
     color: $button-secondary-bg-hover;
+
+    &:hover,
+    &:active {
+      color: $button-secondary-bg-hover;
+    }
   }
 
   &:hover,
@@ -218,6 +228,11 @@ input[type='submit'] {
   &.loading{
     background-color: $button-primary-border-bg-hover;
     color: $button-primary-border-bg-hover;
+
+    &:hover,
+    &:active {
+      color: $button-primary-border-bg-hover;
+    }
   }
 
   &:hover,
@@ -250,6 +265,11 @@ input[type='submit'] {
   &.loading{
     background-color: $button-secondary-border-bg-hover;
     color: $button-secondary-border-bg-hover;
+
+    &:hover,
+    &:active {
+      color: $button-secondary-border-bg-hover;
+    }
   }
 
   &:hover,
@@ -282,6 +302,11 @@ input[type='submit'] {
   &.loading{
     background-color: $primary-middle;
     color: $primary-middle;
+
+    &:hover,
+    &:active {
+      color: $primary-middle;
+    }
   }
 
   &:hover,
@@ -314,6 +339,11 @@ input[type='submit'] {
   &.loading{
     background-color: $primary-middle;
     color: $primary-middle;
+
+    &:hover,
+    &:active {
+      color: $primary-middle;
+    }
   }
 
   &:hover,
@@ -379,11 +409,6 @@ input[type='submit'] {
 .button-primary-ghost {
   color: $button-primary-ghost-color;
 
-  &.loading{
-    background-color: $button-primary-ghost-color;
-    color: $button-primary-ghost-color;
-  }
-
   &:hover,
   &:active {
     color: $button-primary-ghost-color-hover;
@@ -392,11 +417,6 @@ input[type='submit'] {
 
 .button-secondary-ghost {
   color: $button-secondary-ghost-color;
-
-  &.loading{
-    background-color: $button-secondary-ghost-color-hover;
-    color: $button-secondary-ghost-color-hover;
-  }
 
   &:hover,
   &:active {
