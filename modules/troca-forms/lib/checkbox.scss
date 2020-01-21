@@ -7,20 +7,13 @@ $checkbox-bdr-color: $gray-4;
 $checkbox-bdr-color-selected: $success-middle;
 $checkbox-bdr-color-hover: $primary-dark;
 $checkbox-bdr-width: 2px;
+$checkbox-width: 21px;
+$checkbox-height: 21px;
+$checkbox-icon-font-size: 12px;
 
 //icon
 $checkbox-icon-color: $white;
 $checkbox-icon-font-size-big: 12px;
-
-//big
-$checkbox-big-width: 21px;
-$checkbox-big-height: 21px;
-$checkbox-big-icon-font-size: 12px;
-
-//small
-$checkbox-small-width: 17px;
-$checkbox-small-height: 17px;
-$checkbox-small-icon-font-size: 10px;
 
 
 .checkbox-container{
@@ -43,8 +36,8 @@ $checkbox-small-icon-font-size: 10px;
     z-index: 10;
     opacity: 0;
     margin: 0;
-    width: $checkbox-big-width;
-    height: $checkbox-big-height;
+    width: $checkbox-width;
+    height: $checkbox-height;
     -webkit-appearance: none;
 
     &:hover + .checkbox-style-label,  
@@ -57,6 +50,8 @@ $checkbox-small-icon-font-size: 10px;
   .checkbox-label, .checkbox-text{
     vertical-align: middle;
     @include fontSize(small);
+    @include fontWeight(normal);
+    margin-top: 2px;
   }
 
   input[type=checkbox] + .checkbox-style-label, 
@@ -69,14 +64,13 @@ $checkbox-small-icon-font-size: 10px;
     margin-right: 10px;
     vertical-align: middle;
     flex-shrink: 0;
-    width: $checkbox-big-width;
-    height: $checkbox-big-height;
+    width: $checkbox-width;
+    height: $checkbox-height;
     cursor:pointer;
 
     &:hover, &:focus{
       border-color: $checkbox-bdr-color-hover;
     }
-  
   }
 
   input[type=checkbox]:checked + .checkbox-style-label,
@@ -90,59 +84,11 @@ $checkbox-small-icon-font-size: 10px;
   input[type=checkbox]:checked + .checkbox-input-visible:after {
     content: "\e80c";
     font-family: 'trocafone-icon-font';
-    font-size: $checkbox-big-icon-font-size;
-    position: absolute ;
-    top: 2px;
-    left: 1px;
+    font-size: $checkbox-icon-font-size;
+    position: absolute;
+    top: 3px;
+    left: 2px;
     color: $checkbox-icon-color;
-    line-height: $checkbox-big-icon-font-size;
+    line-height: $checkbox-icon-font-size;
   }
-
-  &.checkbox-big{
-    input[type=checkbox] {
-      width: $checkbox-big-width;
-      height: $checkbox-big-height;
-    }
-    input[type=checkbox] + .checkbox-input-visible {
-      width: $checkbox-big-width;
-      height: $checkbox-big-height;
-    }
-
-    input[type=checkbox]:checked + .checkbox-input-visible:after {
-      @include fontSize(small);
-      top: 3px;
-      left: 2px;
-    }
-    .checkbox-label, .checkbox-text{
-      @include fontSize(small);
-    }
-    input[type=checkbox]:checked + .checkbox-input-visible:after {
-      font-size: $checkbox-big-icon-font-size;
-      line-height: $checkbox-big-icon-font-size;
-    }
-  }
-
-  &.checkbox-small{
-    input[type=checkbox] {
-      width: $checkbox-small-width;
-      height: $checkbox-small-height;
-    }
-    input[type=checkbox] + .checkbox-input-visible {
-      width: $checkbox-small-width;
-      height: $checkbox-small-height;
-    }
-
-    input[type=checkbox]:checked + .checkbox-input-visible:after {
-      top: 1px;
-    }
-    .checkbox-label, .checkbox-text {
-      @include fontSize(smaller);
-    }
-
-    input[type=checkbox]:checked + .checkbox-input-visible:after {
-      font-size: $checkbox-small-icon-font-size;
-      line-height: $checkbox-small-icon-font-size;
-    }
-  }
-
 }
