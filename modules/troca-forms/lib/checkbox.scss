@@ -39,7 +39,8 @@ $checkbox-icon-font-size-big: 12px;
     width: $checkbox-width;
     height: $checkbox-height;
     -webkit-appearance: none;
-
+    cursor:pointer;
+    
     &:hover + .checkbox-style-label,  
     &:focus + .checkbox-style-label,
     &:hover + .checkbox-input-visible,  
