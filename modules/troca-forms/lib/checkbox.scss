@@ -1,3 +1,21 @@
+@import '../../troca-variables/troca-variables';
+
+$checkbox-bdr-radius: 3px;
+$checkbox-bg: $white;
+$checkbox-bg-selected: $success-middle;
+$checkbox-bdr-color: $gray-4;
+$checkbox-bdr-color-selected: $success-middle;
+$checkbox-bdr-color-hover: $primary-dark;
+$checkbox-bdr-width: 2px;
+$checkbox-width: 21px;
+$checkbox-height: 21px;
+$checkbox-icon-font-size: 12px;
+
+//icon
+$checkbox-icon-color: $white;
+$checkbox-icon-font-size-big: 12px;
+
+
 .checkbox-container{
   display: flex;
   position: relative;
@@ -8,21 +26,7 @@
     @include fontSize(small);
   }
 
-  &.label-left{
-    display: flex;
-    flex-direction:row-reverse;
-
-    input{
-      right: 0;
-    }
-
-    input[type=checkbox] + .checkbox-style-label{
-      margin-right: 0;
-      margin-left: 10px;
-    }
-  }
-
-  .checkbox-style-label  {
+  .checkbox-style-label, .checkbox-input-visible  {
     display: inline;
     margin-bottom: 0;
   }
@@ -32,66 +36,60 @@
     z-index: 10;
     opacity: 0;
     margin: 0;
-    width: 20px;
-    height: 20px;
+    width: $checkbox-width;
+    height: $checkbox-height;
     -webkit-appearance: none;
-
-    &:hover + .checkbox-style-label,  &:focus + .checkbox-style-label{
-      border-color: $primary-middle;
+    cursor:pointer;
+    
+    &:hover + .checkbox-style-label,  
+    &:focus + .checkbox-style-label,
+    &:hover + .checkbox-input-visible,  
+    &:focus + .checkbox-input-visible {
+      border-color: $checkbox-bdr-color-hover;
     }
   }
-  .checkbox-text{
+  .checkbox-label, .checkbox-text{
     vertical-align: middle;
     @include fontSize(small);
+    @include fontWeight(normal);
+    margin-top: 2px;
   }
 
-  input[type=checkbox] + .checkbox-style-label {
-    background-color: $white;
-    border: 2px solid $gray-4;
+  input[type=checkbox] + .checkbox-style-label, 
+  input[type=checkbox] + .checkbox-input-visible {
+    background-color: $checkbox-bg;
+    border-radius: $checkbox-bdr-radius;
+    border: $checkbox-bdr-width solid $checkbox-bdr-color;
     display: inline-block;
     position: relative;
-    width: 20px;
-    height: 20px;
     margin-right: 10px;
     vertical-align: middle;
+    flex-shrink: 0;
+    width: $checkbox-width;
+    height: $checkbox-height;
+    cursor:pointer;
 
     &:hover, &:focus{
-      border-color: $primary-middle;
+      border-color: $checkbox-bdr-color-hover;
     }
   }
 
-  input[type=checkbox]:checked + .checkbox-style-label {
-    background-color: $success-middle;
-    border: 2px solid $success-middle;
-    color: $white;
+  input[type=checkbox]:checked + .checkbox-style-label,
+  input[type=checkbox]:checked +  .checkbox-input-visible {
+    background-color: $checkbox-bg-selected;
+    border: $checkbox-bdr-width solid $checkbox-bdr-color-selected;
+    color: $checkbox-icon-color;
   }
 
-  input[type=checkbox]:checked + .checkbox-style-label:after {
+  input[type=checkbox]:checked + .checkbox-style-label:after,
+  input[type=checkbox]:checked + .checkbox-input-visible:after {
     content: "\e80c";
     font-family: 'trocafone-icon-font';
-    font-size: 14px;
-    position: absolute ;
-    top: 1px;
-    left: 1px;
-    color: $white;
-    line-height: 14px;
+    font-size: $checkbox-icon-font-size;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    color: $checkbox-icon-color;
+    line-height: $checkbox-icon-font-size;
   }
-
-
-  &.checkbox-small{
-    input[type=checkbox] {
-      width: 16px;
-      height: 16px;
-    }
-    input[type=checkbox] + .checkbox-style-label {
-      width: 16px;
-      height: 16px;
-    }
-
-    input[type=checkbox]:checked + .checkbox-style-label:after {
-      font-size: 11px;
-      top: 0;
-    }
-  }
-
 }
