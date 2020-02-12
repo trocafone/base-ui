@@ -2,8 +2,6 @@
 
 //import normalize from 'normalizecss';
 //import $ from 'jquery';
-import 'select2';
-import 'select2/select2.css';
 
 import '../troca-reset';
 import '../troca-variables';
