@@ -95,6 +95,7 @@ input[type='submit'] {
   }
   &.button-icon-only {
     padding: $button-small-with-icon-only-padding;
+    margin-right: 0;
 
     [class*='icon-t'],
     [class*='fa-'] {
