@@ -30,13 +30,23 @@ $button-secondary-border-border-hover: $secondary-middle;
 $button-secondary-border-color: $secondary-middle;
 $button-secondary-border-color-hover: $white;
 
+$button-primary-ghost-bg: transparent;
+$button-primary-ghost-bg-hover: $complementary-gray-light;
+$button-primary-ghost-border: transparent;
+$button-primary-ghost-border-hover: $complementary-gray-light;
 $button-primary-ghost-color: $primary-middle;
 $button-primary-ghost-color-hover: $primary-dark;
 
-$button-ghost-disabled-color: $gray-4;
-
+$button-secondary-ghost-bg: transparent;
+$button-secondary-ghost-bg-hover: $complementary-gray-light;
+$button-secondary-ghost-border: transparent;
+$button-secondary-ghost-border-hover: $complementary-gray-light;
 $button-secondary-ghost-color: $secondary-middle;
 $button-secondary-ghost-color-hover: $secondary-dark;
+
+$button-ghost-disabled-bg: transparent;
+$button-ghost-disabled-border: transparent;
+$button-ghost-disabled-color: $gray-4;
 
 //-----------------------------------------------------------------------------------------------
 $button-disabled-bg: $gray-3;
