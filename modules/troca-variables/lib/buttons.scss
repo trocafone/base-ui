@@ -1,10 +1,10 @@
 @import "colors";
 
 //BUTTONS
-$button-primary-bg: $primary-middle;
-$button-primary-bg-hover: $primary-dark;
-$button-primary-border: $primary-middle;
-$button-primary-border-hover: $primary-dark;
+$button-primary-bg: $primary-dark;
+$button-primary-bg-hover: $primary-darker;
+$button-primary-border: $primary-dark;
+$button-primary-border-hover: $primary-darker;
 $button-primary-color: $white;
 $button-primary-color-hover: $white;
 
@@ -16,10 +16,10 @@ $button-secondary-color: $white;
 $button-secondary-color-hover: $white;
 
 $button-primary-border-bg: $white;
-$button-primary-border-bg-hover: $primary-middle;
-$button-primary-border-border: $primary-middle;
-$button-primary-border-border-hover: $primary-middle;
-$button-primary-border-color: $primary-middle;
+$button-primary-border-bg-hover: $primary-dark;
+$button-primary-border-border: $primary-dark;
+$button-primary-border-border-hover: $primary-dark;
+$button-primary-border-color: $primary-dark;
 $button-primary-border-color-hover: $white;
 
 
@@ -34,8 +34,8 @@ $button-primary-ghost-bg: transparent;
 $button-primary-ghost-bg-hover: $complementary-gray-light;
 $button-primary-ghost-border: transparent;
 $button-primary-ghost-border-hover: $complementary-gray-light;
-$button-primary-ghost-color: $primary-middle;
-$button-primary-ghost-color-hover: $primary-dark;
+$button-primary-ghost-color: $primary-dark;
+$button-primary-ghost-color-hover: $primary-darker;
 
 $button-secondary-ghost-bg: transparent;
 $button-secondary-ghost-bg-hover: $complementary-gray-light;
