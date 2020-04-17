@@ -303,19 +303,19 @@ input[type='submit'] {
   color: $gray-5;
 
   &.loading{
-    background-color: $primary-middle;
-    color: $primary-middle;
+    background-color: $primary-dark;
+    color: $primary-dark;
 
     &:hover,
     &:active {
-      color: $primary-middle;
+      color: $primary-dark;
     }
   }
 
   &:hover,
   &:active {
-    background-color: $primary-middle;
-    border: 1px solid $primary-middle;
+    background-color: $primary-dark;
+    border: 1px solid $primary-dark;
     color: $white;
   }
 
@@ -340,20 +340,20 @@ input[type='submit'] {
   color: $white;
 
   &.loading{
-    background-color: $primary-middle;
-    color: $primary-middle;
+    background-color: $primary-dark;
+    color: $primary-dark;
 
     &:hover,
     &:active {
-      color: $primary-middle;
+      color: $primary-dark;
     }
   }
 
   &:hover,
   &:active {
-    background-color: $primary-middle;
+    background-color: $primary-dark;
     color: $white;
-    border-color: $primary-middle;
+    border-color: $primary-dark;
   }
 
   &[disabled] {
