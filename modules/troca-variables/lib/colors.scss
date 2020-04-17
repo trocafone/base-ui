@@ -25,27 +25,35 @@ $white: #fff;
 
 $success-lighter:#E3F1DF ;
 $success-light: #BBE5B3;
-$success-middle: #399D25;
-$success-dark: #035227;
-$success-darker: #012e15;
+$success-middle: #61B251; //
+$success-dark: #399D25; //
+$success-darker: #035227; //
 
 $danger-lighter:#FBEAE5;
 $danger-light: #FEAD9A;
 $danger-middle: #DE3618;
 $danger-dark: #BF0711;
-$danger-darker: #92070e;
+$danger-darker: #9F0000; //
 
 $warning-lighter: #FCF1CD;
 $warning-light: #FFEA8A;
 $warning-middle: #F8CD0E;
-$warning-dark: #d9b309;
-$warning-darker: #947a05;
+$warning-dark: #DDBA1F; //
+$warning-darker: #C8A300; //
 
 $complementary-gray-lighter: #F9FAFB;
 $complementary-gray-light: #F3F6F8;
 $complementary-gray-middle: #DFE3E8;
 $complementary-gray-dark: #C3CCD5;
-$complementary-gray-darker: #aab3bc;
+$complementary-gray-darker: #B1BBC5;  //
+
+
+$complementary-second-lighter: #73A9FF;
+$complementary-second-light: #538DEC;
+$complementary-second-middle: $complementary-second-middle;
+$complementary-second-dark: $complementary-second-dark;
+$complementary-second-darker: #03255C;  //
+
 
 
 
@@ -63,9 +71,9 @@ $content-box-bdr: $gray-3;
 
 
 //LINKS
-$link-color: #0c61e8;
-$link-color-hover: #043e9c;
-$link-color-active:  #043e9c;
+$link-color: $complementary-second-middle;
+$link-color-hover: $complementary-second-dark;
+$link-color-active:  $complementary-second-dark;
 
 
 
