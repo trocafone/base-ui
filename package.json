@@ -1,23 +1,23 @@
 {
   "name": "@tech-trocafone/base-ui",
   "description": "Base styles for Trocafone UI.",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "devDependencies": {
-    "css-loader": "^0.28.8",
+    "css-loader": "^3.5.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
-    "node-sass": "4.12.0",
+    "node-sass": "4.13.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "3.1.11"
+    "webpack-dev-server": "3.10.3"
   },
   "scripts": {
     "build": "webpack -p",
     "dev": "webpack-dev-server"
   },
   "dependencies": {
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "normalizecss": "^3.0.0",
     "select2": "3.5.1"
   },
