@@ -9,6 +9,16 @@ input[type='submit'] {
   cursor: pointer;
 }
 
+a:hover.button-primary,
+a:hover.button-secondary,
+a:hover.button-primary-border,
+a:hover.button-secondary-border,
+a:hover.button-gray-border,
+a:hover.button-primary-ghost,
+a:hover.button-secondary-ghost {
+  text-decoration: none;
+}
+
 .button-primary,
 .button-secondary,
 .button-primary-border,
@@ -27,7 +37,6 @@ input[type='submit'] {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
   display: inline-block;
 
   &.loading{
@@ -48,9 +57,8 @@ input[type='submit'] {
     
   }
 
-  &.button-disabled, &[disabled],
-  &.button-disabled,
-  &[disabled] {
+  &.button-disabled:not(.loading),
+  &[disabled]:not(.loading) {
     background-color: $button-disabled-bg;
     border: 1px solid $button-disabled-border;
     color: $button-disabled-color;
