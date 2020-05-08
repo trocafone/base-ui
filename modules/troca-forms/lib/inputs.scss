@@ -72,6 +72,11 @@ input, input.form-control{
   &:focus{
     outline:none;
     border: solid 1px $primary-dark;
+    box-shadow: none;
+  }
+
+  &:hover {
+    border: solid 1px $gray-6;
   }
 }
 
