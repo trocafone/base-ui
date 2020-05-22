@@ -1170,7 +1170,7 @@
     },
     {
       "uid": "55f5d2f2f84ae329ae55975a0eaa832b",
-      "css": "location-check-outline",
+      "css": "location-outline",
       "code": 59475,
       "src": "custom_icons",
       "selected": true,
