@@ -1,9 +1,9 @@
 # Trocafone fonts
 
 Visit https://github.com/trocafone/kb/wiki/Add-or-modify-icons-in-base-ui  for more information
+# We have 2 versions of this font. 
 
-
-# We have 2 versions of this font. V1 should NOT be updated anymore
+**V1 should NOT be updated anymore and it should be replaced with the icons in V2**
 
 ## V2
 All icons begin with the class "i-t-"
@@ -55,4 +55,3 @@ GOOD example: width: 32px Height:64px
 - On the site put a class for your new icon, they will always be call "i-t-(outline|fill)YOUR_ARTBOARD_NAME" ....... example: i-t-outline-close
 - If your test wen't well, you need to publish a new version of base-ui. If it didn't then go back to the .ai and try to maake it pixel perfect. 
 - Create a new version https://github.com/trocafone/kb/wiki/Create-new-Version-of-Base-Ui
-
