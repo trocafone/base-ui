@@ -1,6 +1,6 @@
 {
-  "name": "trocafont-v2",
-  "css_prefix_text": "icon-t2-",
+  "name": "trocafont",
+  "css_prefix_text": "i-t-",
   "css_use_suffix": false,
   "hinting": true,
   "units_per_em": 1000,
