@@ -3,10 +3,10 @@
 $checkbox-bdr-radius: 3px;
 $checkbox-bg: $white;
 $checkbox-bg-disabled: $gray-5;
-$checkbox-bg-selected: $success-middle;
+$checkbox-bg-selected: $primary-dark;
 $checkbox-bdr-color: $gray-4;
 $checkbox-bdr-color-disabled: $gray-5;
-$checkbox-bdr-color-selected: $success-middle;
+$checkbox-bdr-color-selected: $primary-dark;
 $checkbox-bdr-color-hover: $primary-darker;
 $checkbox-bdr-width: 2px;
 $checkbox-width: 21px;
@@ -14,9 +14,8 @@ $checkbox-height: 21px;
 $checkbox-icon-font-size: 12px;
 
 //icon
-$checkbox-icon-color: $white;
+$checkbox-icon-color: $primary-dark;
 $checkbox-icon-font-size-big: 12px;
-
 
 .checkbox-container{
   display: flex;
@@ -79,7 +78,6 @@ $checkbox-icon-font-size-big: 12px;
 
   input[type=checkbox]:checked:not(:disabled) + .checkbox-style-label,
   input[type=checkbox]:checked:not(:disabled) + .checkbox-input-visible {
-    background-color: $checkbox-bg-selected;
     border-color: $checkbox-bdr-color-selected;
   }
 
