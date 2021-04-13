@@ -1,14 +1,17 @@
 #!/bin/bash
 
-echo "### Login to NPM services ###"
-npm-cli-login -u $NPM_USER -p $NPM_PASS -e $NPM_EMAIL
-
-
-echo "### NPM User logged ###"
-npm whoami
+echo "-> Starting $TROCA_APP_NAME ... "
+#
+echo "### Introducing parameters on NPM & Yarn Files ###"
+echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+echo "always-auth=true" >> ~/.npmrc
+echo "registry \"https://registry.npmjs.org/\"" > ~/.yarnrc
+echo "### Done ###"
 
 echo "### Yarn build ###"
 yarn build
+echo "### Done ###"
 
 echo "### NPM Publishing ###"
 npm publish --access-public
+echo "### Done ###"
