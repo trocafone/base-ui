@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "troca-font";
+  src: url('../font/troca-font.eot?88570792');
+  src: url('../font/troca-font.eot?88570792#iefix') format('embedded-opentype'),
+       url('../font/troca-font.woff2?88570792') format('woff2'),
+       url('../font/troca-font.woff?88570792') format('woff'),
+       url('../font/troca-font.ttf?88570792') format('truetype'),
+       url('../font/troca-font.svg?88570792#troca-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'troca-font';
+    src: url('../font/troca-font.svg?88570792#troca-font') format('svg');
+  }
+}
+*/
+[class^="t-f-"]:before, [class*=" t-f-"]:before {
+  font-family: "troca-font";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.t-f-Outline_Volume:before { content: '\e8f1'; } /* '' */
+.t-f-Fill_Add-Button:before { content: '\e900'; } /* '' */
+.t-f-Fill_Android:before { content: '\e901'; } /* '' */
+.t-f-Fill_Apple:before { content: '\e902'; } /* '' */
+.t-f-Fill_Bag-Add:before { content: '\e903'; } /* '' */
+.t-f-Fill_Bag:before { content: '\e904'; } /* '' */
+.t-f-Fill_Battery:before { content: '\e905'; } /* '' */
+.t-f-Fill_Book-Tutorial:before { content: '\e906'; } /* '' */
+.t-f-Fill_Box-Open-Time:before { content: '\e907'; } /* '' */
+.t-f-Fill_Box-Open:before { content: '\e908'; } /* '' */
+.t-f-Fill_Box-Question:before { content: '\e909'; } /* '' */
+.t-f-Fill_Box:before { content: '\e90a'; } /* '' */
+.t-f-Fill_Building:before { content: '\e90b'; } /* '' */
+.t-f-Fill_Calendar:before { content: '\e90c'; } /* '' */
+.t-f-Fill_Camera:before { content: '\e90d'; } /* '' */
+.t-f-Fill_Charger:before { content: '\e90e'; } /* '' */
+.t-f-Fill_Chart:before { content: '\e90f'; } /* '' */
+.t-f-Fill_Chat:before { content: '\e910'; } /* '' */
+.t-f-Fill_Chip-SIM:before { content: '\e911'; } /* '' */
+.t-f-Fill_Chip:before { content: '\e912'; } /* '' */
+.t-f-Fill_Color-Palette:before { content: '\e913'; } /* '' */
+.t-f-Fill_Coupon:before { content: '\e914'; } /* '' */
+.t-f-Fill_Credential:before { content: '\e915'; } /* '' */
+.t-f-Fill_Delivery-Truck:before { content: '\e916'; } /* '' */
+.t-f-Fill_Discount:before { content: '\e917'; } /* '' */
+.t-f-Fill_Edit:before { content: '\e918'; } /* '' */
+.t-f-Fill_Energy-A:before { content: '\e919'; } /* '' */
+.t-f-Fill_Energy:before { content: '\e91a'; } /* '' */
+.t-f-Fill_Filter:before { content: '\e91b'; } /* '' */
+.t-f-Fill_Fix:before { content: '\e91c'; } /* '' */
+.t-f-Fill_Flash-Hide:before { content: '\e91d'; } /* '' */
+.t-f-Fill_Guarantee:before { content: '\e91e'; } /* '' */
+.t-f-Fill_Hard-Disk:before { content: '\e91f'; } /* '' */
+.t-f-Fill_Heart:before { content: '\e920'; } /* '' */
+.t-f-Fill_Home:before { content: '\e921'; } /* '' */
+.t-f-Fill_Image:before { content: '\e922'; } /* '' */
+.t-f-Fill_information:before { content: '\e923'; } /* '' */
+.t-f-Fill_Location-Check:before { content: '\e924'; } /* '' */
+.t-f-Fill_Location-Cross:before { content: '\e925'; } /* '' */
+.t-f-Fill_Location:before { content: '\e926'; } /* '' */
+.t-f-Fill_Lock-Screen:before { content: '\e927'; } /* '' */
+.t-f-Fill_Lock:before { content: '\e928'; } /* '' */
+.t-f-Fill_Mail:before { content: '\e929'; } /* '' */
+.t-f-Fill_Menu-Kebab:before { content: '\e92a'; } /* '' */
+.t-f-Fill_Microphone:before { content: '\e92b'; } /* '' */
+.t-f-Fill_Notifications:before { content: '\e92c'; } /* '' */
+.t-f-Fill_Offer:before { content: '\e92d'; } /* '' */
+.t-f-Fill_Paypal:before { content: '\e92e'; } /* '' */
+.t-f-Fill_Phone-Back:before { content: '\e92f'; } /* '' */
+.t-f-Fill_Phone-Broke:before { content: '\e930'; } /* '' */
+.t-f-Fill_Phone-Camera-Front:before { content: '\e931'; } /* '' */
+.t-f-Fill_Phone-Check:before { content: '\e932'; } /* '' */
+.t-f-Fill_Phone-Error:before { content: '\e933'; } /* '' */
+.t-f-Fill_Phone-Message:before { content: '\e934'; } /* '' */
+.t-f-Fill_Phone-Money-Price:before { content: '\e935'; } /* '' */
+.t-f-Fill_Phone-Money:before { content: '\e936'; } /* '' */
+.t-f-Fill_Phone-Vibes:before { content: '\e937'; } /* '' */
+.t-f-Fill_Phone:before { content: '\e938'; } /* '' */
+.t-f-Fill_Price-Receip-Add:before { content: '\e939'; } /* '' */
+.t-f-Fill_Price-Receip-Check:before { content: '\e93a'; } /* '' */
+.t-f-Fill_Price-Receip:before { content: '\e93b'; } /* '' */
+.t-f-Fill_Price:before { content: '\e93c'; } /* '' */
+.t-f-Fill_Question-Chat:before { content: '\e93d'; } /* '' */
+.t-f-Fill_Question:before { content: '\e93e'; } /* '' */
+.t-f-Fill_Radio:before { content: '\e93f'; } /* '' */
+.t-f-Fill_Ray:before { content: '\e940'; } /* '' */
+.t-f-Fill_Security-Lock:before { content: '\e941'; } /* '' */
+.t-f-Fill_Security:before { content: '\e942'; } /* '' */
+.t-f-Fill_Settings:before { content: '\e943'; } /* '' */
+.t-f-Fill_Share:before { content: '\e944'; } /* '' */
+.t-f-Fill_Signal-bar:before { content: '\e945'; } /* '' */
+.t-f-Fill_Smartwatch:before { content: '\e946'; } /* '' */
+.t-f-Fill_SSD:before { content: '\e947'; } /* '' */
+.t-f-Fill_Star:before { content: '\e948'; } /* '' */
+.t-f-Fill_Store:before { content: '\e949'; } /* '' */
+.t-f-Fill_Tablet:before { content: '\e94a'; } /* '' */
+.t-f-Fill_Telephone:before { content: '\e94b'; } /* '' */
+.t-f-Fill_Thumb-Down:before { content: '\e94c'; } /* '' */
+.t-f-Fill_Thumb-Up:before { content: '\e94d'; } /* '' */
+.t-f-Fill_Trash:before { content: '\e94e'; } /* '' */
+.t-f-Fill_Turn-on-off:before { content: '\e94f'; } /* '' */
+.t-f-Fill_TV:before { content: '\e950'; } /* '' */
+.t-f-Fill_Two-Credit-Cards:before { content: '\e951'; } /* '' */
+.t-f-Fill_Unlock-Screen:before { content: '\e952'; } /* '' */
+.t-f-Fill_Unlock:before { content: '\e953'; } /* '' */
+.t-f-Fill_USB:before { content: '\e954'; } /* '' */
+.t-f-Fill_User:before { content: '\e955'; } /* '' */
+.t-f-Fill_Video:before { content: '\e956'; } /* '' */
+.t-f-Fill_View-off:before { content: '\e957'; } /* '' */
+.t-f-Fill_View-on:before { content: '\e958'; } /* '' */
+.t-f-Fill_Volume:before { content: '\e959'; } /* '' */
+.t-f-Fill_Warning-Chat:before { content: '\e95a'; } /* '' */
+.t-f-Fill_Warning:before { content: '\e95b'; } /* '' */
+.t-f-Fill_WhatsApp:before { content: '\e95c'; } /* '' */
+.t-f-Outline_Add-Button:before { content: '\e95d'; } /* '' */
+.t-f-Outline_Android:before { content: '\e95e'; } /* '' */
+.t-f-Outline_Apple:before { content: '\e95f'; } /* '' */
+.t-f-Outline_At-Sign:before { content: '\e960'; } /* '' */
+.t-f-Outline_Attachment:before { content: '\e961'; } /* '' */
+.t-f-Outline_Bag-Add:before { content: '\e962'; } /* '' */
+.t-f-Outline_Bag:before { content: '\e963'; } /* '' */
+.t-f-Outline_Barcode:before { content: '\e964'; } /* '' */
+.t-f-Outline_Battery:before { content: '\e965'; } /* '' */
+.t-f-Outline_Bluetooth:before { content: '\e966'; } /* '' */
+.t-f-Outline_Book-Tutorial:before { content: '\e967'; } /* '' */
+.t-f-Outline_Box-Open-Time:before { content: '\e968'; } /* '' */
+.t-f-Outline_Box-Open:before { content: '\e969'; } /* '' */
+.t-f-Outline_Box-Question:before { content: '\e96a'; } /* '' */
+.t-f-Outline_Box:before { content: '\e96b'; } /* '' */
+.t-f-Outline_Building:before { content: '\e96c'; } /* '' */
+.t-f-Outline_Calendar:before { content: '\e96d'; } /* '' */
+.t-f-Outline_Camera:before { content: '\e96e'; } /* '' */
+.t-f-Outline_Card-TrocaMais:before { content: '\e96f'; } /* '' */
+.t-f-Outline_Charger:before { content: '\e970'; } /* '' */
+.t-f-Outline_Chart:before { content: '\e971'; } /* '' */
+.t-f-Outline_Chat:before { content: '\e972'; } /* '' */
+.t-f-Outline_Checkmark:before { content: '\e973'; } /* '' */
+.t-f-Outline_Chevron-Down:before { content: '\e974'; } /* '' */
+.t-f-Outline_Chevron-Left:before { content: '\e975'; } /* '' */
+.t-f-Outline_Chevron-Right:before { content: '\e976'; } /* '' */
+.t-f-Outline_Chevron-Up:before { content: '\e977'; } /* '' */
+.t-f-Outline_Chip-SIM:before { content: '\e978'; } /* '' */
+.t-f-Outline_Chip:before { content: '\e979'; } /* '' */
+.t-f-Outline_Code-QR:before { content: '\e97a'; } /* '' */
+.t-f-Outline_Code:before { content: '\e97b'; } /* '' */
+.t-f-Outline_Color-Palette:before { content: '\e97c'; } /* '' */
+.t-f-Outline_Copy:before { content: '\e97d'; } /* '' */
+.t-f-Outline_Coupon:before { content: '\e97e'; } /* '' */
+.t-f-Outline_Credential:before { content: '\e97f'; } /* '' */
+.t-f-Outline_Credit-Card-Back:before { content: '\e980'; } /* '' */
+.t-f-Outline_Credit-Card-Check:before { content: '\e981'; } /* '' */
+.t-f-Outline_Credit-Card-Cross:before { content: '\e982'; } /* '' */
+.t-f-Outline_Credit-Card-Front:before { content: '\e983'; } /* '' */
+.t-f-Outline_Credit-Card-Info:before { content: '\e984'; } /* '' */
+.t-f-Outline_Credit-Card-Lock:before { content: '\e985'; } /* '' */
+.t-f-Outline_Cross-Close:before { content: '\e986'; } /* '' */
+.t-f-Outline_Delivery-Truck:before { content: '\e987'; } /* '' */
+.t-f-Outline_Diamond:before { content: '\e988'; } /* '' */
+.t-f-Outline_Discount:before { content: '\e989'; } /* '' */
+.t-f-Outline_Document:before { content: '\e98a'; } /* '' */
+.t-f-Outline_Download:before { content: '\e98b'; } /* '' */
+.t-f-Outline_Edit:before { content: '\e98c'; } /* '' */
+.t-f-Outline_Energy-A:before { content: '\e98d'; } /* '' */
+.t-f-Outline_Energy:before { content: '\e98e'; } /* '' */
+.t-f-Outline_External-Link:before { content: '\e98f'; } /* '' */
+.t-f-Outline_Filter:before { content: '\e990'; } /* '' */
+.t-f-Outline_Fingerprint:before { content: '\e991'; } /* '' */
+.t-f-Outline_Fix:before { content: '\e992'; } /* '' */
+.t-f-Outline_Flash-Hide:before { content: '\e993'; } /* '' */
+.t-f-Outline_Gift:before { content: '\e994'; } /* '' */
+.t-f-Outline_Guarantee:before { content: '\e995'; } /* '' */
+.t-f-Outline_Hard-Disk:before { content: '\e996'; } /* '' */
+.t-f-Outline_Heart:before { content: '\e997'; } /* '' */
+.t-f-Outline_Historical:before { content: '\e998'; } /* '' */
+.t-f-Outline_Home:before { content: '\e999'; } /* '' */
+.t-f-Outline_Image-Focus:before { content: '\e99a'; } /* '' */
+.t-f-Outline_Image:before { content: '\e99b'; } /* '' */
+.t-f-Outline_information:before { content: '\e99c'; } /* '' */
+.t-f-Outline_Internet:before { content: '\e99d'; } /* '' */
+.t-f-Outline_Less-Line:before { content: '\e99e'; } /* '' */
+.t-f-Outline_Link:before { content: '\e99f'; } /* '' */
+.t-f-Outline_List:before { content: '\e9a0'; } /* '' */
+.t-f-Outline_Location-Check:before { content: '\e9a1'; } /* '' */
+.t-f-Outline_Location-Cross:before { content: '\e9a2'; } /* '' */
+.t-f-Outline_Location:before { content: '\e9a3'; } /* '' */
+.t-f-Outline_Lock-Screen:before { content: '\e9a4'; } /* '' */
+.t-f-Outline_Lock:before { content: '\e9a5'; } /* '' */
+.t-f-Outline_Mail:before { content: '\e9a6'; } /* '' */
+.t-f-Outline_Maximize:before { content: '\e9a7'; } /* '' */
+.t-f-Outline_Menu-Kebab:before { content: '\e9a8'; } /* '' */
+.t-f-Outline_Mercado-Pago:before { content: '\e9a9'; } /* '' */
+.t-f-Outline_Microphone:before { content: '\e9aa'; } /* '' */
+.t-f-Outline_Minimize:before { content: '\e9ab'; } /* '' */
+.t-f-Outline_More:before { content: '\e9ac'; } /* '' */
+.t-f-Outline_Mouse:before { content: '\e9ad'; } /* '' */
+.t-f-Outline_Notifications:before { content: '\e9ae'; } /* '' */
+.t-f-Outline_Numeral:before { content: '\e9af'; } /* '' */
+.t-f-Outline_Offer:before { content: '\e9b0'; } /* '' */
+.t-f-Outline_Paypal:before { content: '\e9b1'; } /* '' */
+.t-f-Outline_Pendrive:before { content: '\e9b2'; } /* '' */
+.t-f-Outline_Phone-Back:before { content: '\e9b3'; } /* '' */
+.t-f-Outline_Phone-Broke:before { content: '\e9b4'; } /* '' */
+.t-f-Outline_Phone-Camera-Front:before { content: '\e9b5'; } /* '' */
+.t-f-Outline_Phone-Check:before { content: '\e9b6'; } /* '' */
+.t-f-Outline_Phone-Error:before { content: '\e9b7'; } /* '' */
+.t-f-Outline_Phone-Message:before { content: '\e9b8'; } /* '' */
+.t-f-Outline_Phone-Money-Price:before { content: '\e9b9'; } /* '' */
+.t-f-Outline_Phone-Money:before { content: '\e9ba'; } /* '' */
+.t-f-Outline_Phone-Vibes:before { content: '\e9bb'; } /* '' */
+.t-f-Outline_Phone:before { content: '\e9bc'; } /* '' */
+.t-f-Outline_Price-Document:before { content: '\e9bd'; } /* '' */
+.t-f-Outline_Price-List:before { content: '\e9be'; } /* '' */
+.t-f-Outline_Price-Receip-Add:before { content: '\e9bf'; } /* '' */
+.t-f-Outline_Price-Receip-Check:before { content: '\e9c0'; } /* '' */
+.t-f-Outline_Price-Receip:before { content: '\e9c1'; } /* '' */
+.t-f-Outline_Price:before { content: '\e9c2'; } /* '' */
+.t-f-Outline_Question-Chat:before { content: '\e9c3'; } /* '' */
+.t-f-Outline_Question:before { content: '\e9c4'; } /* '' */
+.t-f-Outline_Radio:before { content: '\e9c5'; } /* '' */
+.t-f-Outline_Ray:before { content: '\e9c6'; } /* '' */
+.t-f-Outline_Red:before { content: '\e9c7'; } /* '' */
+.t-f-Outline_Refresh:before { content: '\e9c8'; } /* '' */
+.t-f-Outline_Rotate-360:before { content: '\e9c9'; } /* '' */
+.t-f-Outline_Rotate-Screen:before { content: '\e9ca'; } /* '' */
+.t-f-Outline_Scan:before { content: '\e9cb'; } /* '' */
+.t-f-Outline_Screen-Monitor:before { content: '\e9cc'; } /* '' */
+.t-f-Outline_Search:before { content: '\e9cd'; } /* '' */
+.t-f-Outline_Security-Lock:before { content: '\e9ce'; } /* '' */
+.t-f-Outline_Security:before { content: '\e9cf'; } /* '' */
+.t-f-Outline_Settings:before { content: '\e9d0'; } /* '' */
+.t-f-Outline_Share:before { content: '\e9d1'; } /* '' */
+.t-f-Outline_Signal-bar:before { content: '\e9d2'; } /* '' */
+.t-f-Outline_Signal:before { content: '\e9d3'; } /* '' */
+.t-f-Outline_Smartwatch:before { content: '\e9d4'; } /* '' */
+.t-f-Outline_SSD:before { content: '\e9d5'; } /* '' */
+.t-f-Outline_Star:before { content: '\e9d6'; } /* '' */
+.t-f-Outline_Store:before { content: '\e9d7'; } /* '' */
+.t-f-Outline_Tablet:before { content: '\e9d8'; } /* '' */
+.t-f-Outline_Telephone:before { content: '\e9d9'; } /* '' */
+.t-f-Outline_Temporary-10:before { content: '\e9da'; } /* '' */
+.t-f-Outline_Temporary-Price:before { content: '\e9db'; } /* '' */
+.t-f-Outline_Temporary:before { content: '\e9dc'; } /* '' */
+.t-f-Outline_Thumb-Down:before { content: '\e9dd'; } /* '' */
+.t-f-Outline_Thumb-Up:before { content: '\e9de'; } /* '' */
+.t-f-Outline_Trash:before { content: '\e9df'; } /* '' */
+.t-f-Outline_Turn-on-off:before { content: '\e9e0'; } /* '' */
+.t-f-Outline_TV:before { content: '\e9e1'; } /* '' */
+.t-f-Outline_Two-Credit-Cards:before { content: '\e9e2'; } /* '' */
+.t-f-Outline_Unlock-Screen:before { content: '\e9e3'; } /* '' */
+.t-f-Outline_Unlock:before { content: '\e9e4'; } /* '' */
+.t-f-Outline_Upload:before { content: '\e9e5'; } /* '' */
+.t-f-Outline_USB:before { content: '\e9e6'; } /* '' */
+.t-f-Outline_User:before { content: '\e9e7'; } /* '' */
+.t-f-Outline_Video:before { content: '\e9e8'; } /* '' */
+.t-f-Outline_View-off:before { content: '\e9e9'; } /* '' */
+.t-f-Outline_View-on:before { content: '\e9ea'; } /* '' */
+.t-f-Outline_Warning-Chat:before { content: '\e9ee'; } /* '' */
+.t-f-Outline_Warning:before { content: '\e9ef'; } /* '' */
+.t-f-Outline_Wifi:before { content: '\e9f0'; } /* '' */
