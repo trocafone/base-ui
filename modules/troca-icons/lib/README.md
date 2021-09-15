@@ -1,12 +1,18 @@
 # Trocafone fonts
 
 Visit https://github.com/trocafone/kb/wiki/Add-or-modify-icons-in-base-ui  for more information
-# We have 2 versions of this font. 
+# We have 3 versions of this font.
 
-**V1 should NOT be updated anymore and it should be replaced with the icons in V2**
+**V1 and v2 should NOT be updated anymore and it should be replaced with the icons in V2**
 
 ## V2
 All icons begin with the class "i-t-"
+After that prefix there are 2 groups. There should not be icons without a group.
+* outline
+* fill
+
+## V3
+All icons begin with the class "t-f-"
 After that prefix there are 2 groups. There should not be icons without a group.
 * outline
 * fill
@@ -16,7 +22,7 @@ The font family it's call "trocafont"
 
 ## Add or modify icons in Base Ui
 
-### Generate svg file to upload to fontello 
+### Generate svg file to upload to fontello
 _This part will an UX task from now on_
 
 - Go to the repo Base ui and open the .ai in /modules/troca-icons/lib. This route will change once UX beggins managing this file.
@@ -29,7 +35,7 @@ _This part will an UX task from now on_
 - make it black
 - right click and search for make compound path, maybe in each vector layer.
 - Once you have your vector, and nothing else. Stretch it without loosing proportion to the size of the artboard until you reach a border. Biggest artboard should be 64px x 64px
-- make sure the width and height of the vector it's ALWAYS in exact numbers and pair. 
+- make sure the width and height of the vector it's ALWAYS in exact numbers and pair.
 BAD Example ---> width: 31,34px Height: 63,76.
 GOOD example: width: 32px Height:64px
 - Same for the position X and Y ---> ALWAYS in exact numbers and pair
@@ -48,10 +54,10 @@ GOOD example: width: 32px Height:64px
 - Download the zip file
 
 ### Overwritte files in Base Ui
-- Overwritte the **Json, all the font files** in the repo. 
+- Overwritte the **Json, all the font files** in the repo.
 - From the file **trocafont.css** copy all the classes for the icons. **NOT** the font-face nor the [class^="i-t-"]:before, [class*=" i-t-"]:befo.....
 - In the repo **BASE-UI** re build, with yarn build.
 - To test this, there is a hack (we need to find a better way). Overwrite the dist file created in base-ui after the build. paste it in web repo folder src/node_modules/@tech-trocafone/base-ui/dist and then rebuild web.
 - On the site put a class for your new icon, they will always be call "i-t-(outline|fill)YOUR_ARTBOARD_NAME" ....... example: i-t-outline-close
-- If your test wen't well, you need to publish a new version of base-ui. If it didn't then go back to the .ai and try to maake it pixel perfect. 
+- If your test wen't well, you need to publish a new version of base-ui. If it didn't then go back to the .ai and try to maake it pixel perfect.
 - Create a new version https://github.com/trocafone/kb/wiki/Create-new-Version-of-Base-Ui
