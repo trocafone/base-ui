@@ -51,7 +51,7 @@
     },
     {
       "uid": "0bb23836b286bd40d4d6d4fe0520c74a",
-      "css": "fill-bad-add",
+      "css": "fill-bag-add",
       "code": 59651,
       "src": "custom_icons",
       "selected": true,
@@ -60,7 +60,7 @@
         "width": 1000
       },
       "search": [
-        "fill-bad-add"
+        "fill-bag-add"
       ]
     },
     {
@@ -667,7 +667,7 @@
     },
     {
       "uid": "01dc71a00ee4eaf719ca12c23d9c2e7e",
-      "css": "outline-bad-add",
+      "css": "outline-bag-add",
       "code": 59746,
       "src": "custom_icons",
       "selected": true,
@@ -676,7 +676,7 @@
         "width": 1000
       },
       "search": [
-        "outline-bad-add"
+        "outline-bag-add"
       ]
     },
     {
