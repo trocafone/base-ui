@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "troca-font";
-  src: url('./lib/v3/font/troca-font.eot?36562347');
-  src: url('./lib/v3/font/troca-font.eot?36562347#iefix') format('embedded-opentype'),
-       url('./lib/v3/font/troca-font.woff2?36562347') format('woff2'),
-       url('./lib/v3/font/troca-font.woff?36562347') format('woff'),
-       url('./lib/v3/font/troca-font.ttf?36562347') format('truetype'),
-       url('./lib/v3/font/troca-font.svg?36562347#troca-font') format('svg');
+  font-family: 'troca-font';
+  src: url('./lib/v3/font/troca-font.eot?28783769');
+  src: url('./lib/v3/font/troca-font.eot?28783769#iefix') format('embedded-opentype'),
+       url('./lib/v3/font/troca-font.woff2?28783769') format('woff2'),
+       url('./lib/v3/font/troca-font.woff?28783769') format('woff'),
+       url('./lib/v3/font/troca-font.ttf?28783769') format('truetype'),
+       url('./lib/v3/font/troca-font.svg?28783769#troca-font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'troca-font';
-    src: url('../font/troca-font.svg?36562347#troca-font') format('svg');
+    src: url('../font/troca-font.svg?28783769#troca-font') format('svg');
   }
 }
 */
@@ -179,6 +179,7 @@
 .t-f-outline-code-qr:before { content: '\e97a'; } /* '' */
 .t-f-outline-code:before { content: '\e97b'; } /* '' */
 .t-f-outline-color-palette:before { content: '\e97c'; } /* '' */
+.t-f-outline-computer:before { content: '\e800'; } /* '' */
 .t-f-outline-copy:before { content: '\e97d'; } /* '' */
 .t-f-outline-coupon:before { content: '\e97e'; } /* '' */
 .t-f-outline-credential:before { content: '\e97f'; } /* '' */
