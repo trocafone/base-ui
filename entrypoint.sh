@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 echo "-> Starting $TROCA_APP_NAME ... "
 #
 echo "### Introducing parameters on NPM & Yarn Files ###"
